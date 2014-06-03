@@ -29,6 +29,7 @@ import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
+import com.srowen.bs.android.simple.R;
 
 /**
  * Implements support for barcode scanning preferences.
@@ -54,8 +55,7 @@ public final class PreferencesFragment
                                     PreferencesActivity.KEY_DECODE_QR,
                                     PreferencesActivity.KEY_DECODE_DATA_MATRIX,
                                     PreferencesActivity.KEY_DECODE_AZTEC,
-                                    PreferencesActivity.KEY_DECODE_PDF417,
-                                    PreferencesActivity.KEY_DECODE_NFC);
+                                    PreferencesActivity.KEY_DECODE_PDF417);
     disableLastCheckedPref();
 
     EditTextPreference customProductSearch = (EditTextPreference)

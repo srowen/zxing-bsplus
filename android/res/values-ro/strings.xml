@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Aplicații</string>
-  <string name="bookmark_picker_name">Nume însemnare</string>
   <string name="button_add_calendar">Adaugă în calendar</string>
   <string name="button_add_contact">Adaugă contact</string>
   <string name="button_book_search">Caută carte</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Caută produs</string>
   <string name="button_search_book_contents">Caută conținut</string>
   <string name="button_share_app">Aplicație</string>
-  <string name="button_share_bookmark">Distribuie însemnarea</string>
   <string name="button_share_by_email">Distribuie prin e-mail</string>
   <string name="button_share_by_sms">Distribuie prin SMS</string>
   <string name="button_share_clipboard">Clipboard</string>
-  <string name="button_share_contact">Contact</string>
   <string name="button_show_map">Arată harta</string>
   <string name="button_sms">Trimite SMS</string>
   <string name="button_web_search">Caută pe web</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Text</string>
   <string name="history_clear_one_history_text">Șterge</string>
   <string name="history_clear_text">Șterge istoricul</string>
-  <string name="history_email_title">Istoric Barcode Scanner</string>
+  <string name="history_copied">Copiați în clipboard</string>
+  <string name="history_copy">Copierea</string>
   <string name="history_empty">Nicio înregistare</string>
   <string name="history_empty_detail">Nicio scanare de coduri de bară nu a fost înregistrată</string>
-  <string name="history_send">Trimite istoric</string>
   <string name="history_title">Istoric</string>
-  <string name="menu_decode_image">Decodifică imaginea</string>
   <string name="menu_encode_mecard">Folosește MECARD</string>
   <string name="menu_encode_vcard">Folosește vCard</string>
   <string name="menu_help">Ajutor</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Poți distribui datele afișând codul pe ecran și scanându-l cu alt aparat</string>
   <string name="msg_share_text">Sau introdu textul și tastează Enter</string>
   <string name="msg_sure">Confirmă</string>
-  <string name="msg_unmount_usb">Card SD inaccesibil</string>
   <string name="preferences_actions_title">Când un cod de bare este găsit\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Coduri de bare Renunțați nu potrivire expresie regulată</string>
   <string name="preferences_allowed_content_pattern_title">Potrivire de model</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D Produs</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">Comunicare NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417</string>
   <string name="preferences_decode_QR_title">Coduri QR</string>
   <string name="preferences_device_bug_workarounds_title">Rezolvări rapide ale defectelor la aparat</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Caută țara</string>
   <string name="preferences_supplemental_summary">Încearcă preluarea mai multor informații din conținutul codurilor de bară</string>
   <string name="preferences_supplemental_title">Preia mai multe informații</string>
-  <string name="preferences_vibrate_title">Vibrează</string>
   <string name="sbc_name">Căutare Google Cărți</string>
-  <string name="wifi_changing_network">Solicită conexiune la rețea\u2026</string>
 </resources>

@@ -17,7 +17,7 @@
 package com.srowen.bs.android.result;
 
 import com.google.zxing.Result;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.google.zxing.client.result.ExpandedProductParsedResult;
 import com.google.zxing.client.result.ParsedResult;
 import com.google.zxing.client.result.ProductParsedResult;

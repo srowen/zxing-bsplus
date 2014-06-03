@@ -33,7 +33,6 @@ public final class PreferencesActivity extends Activity {
   public static final String KEY_DECODE_DATA_MATRIX = "preferences_decode_Data_Matrix";
   public static final String KEY_DECODE_AZTEC = "preferences_decode_Aztec";
   public static final String KEY_DECODE_PDF417 = "preferences_decode_PDF417";
-  public static final String KEY_DECODE_NFC = "preferences_decode_NFC";
 
   public static final String[] ONE_D_FORMAT_KEYS = {
       KEY_DECODE_1D_PRODUCT,
@@ -50,7 +49,6 @@ public final class PreferencesActivity extends Activity {
 
   public static final String KEY_FRONT_CAMERA = "preferences_front_camera";
   public static final String KEY_PLAY_BEEP = "preferences_play_beep";
-  public static final String KEY_VIBRATE = "preferences_vibrate";
   public static final String KEY_COPY_TO_CLIPBOARD = "preferences_copy_to_clipboard";
   public static final String KEY_FRONT_LIGHT_MODE = "preferences_front_light_mode";
   public static final String KEY_BULK_MODE = "preferences_bulk_mode";

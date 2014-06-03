@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Aplikacije</string>
-  <string name="bookmark_picker_name">Zaznamki</string>
   <string name="button_add_calendar">Dodaj v koledar</string>
   <string name="button_add_contact">Dodaj kontakt</string>
   <string name="button_book_search">Išči knjigo</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Iskanje po izdelkih</string>
   <string name="button_search_book_contents">Išči vsebino</string>
   <string name="button_share_app">Aplikacija</string>
-  <string name="button_share_bookmark">Zaznamek</string>
   <string name="button_share_by_email">Deli preko e-maila</string>
   <string name="button_share_by_sms">Deli preko SMS</string>
   <string name="button_share_clipboard">Odložišče</string>
-  <string name="button_share_contact">Kontakt</string>
   <string name="button_show_map">Pokaži zemljevid</string>
   <string name="button_sms">Pošlji SMS</string>
   <string name="button_web_search">Spletno iskanje</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Tekst</string>
   <string name="history_clear_one_history_text">Pobriši</string>
   <string name="history_clear_text">Pobriši zgodovino</string>
-  <string name="history_email_title">Barcode Scanner zgodovina</string>
+  <string name="history_copied">Kopira na odložišče</string>
+  <string name="history_copy">Kopiraj</string>
   <string name="history_empty">Prazne</string>
   <string name="history_empty_detail">Ni zapisov o skeniranih črtnih kodah</string>
-  <string name="history_send">Pošlji zgodovino</string>
   <string name="history_title">Zgodovina</string>
-  <string name="menu_decode_image">Dekodiranje slike</string>
   <string name="menu_encode_mecard">Uporaba MECARD</string>
   <string name="menu_encode_vcard">Uporaba vCard</string>
   <string name="menu_help">Pomoč</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Lahko delite podatke s prikazom črtne kode na vašem zaslonu in branju le-te z drugim mobilnim telefonom.</string>
   <string name="msg_share_text">Ali vnesite nekaj besedila</string>
   <string name="msg_sure">Ali ste prepričani?</string>
-  <string name="msg_unmount_usb">Oprostite, do SD kartice ni možno dostopati</string>
   <string name="preferences_actions_title">Ko je črtna koda najdena\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Izločitveni črtne kode, ki ne ustreza regularni izraz</string>
   <string name="preferences_allowed_content_pattern_title">Ujemanje vzorca le</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D izdelka</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR kode</string>
   <string name="preferences_device_bug_workarounds_title">Naprava Bug Rešitve</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Išči po državi</string>
   <string name="preferences_supplemental_summary">Poskusite pridobiti več informacij o vsebini črtne kode</string>
   <string name="preferences_supplemental_title">Naloži več informacij</string>
-  <string name="preferences_vibrate_title">Vibriraj</string>
   <string name="sbc_name">Iskanje z Google Book Search</string>
-  <string name="wifi_changing_network">Priključevanje na omrežje\u2026</string>
 </resources>

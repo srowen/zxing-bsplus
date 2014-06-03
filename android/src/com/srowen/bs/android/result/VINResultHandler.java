@@ -7,7 +7,7 @@ package com.srowen.bs.android.result;
 import android.app.Activity;
 import com.google.zxing.client.result.ParsedResult;
 import com.google.zxing.client.result.VINParsedResult;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 import java.util.Collection;
 import java.util.Collections;

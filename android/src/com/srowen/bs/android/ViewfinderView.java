@@ -22,6 +22,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 import com.google.zxing.ResultPoint;
+import com.srowen.bs.android.simple.R;
 import com.srowen.bs.android.camera.CameraManager;
 
 import android.content.Context;

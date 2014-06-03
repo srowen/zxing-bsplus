@@ -20,7 +20,7 @@ import android.content.Context;
 import android.widget.TextView;
 import com.srowen.bs.android.HttpHelper;
 import com.srowen.bs.android.history.HistoryManager;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.google.zxing.client.result.URIParsedResult;
 
 import java.io.IOException;

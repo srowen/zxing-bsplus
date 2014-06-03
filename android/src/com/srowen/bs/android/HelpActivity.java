@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebView;
+import com.srowen.bs.android.simple.R;
 
 /**
  * An HTML-based help screen.

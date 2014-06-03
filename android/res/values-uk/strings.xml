@@ -17,7 +17,6 @@
 <resources>
   <string name="app_name">Сканер штрих-кодів</string>
   <string name="app_picker_name">Програми</string>
-  <string name="bookmark_picker_name">Закладки</string>
   <string name="button_add_calendar">Додати в календар</string>
   <string name="button_add_contact">Додати контакт</string>
   <string name="button_book_search">Пошук книги</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Пошук товару</string>
   <string name="button_search_book_contents">Пошук вмісту книги</string>
   <string name="button_share_app">Програма</string>
-  <string name="button_share_bookmark">Закладка</string>
   <string name="button_share_by_email">Поділитись через e-mail</string>
   <string name="button_share_by_sms">Поділитись через SMS</string>
   <string name="button_share_clipboard">Буфер обміну</string>
-  <string name="button_share_contact">Контакт</string>
   <string name="button_show_map">Показати карту</string>
   <string name="button_sms">Відправити SMS</string>
   <string name="button_web_search">Пошук в інтернеті</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Текст</string>
   <string name="history_clear_one_history_text">Видалити</string>
   <string name="history_clear_text">Видалити історію</string>
-  <string name="history_email_title">Історія сканування</string>
+  <string name="history_copied">Скопіювати в буфер обміну</string>
+  <string name="history_copy">Копія</string>
   <string name="history_empty">Пусто</string>
   <string name="history_empty_detail">Нема збережених штрих-кодів</string>
-  <string name="history_send">Відправити історію</string>
   <string name="history_title">Історія</string>
-  <string name="menu_decode_image">Декодування зображення</string>
   <string name="menu_encode_mecard">Використовуйте MECARD</string>
   <string name="menu_encode_vcard">Використовуйте vCard</string>
   <string name="menu_help">Допомога</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Ви можете ділитись даними, скануючи штрих-код з вашого екрану іншим телефоном.</string>
   <string name="msg_share_text">Або введіть текст</string>
   <string name="msg_sure">Ви впевнені?</string>
-  <string name="msg_unmount_usb">На жаль, SD-карта недоступна.</string>
   <string name="preferences_actions_title">Коли штрих-код знайдено\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Відмінити штрих-код не відповідає регулярному виразу</string>
   <string name="preferences_allowed_content_pattern_title">Пошук за шаблоном тільки</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">Продуктові 1D</string>
   <string name="preferences_decode_Aztec_title">Розпізнавати Aztec коди</string>
   <string name="preferences_decode_Data_Matrix_title">Розпізнавати Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">Розпізнавати QR-коди</string>
   <string name="preferences_device_bug_workarounds_title">Виправлення помилок пристрою</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Пошук країни</string>
   <string name="preferences_supplemental_summary">Показати детальну інформацію про штрих-код</string>
   <string name="preferences_supplemental_title">Подробиці</string>
-  <string name="preferences_vibrate_title">Вібрувати</string>
   <string name="sbc_name">Пошук книг Google</string>
-  <string name="wifi_changing_network">Запит підключення до мережі\u2026</string>
 </resources>

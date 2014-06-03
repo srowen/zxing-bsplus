@@ -33,6 +33,7 @@ import com.google.zxing.ResultPoint;
 import com.google.zxing.ResultPointCallback;
 import com.google.zxing.ScalingResultPointCallback;
 import com.google.zxing.common.advanced.rowedge.RowEdgeDetectorBinarizer;
+import com.srowen.bs.android.simple.R;
 import com.google.zxing.common.HybridBinarizer;
 
 import android.os.Bundle;

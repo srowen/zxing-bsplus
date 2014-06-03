@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">סורק ברקודים+</string>
+  <string name="app_name">סורק ברקוד + פשוט</string>
   <string name="app_picker_name">יישומים</string>
-  <string name="bookmark_picker_name">סימניות</string>
   <string name="button_add_calendar">הוסף ללוח שנה</string>
   <string name="button_add_contact">הוספת איש קשר</string>
   <string name="button_book_search">חיפוש ספר</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">חיפוש מוצר</string>
   <string name="button_search_book_contents">חיפוש בתוכן</string>
   <string name="button_share_app">יישום</string>
-  <string name="button_share_bookmark">סימניה</string>
   <string name="button_share_by_email">שתף בדואר אלקטרוני</string>
   <string name="button_share_by_sms">שתף בהודעה</string>
   <string name="button_share_clipboard">לוח עריכה</string>
-  <string name="button_share_contact">איש קשר</string>
   <string name="button_show_map">הצג מפה</string>
   <string name="button_sms">שלח הודעה</string>
   <string name="button_web_search">חיפוש באינטרנט</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">טקסט רגיל</string>
   <string name="history_clear_one_history_text">נקה</string>
   <string name="history_clear_text">נקה היסטוריה</string>
-  <string name="history_email_title">היסטוריית סורק הברקודים</string>
+  <string name="history_copied">הועתק ללוח</string>
+  <string name="history_copy">העתק</string>
   <string name="history_empty">ריק</string>
   <string name="history_empty_detail">ברקודים לא נרשמו</string>
-  <string name="history_send">שלח היסטוריה</string>
   <string name="history_title">היסטוריה</string>
-  <string name="menu_decode_image">פענוח תמונה</string>
   <string name="menu_encode_mecard">השתמש MECARD</string>
   <string name="menu_encode_vcard">השתמש vCard</string>
   <string name="menu_help">עזרה</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">באפשרותך לשתף נתונים על-ידי הצגת ברקוד על המסך וסריקתו עם טלפון אחר.</string>
   <string name="msg_share_text">או הקלד טקסט כלשהו</string>
   <string name="msg_sure">האם אתה בטוח?</string>
-  <string name="msg_unmount_usb">סליחה, כרטיס הזכרון אינו נגיש.</string>
   <string name="preferences_actions_title">כאשר ברקוד נמצא\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">ברקודים מחקו אינם תואמים ביטוי רגיל</string>
   <string name="preferences_allowed_content_pattern_title">התאמת דפוס בלבד</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D מוצר</string>
   <string name="preferences_decode_Aztec_title">האצטקים</string>
   <string name="preferences_decode_Data_Matrix_title">מטריצת נתונים</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">קודי QR</string>
   <string name="preferences_device_bug_workarounds_title">באג התקן דרכים לעקיפת</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">חיפוש הארץ</string>
   <string name="preferences_supplemental_summary">נסה למצא מידע נוסף על תוכן הברקוד</string>
   <string name="preferences_supplemental_title">מצא מידע נוסף</string>
-  <string name="preferences_vibrate_title">רטט</string>
   <string name="sbc_name">Google חיפוש ספרים</string>
-  <string name="wifi_changing_network">בקשת חיבור לרשת \u2026</string>
 </resources>

@@ -39,47 +39,30 @@
              android:padding="@dimen/standard_padding"
              tools:ignore="ContentDescription"/>
 
-  <TableLayout android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:padding="@dimen/standard_padding">
+  <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/standard_padding">
 
-    <TableRow>
+    <Button android:id="@+id/share_app_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_share_app"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:paddingRight="@dimen/standard_padding"
+            android:textAllCaps="true"
+            style="@android:style/Widget.Holo.Button.Borderless.Small"/>
 
-      <Button android:id="@+id/share_app_button"
-              android:text="@string/button_share_app"
-              android:drawableStart="@android:drawable/ic_menu_edit"
-              android:paddingRight="@dimen/standard_padding"
-              android:textAllCaps="true"
-              style="@android:style/Widget.Holo.Button.Borderless.Small"/>
+    <Button android:id="@+id/share_clipboard_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_share_clipboard"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:paddingRight="@dimen/standard_padding"
+            android:textAllCaps="true"
+            style="@android:style/Widget.Holo.Button.Borderless.Small"/>
 
-      <Button android:id="@+id/share_bookmark_button"
-              android:text="@string/button_share_bookmark"
-              android:drawableStart="@android:drawable/ic_menu_info_details"
-              android:paddingRight="@dimen/standard_padding"
-              android:textAllCaps="true"
-              style="@android:style/Widget.Holo.Button.Borderless.Small"/>
-
-    </TableRow>
-
-    <TableRow>
-
-      <Button android:id="@+id/share_contact_button"
-              android:text="@string/button_share_contact"
-              android:drawableStart="@android:drawable/ic_menu_crop"
-              android:paddingRight="@dimen/standard_padding"
-              android:textAllCaps="true"
-              style="@android:style/Widget.Holo.Button.Borderless.Small"/>
-
-      <Button android:id="@+id/share_clipboard_button"
-              android:text="@string/button_share_clipboard"
-              android:drawableStart="@android:drawable/ic_menu_agenda"
-              android:paddingRight="@dimen/standard_padding"
-              android:textAllCaps="true"
-              style="@android:style/Widget.Holo.Button.Borderless.Small"/>
-
-    </TableRow>
-
-  </TableLayout>
+  </LinearLayout>
 
   <EditText android:id="@+id/share_text_view"
             android:layout_width="wrap_content"

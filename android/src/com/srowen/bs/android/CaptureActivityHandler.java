@@ -24,6 +24,7 @@ import android.provider.Browser;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
+import com.srowen.bs.android.simple.R;
 import com.srowen.bs.android.camera.CameraManager;
 
 import android.app.Activity;

@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">बारकोड स्कैनर +</string>
+  <string name="app_name">बारकोड स्कैनर + सरल</string>
   <string name="app_picker_name">अनुप्रयोगों</string>
-  <string name="bookmark_picker_name">बुकमार्क्स</string>
   <string name="button_add_calendar">कैलेंडर के लिए जोड़ें</string>
   <string name="button_add_contact">संपर्क जोड़ें</string>
   <string name="button_book_search">पुस्तक खोज</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">उत्पाद खोज</string>
   <string name="button_search_book_contents">खोज सामग्री</string>
   <string name="button_share_app">आवेदन</string>
-  <string name="button_share_bookmark">बुकमार्क</string>
   <string name="button_share_by_email">ईमेल के माध्यम से साझा करें</string>
   <string name="button_share_by_sms">एसएमएस के जरिए शेयर</string>
   <string name="button_share_clipboard">क्लिपबोर्ड</string>
-  <string name="button_share_contact">संपर्क</string>
   <string name="button_show_map">नक्शा दिखाएँ</string>
   <string name="button_sms">एसएमएस भेजें</string>
   <string name="button_web_search">वेब खोज</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">सादा पाठ</string>
   <string name="history_clear_one_history_text">हटाएँ</string>
   <string name="history_clear_text">इतिहास हटाएँ</string>
-  <string name="history_email_title">बारकोड स्कैनर इतिहास</string>
+  <string name="history_copied">क्लिपबोर्ड को कॉपी</string>
+  <string name="history_copy">की प्रतिलिपि बनाएँ</string>
   <string name="history_empty">खाली</string>
   <string name="history_empty_detail">अभी तक कोई बारकोड स्कैन दर्ज किया गया है</string>
-  <string name="history_send">इतिहास भेजें</string>
   <string name="history_title">इतिहास</string>
-  <string name="menu_decode_image">डिकोड छवि</string>
   <string name="menu_encode_mecard">MECARD का प्रयोग करें</string>
   <string name="menu_encode_vcard">vCard का प्रयोग करें</string>
   <string name="menu_help">मदद</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">आप अपनी स्क्रीन पर प्रदर्शित बारकोड और यह अन्य फोन के साथ स्कैनिंग द्वारा डेटा साझा कर सकते हैं.</string>
   <string name="msg_share_text">या कुछ पाठ टाइप करें और प्रेस दर्ज करें</string>
   <string name="msg_sure">तुम्हें यकीन है?</string>
-  <string name="msg_unmount_usb">क्षमा करें, एसडी कार्ड सुलभ नहीं है.</string>
   <string name="preferences_actions_title">जब एक बारकोड पाया जाता है\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">त्यागें बारकोड मिलान नहीं नियमित अभिव्यक्ति</string>
   <string name="preferences_allowed_content_pattern_title">पैटर्न मिलान केवल</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D उत्पाद</string>
   <string name="preferences_decode_Aztec_title">एज़्टेक</string>
   <string name="preferences_decode_Data_Matrix_title">डाटा मैट्रिक्स</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR कोड</string>
   <string name="preferences_device_bug_workarounds_title">डिवाइस बग workarounds</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">खोज देश</string>
   <string name="preferences_supplemental_summary">बारकोड सामग्री के बारे में में अधिक जानकारी पुनः प्राप्त करने की कोशिश करो</string>
   <string name="preferences_supplemental_title">अधिक जानकारी पुनर्प्राप्त</string>
-  <string name="preferences_vibrate_title">कांपना</string>
   <string name="sbc_name">Google पुस्तक खोज</string>
-  <string name="wifi_changing_network">नेटवर्क के लिए कनेक्शन का अनुरोध कर रहा है \u2026</string>
 </resources>

@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Εφαρμογές</string>
-  <string name="bookmark_picker_name">Σελιδοδείκτες</string>
   <string name="button_add_calendar">Προσθήκη στο ημερολόγιο</string>
   <string name="button_add_contact">Προσθήκη στις επαφές</string>
   <string name="button_book_search">Αναζήτηση βιβλίων</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Αναζήτηση προϊόντων</string>
   <string name="button_search_book_contents">Αναζήτηση περιεχομένων</string>
   <string name="button_share_app">Εφαρμογή</string>
-  <string name="button_share_bookmark">Σελιδοδείκτης</string>
   <string name="button_share_by_email">Μοιράσου με email</string>
   <string name="button_share_by_sms">Μοιράσου με SMS</string>
   <string name="button_share_clipboard">Πρόχειρο</string>
-  <string name="button_share_contact">Επαφή</string>
   <string name="button_show_map">Δείξε χάρτη</string>
   <string name="button_sms">Στείλε SMS</string>
   <string name="button_web_search">Αναζήτηση ιστού</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Απλό κείμενο</string>
   <string name="history_clear_one_history_text">Διαγραφή</string>
   <string name="history_clear_text">Διαγραφή ιστορικού</string>
-  <string name="history_email_title">Ιστορικό Barcode Scanner</string>
+  <string name="history_copied">Αντιγραφή στο πρόχειρο</string>
+  <string name="history_copy">Αντιγράψτε</string>
   <string name="history_empty">Κενό</string>
   <string name="history_empty_detail">Δεν έχουν καταγραφεί σαρώσεις barcode</string>
-  <string name="history_send">Αποστολή ιστορικού</string>
   <string name="history_title">Ιστορικό</string>
-  <string name="menu_decode_image">Εικόνα Decode</string>
   <string name="menu_encode_mecard">Χρησιμοποιήστε MECARD</string>
   <string name="menu_encode_vcard">Χρησιμοποιήστε vCard</string>
   <string name="menu_help">Βοήθεια</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Μπορείς να μοιραστείς δεδομένα εμφανίζοντας ένα barcode στην οθόνη σου και σκανάροντάς το με ένα άλλο κινητό.</string>
   <string name="msg_share_text">Ή πληκτολογήστε εδώ κείμενο και πατήστε Enter</string>
   <string name="msg_sure">Είσαι σίγουρος;</string>
-  <string name="msg_unmount_usb">Συγνώμη, η κάρτα SD δεν είναι προσβάσιμη.</string>
   <string name="preferences_actions_title">Όταν ένα barcode ανιχνεύεται\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Απόρριψη barcodes δεν ταιριάζουν κανονική έκφραση</string>
   <string name="preferences_allowed_content_pattern_title">Matching σχέδιο μόνο</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D Προϊόντος</string>
   <string name="preferences_decode_Aztec_title">Αζτέκων</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR Codes</string>
   <string name="preferences_device_bug_workarounds_title">Υπάρχει κάποια λύση Bug συσκευής</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Χώρα Αναζήτησης</string>
   <string name="preferences_supplemental_summary">Προσπάθησε να βρείς περισσότερες πληροφορίες για τα περιεχόμενα του barcode</string>
   <string name="preferences_supplemental_title">Αναζήτηση για επιπλέον πληροφορίες</string>
-  <string name="preferences_vibrate_title">Δόνηση</string>
   <string name="sbc_name">Αναζήτηση βιβλίων Google</string>
-  <string name="wifi_changing_network">Αίτηση σύνδεσης με το δίκτυο\u2026</string>
 </resources>

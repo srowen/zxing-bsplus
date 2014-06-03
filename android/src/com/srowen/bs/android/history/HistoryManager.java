@@ -29,16 +29,9 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.net.Uri;
-import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -320,33 +313,6 @@ public final class HistoryManager {
       db.delete(DBHelper.TABLE_NAME, null, null);
     } finally {
       close(null, db);
-    }
-  }
-
-  static Uri saveHistory(String history) {
-    File bsRoot = new File(Environment.getExternalStorageDirectory(), "BarcodeScanner");
-    File historyRoot = new File(bsRoot, "History");
-    if (!historyRoot.exists() && !historyRoot.mkdirs()) {
-      Log.w(TAG, "Couldn't make dir " + historyRoot);
-      return null;
-    }
-    File historyFile = new File(historyRoot, "history-" + System.currentTimeMillis() + ".csv");
-    OutputStreamWriter out = null;
-    try {
-      out = new OutputStreamWriter(new FileOutputStream(historyFile), Charset.forName("UTF-8"));
-      out.write(history);
-      return Uri.parse("file://" + historyFile.getAbsolutePath());
-    } catch (IOException ioe) {
-      Log.w(TAG, "Couldn't access file " + historyFile + " due to " + ioe);
-      return null;
-    } finally {
-      if (out != null) {
-        try {
-          out.close();
-        } catch (IOException ioe) {
-          // do nothing
-        }
-      }
     }
   }
 

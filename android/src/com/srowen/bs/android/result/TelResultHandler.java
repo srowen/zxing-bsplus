@@ -16,15 +16,15 @@
 
 package com.srowen.bs.android.result;
 
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.google.zxing.client.result.ParsedResult;
 import com.google.zxing.client.result.TelParsedResult;
 
 import android.app.Activity;
 import android.telephony.PhoneNumberUtils;
 
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
  * Offers relevant actions for telephone numbers.
@@ -33,9 +33,8 @@ import java.util.Collection;
  */
 public final class TelResultHandler extends ResultHandler {
 
-  private static final Collection<Integer> BUTTON_IDS = Arrays.asList(
-      R.id.button_dial,
-      R.id.button_add_contact
+  private static final Collection<Integer> BUTTON_IDS = Collections.singletonList(
+      R.id.button_dial
   );
 
   public TelResultHandler(Activity activity, ParsedResult result) {
@@ -50,17 +49,12 @@ public final class TelResultHandler extends ResultHandler {
   @Override
   public void handleClick(int buttonID) {
     TelParsedResult telResult = (TelParsedResult) getResult();
-    switch (buttonID) {
-      case R.id.button_dial:
-        dialPhoneFromUri(telResult.getTelURI());
-        // When dialer comes up, it allows underlying display activity to continue or something,
-        // but app can't get camera in this state. Avoid issues by just quitting, only in the
-        // case of a phone number
-        getActivity().finish();
-        break;
-      case R.id.button_add_contact:
-        addPhoneOnlyContact(new String[] {telResult.getNumber()}, null);
-        break;
+    if (buttonID == R.id.button_dial) {
+      dialPhoneFromUri(telResult.getTelURI());
+      // When dialer comes up, it allows underlying display activity to continue or something,
+      // but app can't get camera in this state. Avoid issues by just quitting, only in the
+      // case of a phone number
+      getActivity().finish();
     }
   }
 

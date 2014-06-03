@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Applikasjoner</string>
-  <string name="bookmark_picker_name">Bokmerker</string>
   <string name="button_add_calendar">Legg til i kalender</string>
   <string name="button_add_contact">Legg til kontakt</string>
   <string name="button_book_search">Boksøk</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Produktsøk</string>
   <string name="button_search_book_contents">Søk i innhold</string>
   <string name="button_share_app">Applikasjon</string>
-  <string name="button_share_bookmark">Bokmerke</string>
   <string name="button_share_by_email">Del via epost</string>
   <string name="button_share_by_sms">Del via SMS</string>
   <string name="button_share_clipboard">Utklippstavle</string>
-  <string name="button_share_contact">Kontakt</string>
   <string name="button_show_map">Vis Kart</string>
   <string name="button_sms">Send SMS</string>
   <string name="button_web_search">Nettsøk</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Ren tekst</string>
   <string name="history_clear_text">Slett logg</string>
   <string name="history_clear_one_history_text">Slett</string>
-  <string name="history_email_title">Logg fra strekkodeskanner</string>
+  <string name="history_copied">Kopiert til utklippstavle</string>  
+  <string name="history_copy">Kopier</string>
   <string name="history_empty">Tom</string>
   <string name="history_empty_detail">Ingen strekkodeskanning er logget</string>
-  <string name="history_send">Send logg</string>
   <string name="history_title">Logg</string>
-  <string name="menu_decode_image">Skann bilde</string>
   <string name="menu_encode_mecard">Bruk MECARD</string>
   <string name="menu_encode_vcard">Bruk vCard</string>
   <string name="menu_help">Hjelp</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Du kan dele informasjon ved å vise en strekkode på skjermen, og skanne den med en annen telefon</string>
   <string name="msg_share_text">Eller skriv noe og trykk Enter</string>
   <string name="msg_sure">Er du sikker?</string>
-  <string name="msg_unmount_usb">Beklager. SD-kortet er ikke tilgjengelig.</string>
   <string name="preferences_actions_title">Når en strekkode er funnet\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Se bort fra strekkoder som ikke stemmer med regulære uttrykk</string>
   <string name="preferences_allowed_content_pattern_title">Kun matchende mønstre</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D Produkt</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Datamatrise</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR-koder</string>
   <string name="preferences_device_bug_workarounds_title">Løsninger på enhetsfeil</string>
@@ -133,7 +127,5 @@
   <string name="preferences_search_country">Søk land</string>
   <string name="preferences_supplemental_summary">Prøv å hente mer informasjon om strekkodens innhold</string>
   <string name="preferences_supplemental_title">Hent mer informasjon</string>
-  <string name="preferences_vibrate_title">Vibrer</string>
   <string name="sbc_name">Google Book-søk</string>
-  <string name="wifi_changing_network">Ber om tilkobling til nettverk\u2026</string>
 </resources>

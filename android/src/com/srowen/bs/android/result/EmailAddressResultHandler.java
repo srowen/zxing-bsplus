@@ -16,14 +16,14 @@
 
 package com.srowen.bs.android.result;
 
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.google.zxing.client.result.EmailAddressParsedResult;
 import com.google.zxing.client.result.ParsedResult;
 
 import android.app.Activity;
 
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
  * Handles email addresses.
@@ -31,9 +31,8 @@ import java.util.Collection;
  * @author dswitkin@google.com (Daniel Switkin)
  */
 public final class EmailAddressResultHandler extends ResultHandler {
-  private static final Collection<Integer> BUTTON_IDS = Arrays.asList(
-      R.id.button_email,
-      R.id.button_add_contact
+  private static final Collection<Integer> BUTTON_IDS = Collections.singletonList(
+      R.id.button_email
   );
 
   public EmailAddressResultHandler(Activity activity, ParsedResult result) {
@@ -48,17 +47,12 @@ public final class EmailAddressResultHandler extends ResultHandler {
   @Override
   public void handleClick(int buttonID) {
     EmailAddressParsedResult emailResult = (EmailAddressParsedResult) getResult();
-    switch (buttonID) {
-      case R.id.button_email:
-        sendEmail(emailResult.getTos(),
-                  emailResult.getCCs(),
-                  emailResult.getBCCs(),
-                  emailResult.getSubject(),
-                  emailResult.getBody());
-        break;
-      case R.id.button_add_contact:
-        addEmailOnlyContact(emailResult.getTos(), null);
-        break;
+    if (buttonID == R.id.button_email) {
+      sendEmail(emailResult.getTos(),
+                emailResult.getCCs(),
+                emailResult.getBCCs(),
+                emailResult.getSubject(),
+                emailResult.getBody());
     }
   }
 

@@ -21,7 +21,7 @@ import com.srowen.bs.android.Contents;
 import com.srowen.bs.android.Intents;
 import com.srowen.bs.android.LocaleManager;
 import com.srowen.bs.android.PreferencesActivity;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.srowen.bs.android.book.SearchBookContentsActivity;
 import com.google.zxing.client.result.ParsedResult;
 import com.google.zxing.client.result.ParsedResultType;
@@ -150,14 +150,6 @@ public abstract class ResultHandler implements View.OnClickListener {
    */
   public final ParsedResultType getType() {
     return result.getType();
-  }
-
-  final void addPhoneOnlyContact(String[] phoneNumbers,String[] phoneTypes) {
-    addContact(null, null, null, phoneNumbers, phoneTypes, null, null, null, null, null, null, null, null, null, null, null);
-  }
-
-  final void addEmailOnlyContact(String[] emails, String[] emailTypes) {
-    addContact(null, null, null, null, null, emails, emailTypes, null, null, null, null, null, null, null, null, null);
   }
 
   final void addContact(String[] names,

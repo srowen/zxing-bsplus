@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">ماسح الرمز الشريطي+</string>
+  <string name="app_name">ماسحة الباركود + بسيط</string>
   <string name="app_picker_name">تطبيقات</string>
-  <string name="bookmark_picker_name">إشارات مرجعية</string>
   <string name="button_add_calendar">إضافة إلى التقويم</string>
   <string name="button_add_contact">إضافة جهة اتصال</string>
   <string name="button_book_search">بحث في الكتب</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">بحث عن منتجات</string>
   <string name="button_search_book_contents">بحث في المحتويات</string>
   <string name="button_share_app">التطبيق</string>
-  <string name="button_share_bookmark">إشارة مرجعية</string>
   <string name="button_share_by_email">مشاركة عبر البريد</string>
   <string name="button_share_by_sms">مشاركة عبر SMS</string>
   <string name="button_share_clipboard">حافظة</string>
-  <string name="button_share_contact">جهة اتصال</string>
   <string name="button_show_map">عرض الخريطة</string>
   <string name="button_sms">إرسال SMS</string>
   <string name="button_web_search">بحث في الويب</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">نص عادي</string>
   <string name="history_clear_one_history_text">حذف</string>
   <string name="history_clear_text">مسح السجل</string>
-  <string name="history_email_title">سجل ماسح الرموز الشريطية</string>
+  <string name="history_copied">نسخ إلى الحافظة</string>
+  <string name="history_copy">نسخ</string>
   <string name="history_empty">فارغ</string>
   <string name="history_empty_detail">لم تسجل حتى الآن بمسح الباركود</string>
-  <string name="history_send">إرسال السجل</string>
   <string name="history_title">سجل</string>
-  <string name="menu_decode_image">فك صورة</string>
   <string name="menu_encode_mecard">استخدام MECARD</string>
   <string name="menu_encode_vcard">استخدام vCard</string>
   <string name="menu_help">تعليمات</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">يمكنك مشاركة البيانات عن طريق عرض رمز شريطي على الشاشة ومسحه من خلال هاتف آخر.</string>
   <string name="msg_share_text">أو اكتب بعض النص</string>
   <string name="msg_sure">هل أنت متأكد؟</string>
-  <string name="msg_unmount_usb">رجاء إيقاف التخزين على USB للمتابعة.</string>
   <string name="preferences_actions_title">عند العثور على رمز شريطي</string>
   <string name="preferences_allowed_content_pattern_summary">الباركود تجاهل غير مطابقة التعبير العادي</string>
   <string name="preferences_allowed_content_pattern_title">مطابقة نمط فقط</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D المنتج</string>
   <string name="preferences_decode_Aztec_title">ازتك</string>
   <string name="preferences_decode_Data_Matrix_title">فك رموز البيانات ماتريكس</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">فك رموز QR</string>
   <string name="preferences_device_bug_workarounds_title">جهاز علة الحلول</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">ابحث عن بلد</string>
   <string name="preferences_supplemental_summary">محاولة لاسترداد مزيد من المعلومات حول محتويات الباركود</string>
   <string name="preferences_supplemental_title">استرداد مزيد من المعلومات</string>
-  <string name="preferences_vibrate_title">اهتزاز</string>
   <string name="sbc_name">البحث في Google Book</string>
-  <string name="wifi_changing_network">طلب الاتصال بالشبكة\u2026</string>
 </resources>

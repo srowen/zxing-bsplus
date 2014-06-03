@@ -21,12 +21,12 @@ import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
 import com.google.zxing.ResultMetadataType;
 import com.google.zxing.ResultPoint;
+import com.srowen.bs.android.simple.R;
 import com.srowen.bs.android.camera.CameraManager;
 import com.srowen.bs.android.clipboard.ClipboardInterface;
 import com.srowen.bs.android.history.HistoryActivity;
 import com.srowen.bs.android.history.HistoryItem;
 import com.srowen.bs.android.history.HistoryManager;
-import com.srowen.bs.android.nfc.NFCInterface;
 import com.srowen.bs.android.result.ResultHandler;
 import com.srowen.bs.android.result.ResultHandlerFactory;
 import com.srowen.bs.android.result.supplement.SupplementalInfoRetriever;
@@ -34,7 +34,6 @@ import com.srowen.bs.android.share.ShareActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -45,7 +44,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.net.Uri;
-import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -209,8 +207,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     decodeFormats = null;
     characterSet = null;
 
-    NFCInterface.listenForNFC(this);
-
     if (intent != null) {
       handleIntent(intent);
     }
@@ -245,18 +241,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       }
       if (uri != null) {
         decodeUri(uri);
-      }
-
-    } else if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action) ||
-               NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) {
-
-      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-      if (prefs.getBoolean(PreferencesActivity.KEY_DECODE_NFC, false)) {
-        Bundle extras = intent.getExtras();
-        if (extras != null) {
-          String readablePayload = NFCInterface.parseNFCStringPayload(extras);
-          handleDecode(new Result(readablePayload, null, null, BarcodeFormat.NFC));
-        }
       }
 
     } else if (dataString != null &&
@@ -305,7 +289,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       }
     }
   }
-  
+
   private static boolean isZXingURL(String dataString) {
     if (dataString == null) {
       return false;
@@ -326,8 +310,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     }
     inactivityTimer.onPause();
     ambientLightManager.stop();
-    beepManager.close();
-    NFCInterface.unlistenForNFC(this);
     cameraManager.closeDriver();
     //historyManager = null; // Keep for onActivityResult
     if (!hasSurface) {
@@ -396,17 +378,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       case R.id.menu_history:
         intent.setClassName(this, HistoryActivity.class.getName());
         startActivityForResult(intent, HISTORY_REQUEST_CODE);
-        break;
-      case R.id.menu_decode_image:
-        Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        getIntent.setType("image/*");
-        Intent chooseIntent = Intent.createChooser(getIntent, getResources().getString(R.string.menu_decode_image));
-        chooseIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-        try {
-          startActivityForResult(chooseIntent, DECODE_RESOURCE_REQUEST_CODE);
-        } catch (ActivityNotFoundException anfe) {
-          Log.w(TAG, anfe);
-        }
         break;
       case R.id.menu_settings:
         intent.setClassName(this, PreferencesActivity.class.getName());
@@ -535,10 +506,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
   @Override
   public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
-  }
-
-  private void handleDecode(Result result) {
-    handleDecode(result, null, 1.0f, false);
   }
 
   /**

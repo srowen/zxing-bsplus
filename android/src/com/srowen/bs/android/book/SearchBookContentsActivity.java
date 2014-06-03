@@ -42,7 +42,7 @@ import java.util.regex.Pattern;
 import com.srowen.bs.android.Intents;
 import com.srowen.bs.android.HttpHelper;
 import com.srowen.bs.android.LocaleManager;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 /**
  * Uses Google Book Search to find a word or phrase in the requested book.

@@ -25,7 +25,7 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.zxing.Result;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 import java.util.ArrayList;
 

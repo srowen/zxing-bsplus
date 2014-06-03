@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Aplikazioak</string>
-  <string name="bookmark_picker_name">Laster-markak</string>
   <string name="button_add_calendar">Gehitu egutegian</string>
   <string name="button_add_contact">Gehitu kontaktua</string>
   <string name="button_book_search">Bilatu liburua</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Produktu bilaketa</string>
   <string name="button_search_book_contents">Bilatu edukiak</string>
   <string name="button_share_app">Aplikazioa</string>
-  <string name="button_share_bookmark">Laster-marka</string>
   <string name="button_share_by_email">Partekatu e-posta bidez</string>
   <string name="button_share_by_sms">Partekatu SMS bidez</string>
   <string name="button_share_clipboard">Arbela</string>
-  <string name="button_share_contact">Kontaktua</string>
   <string name="button_show_map">Erakutsi mapa</string>
   <string name="button_sms">Bidali SMS-a</string>
   <string name="button_web_search">Web bilaketa</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Testu laua</string>
   <string name="history_clear_one_history_text">Garbitu</string>
   <string name="history_clear_text">Garbitu historia</string>
-  <string name="history_email_title">Barra-kode Eskanerraren historia</string>
+  <string name="history_copied">Arbelera kopiatu</string>
+  <string name="history_copy">Kopiatu</string>
   <string name="history_empty">Hutsik</string>
   <string name="history_empty_detail">Ez da inoiz barra-koderik gorde</string>
-  <string name="history_send">Bidali historia</string>
   <string name="history_title">Historia</string>
-  <string name="menu_decode_image">Deskodetu irudia</string>
   <string name="menu_encode_mecard">Erabili MECARD</string>
   <string name="menu_encode_vcard">Erabili vCard</string>
   <string name="menu_help">Laguntza</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Datuak parteka ditzakezu zure pantailan barra-kode bat bistaratu eta beste telefono batekin eskaneatuz.</string>
   <string name="msg_share_text">Edo idatzi zerbait eta sakatu Enter</string>
   <string name="msg_sure">Ziur zaude?</string>
-  <string name="msg_unmount_usb">Barkatu, SD txartela ez dago eskuragarri.</string>
   <string name="preferences_actions_title">Barra kode bat aurkitzean\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Baztertu barra ez da adierazpen erregular bat datozen</string>
   <string name="preferences_allowed_content_pattern_title">Eredua Matching bakarrik</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D Product</string>
   <string name="preferences_decode_Aztec_title">Azteken</string>
   <string name="preferences_decode_Data_Matrix_title">Datu Matrizeak</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR Kodeak</string>
   <string name="preferences_device_bug_workarounds_title">Gailuak Bug konponbidea</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Bilatu herrialdea</string>
   <string name="preferences_supplemental_summary">Saiatu barra-kodearen edukiei buruzko informazio gehiago eskuratzen</string>
   <string name="preferences_supplemental_title">Eskuratu informazio gehiago</string>
-  <string name="preferences_vibrate_title">Bibratu</string>
   <string name="sbc_name">Google Book Bilaketa</string>
-  <string name="wifi_changing_network">Sarerako konexioa eskatzen\u2026</string>
 </resources>

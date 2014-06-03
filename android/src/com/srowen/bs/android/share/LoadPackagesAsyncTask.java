@@ -27,7 +27,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

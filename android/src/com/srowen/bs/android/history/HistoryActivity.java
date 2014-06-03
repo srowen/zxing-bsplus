@@ -19,13 +19,9 @@ package com.srowen.bs.android.history;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ListActivity;
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,9 +30,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.srowen.bs.android.CaptureActivity;
 import com.srowen.bs.android.Intents;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.clipboard.ClipboardInterface;
+import com.srowen.bs.android.simple.R;
 
 /**
  * The activity for interacting with the scan history.
@@ -118,28 +116,10 @@ public final class HistoryActivity extends ListActivity {
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {
-      case R.id.menu_history_send:
+      case R.id.menu_history_copy:
         CharSequence history = historyManager.buildHistory();
-        Parcelable historyFile = HistoryManager.saveHistory(history.toString());
-        if (historyFile == null) {
-          AlertDialog.Builder builder = new AlertDialog.Builder(this);
-          builder.setMessage(R.string.msg_unmount_usb);
-          builder.setPositiveButton(R.string.button_ok, null);
-          builder.show();
-        } else {
-          Intent intent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
-          intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-          String subject = getResources().getString(R.string.history_email_title);
-          intent.putExtra(Intent.EXTRA_SUBJECT, subject);
-          intent.putExtra(Intent.EXTRA_TEXT, subject);
-          intent.putExtra(Intent.EXTRA_STREAM, historyFile);
-          intent.setType("text/csv");
-          try {
-            startActivity(intent);
-          } catch (ActivityNotFoundException anfe) {
-            Log.w(TAG, anfe.toString());
-          }
-        }
+        ClipboardInterface.setText(history, this);
+        Toast.makeText(getApplicationContext(), R.string.history_copied, Toast.LENGTH_SHORT).show();
         break;
       case R.id.menu_history_clear_text:
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

@@ -24,7 +24,7 @@ import android.content.Context;
 import android.widget.TextView;
 import com.srowen.bs.android.HttpHelper;
 import com.srowen.bs.android.LocaleManager;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

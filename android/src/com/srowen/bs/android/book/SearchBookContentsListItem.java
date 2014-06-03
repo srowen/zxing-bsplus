@@ -16,7 +16,7 @@
 
 package com.srowen.bs.android.book;
 
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 import android.content.Context;
 import android.graphics.Typeface;

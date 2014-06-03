@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">条码扫描器+</string>
+  <string name="app_name">条码扫描器+简单</string>
   <string name="app_picker_name">应用</string>
-  <string name="bookmark_picker_name">书签</string>
   <string name="button_add_calendar">添加至日程表</string>
   <string name="button_add_contact">添加联系人</string>
   <string name="button_book_search">打开图书搜索</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">打开商品搜索</string>
   <string name="button_search_book_contents">搜索图书内容</string>
   <string name="button_share_app">分享应用</string>
-  <string name="button_share_bookmark">分享书签</string>
   <string name="button_share_by_email">通过 E-mail 分享</string>
   <string name="button_share_by_sms">通过短信分享</string>
   <string name="button_share_clipboard">分享剪切板</string>
-  <string name="button_share_contact">分享联系人</string>
   <string name="button_show_map">显示地图</string>
   <string name="button_sms">发送短信</string>
   <string name="button_web_search">网页搜索</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">纯文本</string>
   <string name="history_clear_one_history_text">删除</string>
   <string name="history_clear_text">删除历史记录</string>
-  <string name="history_email_title">条码扫描器的历史</string>
+  <string name="history_copied">复制到剪贴板</string>
+  <string name="history_copy">复制</string>
   <string name="history_empty">空</string>
   <string name="history_empty_detail">没有历史记录</string>
-  <string name="history_send">发送历史记录</string>
   <string name="history_title">历史记录</string>
-  <string name="menu_decode_image">解码图像</string>
   <string name="menu_encode_mecard">使用MECARD</string>
   <string name="menu_encode_vcard">使用vCard</string>
   <string name="menu_help">帮助</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
   <string name="msg_share_text">或键入一些文字</string>
   <string name="msg_sure">确定吗？</string>
-  <string name="msg_unmount_usb">抱歉，无法访问 SD 卡。</string>
   <string name="preferences_actions_title">扫描成功</string>
   <string name="preferences_allowed_content_pattern_summary">放弃条形码不匹配正则表达式</string>
   <string name="preferences_allowed_content_pattern_title">仅匹配模式</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">一维码：商品</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (测试)</string>
   <string name="preferences_decode_QR_title">二维码</string>
   <string name="preferences_device_bug_workarounds_title">设备适配</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">搜索引擎国别</string>
   <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
   <string name="preferences_supplemental_title">检索更多信息</string>
-  <string name="preferences_vibrate_title">振动</string>
   <string name="sbc_name">Google 图书搜索</string>
-  <string name="wifi_changing_network">连接到 Wi-Fi \u2026</string>
 </resources>

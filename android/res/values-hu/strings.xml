@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Alkalmazások</string>
-  <string name="bookmark_picker_name">Könyvjelzők</string>
   <string name="button_add_calendar">Hozzáadás a naptárhoz</string>
   <string name="button_add_contact">Névjegy hozzáadása</string>
   <string name="button_book_search">Könyv keresése</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Termék keresése</string>
   <string name="button_search_book_contents">Tartalom keresése</string>
   <string name="button_share_app">Alkalmazás</string>
-  <string name="button_share_bookmark">Könyvjelző</string>
   <string name="button_share_by_email">Megosztás e-mailben</string>
   <string name="button_share_by_sms">Megosztás SMS-ben</string>
   <string name="button_share_clipboard">Vágólap</string>
-  <string name="button_share_contact">Névjegy</string>
   <string name="button_show_map">Térkép mutatása</string>
   <string name="button_sms">SMS küldése</string>
   <string name="button_web_search">Keresés a weben</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Egyszerű szöveg</string>
   <string name="history_clear_one_history_text">Törlése</string>
   <string name="history_clear_text">Előzmények törlése</string>
-  <string name="history_email_title">Barcode Scanner előzmények</string>
+  <string name="history_copied">Másolt vágólapra</string>
+  <string name="history_copy">Másolás</string>
   <string name="history_empty">Üres</string>
   <string name="history_empty_detail">Még nincs rögzítve vonalkód-szkennelés</string>
-  <string name="history_send">Előzmények küldése</string>
   <string name="history_title">Előzmények</string>
-  <string name="menu_decode_image">Decode kép</string>
   <string name="menu_encode_mecard">MECARD használata</string>
   <string name="menu_encode_vcard">vCard használata</string>
   <string name="menu_help">Súgó</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Meg tud osztani adatot úgy, hogy egy vonalkódot jelenít meg a képernyőjén, melyet egy másik telefon beszkennel.</string>
   <string name="msg_share_text">Vagy írja be a szöveget és nyomjon Enter-t</string>
   <string name="msg_sure">Biztos benne?</string>
-  <string name="msg_unmount_usb">Az SD kártya nem elérhető.</string>
   <string name="preferences_actions_title">Amikor a vonalkód megvan\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Elvetése vonalkódok nem egyező reguláris kifejezés</string>
   <string name="preferences_allowed_content_pattern_title">Megfelelő minta csak</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D termék</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR kódok</string>
   <string name="preferences_device_bug_workarounds_title">Eszközhibák kerülő megoldásai</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Keresési ország</string>
   <string name="preferences_supplemental_summary">A vonalkóddal jelzett tartalomról megpróbál több információt letölteni</string>
   <string name="preferences_supplemental_title">További információk letöltése</string>
-  <string name="preferences_vibrate_title">Rezgés</string>
   <string name="sbc_name">Google Könyvek keresés</string>
-  <string name="wifi_changing_network">Hálózati kapcsolat kérése\u2026</string>
 </resources>

@@ -24,7 +24,7 @@ import android.widget.ArrayAdapter;
 
 import java.util.List;
 
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 /**
  * Manufactures list items which represent SBC results.

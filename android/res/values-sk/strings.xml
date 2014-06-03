@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Aplikácie</string>
-  <string name="bookmark_picker_name">Záložky</string>
   <string name="button_add_calendar">Pridať do kalendára</string>
   <string name="button_add_contact">Pridať kontakt</string>
   <string name="button_book_search">Hľadať knihu</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Vyhľadať produkt</string>
   <string name="button_search_book_contents">Vyhľadať obsah</string>
   <string name="button_share_app">Aplikácia</string>
-  <string name="button_share_bookmark">Záložka</string>
   <string name="button_share_by_email">Zdieľať cez email</string>
   <string name="button_share_by_sms">Zdieľať cez SMS</string>
   <string name="button_share_clipboard">Schránka</string>
-  <string name="button_share_contact">Kontakt</string>
   <string name="button_show_map">Zobraziť mapu</string>
   <string name="button_sms">Poslať SMS</string>
   <string name="button_web_search">Hľadať na webe</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Obyčajný text</string>
   <string name="history_clear_one_history_text">Vymazať</string>
   <string name="history_clear_text">Vymazať históriu</string>
-  <string name="history_email_title">História Barcode Scannera</string>
+  <string name="history_copied">Skopírovaný do schránky</string>
+  <string name="history_copy">Kopírovať</string>
   <string name="history_empty">Prázdna</string>
   <string name="history_empty_detail">Žiadne čiarové kódy neboli zaznamenané</string>
-  <string name="history_send">Poslať históriu</string>
   <string name="history_title">História</string>
-  <string name="menu_decode_image">Dekódovať z obrázka</string>
   <string name="menu_encode_mecard">Použiť MECARD</string>
   <string name="menu_encode_vcard">Použiť vCard</string>
   <string name="menu_help">Nápoveda</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Môžete zdieľať dáta zobrazením čiarového kódu na displeji vášho zariadenia a jeho zoskenovaním iným zariadením.</string>
   <string name="msg_share_text">Alebo zadajte nejaký text</string>
   <string name="msg_sure">Ste si istí?</string>
-  <string name="msg_unmount_usb">Ospravedlňujeme sa, SD karta nie je prístupná</string>
   <string name="preferences_actions_title">Pri zistení čiarového kódu</string>
   <string name="preferences_allowed_content_pattern_summary">Zahodiť čiarové kódy ktoré nemajú správnu kombináciu znakov</string>
   <string name="preferences_allowed_content_pattern_title">Iba zodpovedajúci tvar</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D tovar</string>
   <string name="preferences_decode_Aztec_title">Aztécky</string>
   <string name="preferences_decode_Data_Matrix_title">Dáta Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR kódy</string>
   <string name="preferences_device_bug_workarounds_title">Možné chyby zariadenia</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Vyhľadávať v krajine</string>
   <string name="preferences_supplemental_summary">Skúsiť získať viac informácií o obsahu čiarového kódu.</string>
   <string name="preferences_supplemental_title">Získať viac informácií</string>
-  <string name="preferences_vibrate_title">Vibrovať</string>
   <string name="sbc_name">Vyhľadať v Google Knihy</string>
-  <string name="wifi_changing_network">Požiadavka na pripojenie k sieti\u2026</string>
 </resources>

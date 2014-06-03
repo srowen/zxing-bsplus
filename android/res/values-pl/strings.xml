@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Aplikacje</string>
-  <string name="bookmark_picker_name">Zakładki</string>
   <string name="button_add_calendar">Dodaj do kalendarza</string>
   <string name="button_add_contact">Dodaj kontakt</string>
   <string name="button_book_search">Szukaj książek</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Szukaj produktów</string>
   <string name="button_search_book_contents">Przeszukaj zawartość</string>
   <string name="button_share_app">Aplikacja</string>
-  <string name="button_share_bookmark">Zakładka</string>
   <string name="button_share_by_email">Udostępnij przez email</string>
   <string name="button_share_by_sms">Udostępnij przez SMS</string>
   <string name="button_share_clipboard">Schowek</string>
-  <string name="button_share_contact">Kontakt</string>
   <string name="button_show_map">Pokaż mapę</string>
   <string name="button_sms">Wyślij SMS</string>
   <string name="button_web_search">Szukaj w sieci</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Zwykły tekst</string>
   <string name="history_clear_one_history_text">Wyczyść</string>
   <string name="history_clear_text">Wyczyść historię</string>
-  <string name="history_email_title">Historia Skanera Kodów Paskowych</string>
+  <string name="history_copied">Skopiować do schowka</string>
+  <string name="history_copy">Skopiuj</string>
   <string name="history_empty">Pusty</string>
   <string name="history_empty_detail">Brak zeskanowanych kodów</string>
-  <string name="history_send">Wyślij historię</string>
   <string name="history_title">Historia</string>
-  <string name="menu_decode_image">Grafika Decode</string>
   <string name="menu_encode_mecard">Użyj MECARD</string>
   <string name="menu_encode_vcard">Użyj vCard</string>
   <string name="menu_help">Pomoc</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Możesz udostępniać dane wyświetlając kod paskowy na swoim ekranie i skanując go innym telefonem.</string>
   <string name="msg_share_text">Albo wpisz tekst</string>
   <string name="msg_sure">Czy na pewno?</string>
-  <string name="msg_unmount_usb">Niestety, karta SD nie jest dostępna.</string>
   <string name="preferences_actions_title">Akcja po odnalezieniu kodu\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Kody odrzutów nie pasujące do wyrażenia regularnego</string>
   <string name="preferences_allowed_content_pattern_title">Dopasowanie wzorca tylko</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D wyrobów</string>
   <string name="preferences_decode_Aztec_title">Aztek</string>
   <string name="preferences_decode_Data_Matrix_title">Dekoduj Decode Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">Dekoduj kody QR</string>
   <string name="preferences_device_bug_workarounds_title">Obejścia Bug urządzenia</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Szukaj kraju</string>
   <string name="preferences_supplemental_summary">Spróbuj wyszukać więcej informacji o treści kodu</string>
   <string name="preferences_supplemental_title">Pobierz więcej informacji</string>
-  <string name="preferences_vibrate_title">Wibruj</string>
   <string name="sbc_name">Wyszukiwanie książek Google</string>
-  <string name="wifi_changing_network">Trwa próba podłączenia się do sieci\u2026</string>
 </resources>

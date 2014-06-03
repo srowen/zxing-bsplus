@@ -20,7 +20,7 @@ import android.content.Context;
 import android.text.Html;
 import android.widget.TextView;
 import com.srowen.bs.android.HttpHelper;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 import com.srowen.bs.android.history.HistoryManager;
 import com.srowen.bs.android.LocaleManager;
 

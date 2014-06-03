@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner+</string>
+  <string name="app_name">Barcode Scanner+ Simple</string>
   <string name="app_picker_name">Ohjelmat</string>
-  <string name="bookmark_picker_name">Kirjanmerkit</string>
   <string name="button_add_calendar">Lisää kalenteriin</string>
   <string name="button_add_contact">Lisää yhteystieto</string>
   <string name="button_book_search">Kirjahaku</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Tuotehaku</string>
   <string name="button_search_book_contents">Hae kirjan sisältö</string>
   <string name="button_share_app">Ohjelma</string>
-  <string name="button_share_bookmark">Kirjanmerkki</string>
   <string name="button_share_by_email">Jaa sähköpostilla</string>
   <string name="button_share_by_sms">Jaa tekstiviestillä</string>
   <string name="button_share_clipboard">Leikepöytä</string>
-  <string name="button_share_contact">Kontakti</string>
   <string name="button_show_map">Näytä kartta</string>
   <string name="button_sms">Lähetä tekstiviesti</string>
   <string name="button_web_search">Haku netistä</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Teksti</string>
   <string name="history_clear_one_history_text">Tyhjennä</string>
   <string name="history_clear_text">Tyhjennä historia</string>
-  <string name="history_email_title">Viivakoodien historia</string>
+  <string name="history_copied">Kopioitu leikepöydälle</string>
+  <string name="history_copy">Kopioi</string>
   <string name="history_empty">Tyhjä</string>
   <string name="history_empty_detail">Ei tallennettuja viivakoodeja</string>
-  <string name="history_send">Lähetä historia</string>
   <string name="history_title">Historia</string>
-  <string name="menu_decode_image">Pura kuvan koodi</string>
   <string name="menu_encode_mecard">Käytä MECARD:ia</string>
   <string name="menu_encode_vcard">Käytä vCard:ia</string>
   <string name="menu_help">Ohje</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Voit jakaa dataa näyttämällä viivakoodin laitteesi näytöllä ja lukemalla sen toisella laitteella.</string>
   <string name="msg_share_text">Tai kirjoita tekstiä ja lopeta Enterillä</string>
   <string name="msg_sure">Oletko varma?</string>
-  <string name="msg_unmount_usb">SD-kortti ei ole käytettävissä.</string>
   <string name="preferences_actions_title">Kun viivakoodi löytyy\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Hylkää viivakoodit jotka eivät vastaa täsmällistä muotoa</string>
   <string name="preferences_allowed_content_pattern_title">Vain yhteensopivat kuviot</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D Tuote</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR-koodit</string>
   <string name="preferences_device_bug_workarounds_title">Laitteen vikojen kiertäminen</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Etsi maasta…</string>
   <string name="preferences_supplemental_summary">Yritä hakea lisätietoja viivakoodin sisällöstä</string>
   <string name="preferences_supplemental_title">Hae lisää tietoa</string>
-  <string name="preferences_vibrate_title">Värinä</string>
   <string name="sbc_name">Googlen kirjahaku</string>
-  <string name="wifi_changing_network">Pyydetään yhteyttä verkkoon\u2026</string>
 </resources>

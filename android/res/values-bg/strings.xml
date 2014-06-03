@@ -15,9 +15,8 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Баркод Скенер+</string>
+  <string name="app_name">Баркод скенер+ Прост</string>
   <string name="app_picker_name">Приложения</string>
-  <string name="bookmark_picker_name">Отметки</string>
   <string name="button_add_calendar">Добави в календар</string>
   <string name="button_add_contact">Добави контакт</string>
   <string name="button_book_search">Търси Книга</string>
@@ -32,11 +31,9 @@
   <string name="button_product_search">Търси продукт</string>
   <string name="button_search_book_contents">Търси в книга</string>
   <string name="button_share_app">Приложение</string>
-  <string name="button_share_bookmark">Отметка</string>
   <string name="button_share_by_email">Сподели по поща</string>
   <string name="button_share_by_sms">Сподели чрез SMS</string>
   <string name="button_share_clipboard">Клипборд</string>
-  <string name="button_share_contact">Контакт</string>
   <string name="button_show_map">Покажи карта</string>
   <string name="button_sms">Изпрати SMS</string>
   <string name="button_web_search">Уеб търсене</string>
@@ -49,12 +46,11 @@
   <string name="contents_text">Чист текст</string>
   <string name="history_clear_one_history_text">Изчисти</string>
   <string name="history_clear_text">Изчисти историята</string>
-  <string name="history_email_title">История на Баркод Скенера</string>
+  <string name="history_copied">Копиран в клипборда</string>
+  <string name="history_copy">Копирайте</string>
   <string name="history_empty">Празно</string>
   <string name="history_empty_detail">Няма сканирани и записани бар-кодове все още</string>
-  <string name="history_send">Изпрати историята</string>
   <string name="history_title">История</string>
-  <string name="menu_decode_image">Декодиране на изображението</string>
   <string name="menu_encode_mecard">Използвай MECARD формат</string>
   <string name="menu_encode_vcard">Използвай vCard формат</string>
   <string name="menu_help">Помощ</string>
@@ -86,7 +82,6 @@
   <string name="msg_share_explanation">Можете да споделяте информация като покажете баркод на екрана, и го сканирате от друг телефон.</string>
   <string name="msg_share_text">Или въведете някакъв текст</string>
   <string name="msg_sure">Сигурни ли сте?</string>
-  <string name="msg_unmount_usb">Съжаляваме, но SD картата не е достъпна.</string>
   <string name="preferences_actions_title">При прочитане на баркод\u2026</string>
   <string name="preferences_allowed_content_pattern_summary">Игнорирам баркодове, които не съвпадат регулярен израз</string>
   <string name="preferences_allowed_content_pattern_title">Съвпадение на модел само</string>
@@ -101,7 +96,6 @@
   <string name="preferences_decode_1D_product_title">1D продукта</string>
   <string name="preferences_decode_Aztec_title">Ацтеките</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
-  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR Баркодове</string>
   <string name="preferences_device_bug_workarounds_title">Заобикаляне на проблеми</string>
@@ -135,7 +129,5 @@
   <string name="preferences_search_country">Държава при търсене</string>
   <string name="preferences_supplemental_summary">Опитай да получиш повече информация за баркода</string>
   <string name="preferences_supplemental_title">Търсене на разширения</string>
-  <string name="preferences_vibrate_title">Вибрация</string>
   <string name="sbc_name">Гугъл търсене на книга</string>
-  <string name="wifi_changing_network">Запитване свързване към мрежата\u2026</string>
 </resources>

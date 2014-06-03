@@ -24,26 +24,18 @@ import com.google.zxing.WriterException;
 import com.srowen.bs.android.Contents;
 import com.srowen.bs.android.FinishListener;
 import com.srowen.bs.android.Intents;
-import com.srowen.bs.android.R;
+import com.srowen.bs.android.simple.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.regex.Pattern;
 
 /**
  * This class encodes data from an Intent into a QR code, and then displays it full screen so that
@@ -55,8 +47,6 @@ public final class EncodeActivity extends Activity {
 
   private static final String TAG = EncodeActivity.class.getSimpleName();
 
-  private static final int MAX_BARCODE_FILENAME_LENGTH = 24;
-  private static final Pattern NOT_ALPHANUMERIC = Pattern.compile("[^A-Za-z0-9]");
   private static final String USE_VCARD_KEY = "USE_VCARD";
 
   private QRCodeEncoder qrCodeEncoder;
@@ -95,94 +85,15 @@ public final class EncodeActivity extends Activity {
 
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
-    switch (item.getItemId()) {
-      case R.id.menu_share:
-        share();
-        return true;
-      case R.id.menu_encode:
-        Intent intent = getIntent();
-        if (intent == null) {
-          return false;
-        }
-        intent.putExtra(USE_VCARD_KEY, !qrCodeEncoder.isUseVCard());
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-        finish();
-        return true;
-      default:
-        return false;
+    if (item.getItemId() == R.id.menu_encode) {
+      Intent intent = getIntent();
+      intent.putExtra(USE_VCARD_KEY, !qrCodeEncoder.isUseVCard());
+      intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+      startActivity(getIntent());
+      finish();
+      return true;
     }
-  }
-  
-  private void share() {
-    QRCodeEncoder encoder = qrCodeEncoder;
-    if (encoder == null) { // Odd
-      Log.w(TAG, "No existing barcode to send?");
-      return;
-    }
-
-    String contents = encoder.getContents();
-    if (contents == null) {
-      Log.w(TAG, "No existing barcode to send?");
-      return;
-    }
-
-    Bitmap bitmap;
-    try {
-      bitmap = encoder.encodeAsBitmap();
-    } catch (WriterException we) {
-      Log.w(TAG, we);
-      return;
-    }
-    if (bitmap == null) {
-      return;
-    }
-
-    File bsRoot = new File(Environment.getExternalStorageDirectory(), "BarcodeScanner");
-    File barcodesRoot = new File(bsRoot, "Barcodes");
-    if (!barcodesRoot.exists() && !barcodesRoot.mkdirs()) {
-      Log.w(TAG, "Couldn't make dir " + barcodesRoot);
-      showErrorMessage(R.string.msg_unmount_usb);
-      return;
-    }
-    File barcodeFile = new File(barcodesRoot, makeBarcodeFileName(contents) + ".png");
-    if (!barcodeFile.delete()) {
-      Log.w(TAG, "Could not delete " + barcodeFile);
-      // continue anyway
-    }
-    FileOutputStream fos = null;
-    try {
-      fos = new FileOutputStream(barcodeFile);
-      bitmap.compress(Bitmap.CompressFormat.PNG, 0, fos);
-    } catch (FileNotFoundException fnfe) {
-      Log.w(TAG, "Couldn't access file " + barcodeFile + " due to " + fnfe);
-      showErrorMessage(R.string.msg_unmount_usb);
-      return;
-    } finally {
-      if (fos != null) {
-        try {
-          fos.close();
-        } catch (IOException ioe) {
-          // do nothing
-        }
-      }
-    }
-
-    Intent intent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
-    intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name) + " - " + encoder.getTitle());
-    intent.putExtra(Intent.EXTRA_TEXT, contents);
-    intent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + barcodeFile.getAbsolutePath()));
-    intent.setType("image/png");
-    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-    startActivity(Intent.createChooser(intent, null));
-  }
-
-  private static CharSequence makeBarcodeFileName(CharSequence contents) {
-    String fileName = NOT_ALPHANUMERIC.matcher(contents).replaceAll("_");
-    if (fileName.length() > MAX_BARCODE_FILENAME_LENGTH) {
-      fileName = fileName.substring(0, MAX_BARCODE_FILENAME_LENGTH);
-    }
-    return fileName;
+    return false;
   }
 
   @Override
