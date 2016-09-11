@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scanner des QR Codes</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> En plus des codes à barres 1D produits que vous voyez tous les jours, un genre différent et plus complexe de code à barres est devenu populaire ces dernières années. Ces codes barres sont faciles à repérer, car ils codent des données sur les deux leur largeur et la hauteur, dans une matrice de carrés. Par exemple, vous pouvez avoir déjà vu un code-barres dans le QR Code ou le format Data Matrix: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Vous pouvez activer ou désactiver l'analyse de ces formats individuellement dans Paramètres. </p>
+
+<p> Ces codes barres peuvent être numérisés, comme les codes à barres du produit. Ils contiennent plus d'informations que d'un code barre 1D produits, et des types plus complexes de l'information. Ces formats peuvent encoder un lien vers le site, un numéro de téléphone, informations de contact, et plus encore. </p>
+
+<p> En conséquence, sur l'écran de résultat, les boutons d'action, vous trouverez après la numérisation d'un tel code à barres dépend du type de contenu du code à barres. </p>
+
+<h4> Lien hypertexte ou URL </h4>
+
+<p> Le plus souvent, le code barre contient un lien hypertexte vers un site web. Vous pouvez appuyer sur l'URL pour ouvrir un navigateur pour afficher cette page Web, ou autrement accéder au contenu de l'URI. Vous verrez également plusieurs boutons d'action: </p>
+
+<ul>
+  <li> Ouvertes du navigateur. Cette accède également l'URI de la même manière, généralement en ouvrant le navigateur de l'appareil. Notez que certains URI, comme "le marché:" les URI, sera ouvert par une autre application; «marché:" les URI sont ouverts par l'application Android Market par exemple. </li>
+  <li> Partager par email. Partager le lien en envoyant un e-mail. </li>
+  <li> Partager via SMS. Partager le lien en envoyant un SMS ou un message texte. </li>
+</ul>
+
+<h4> Coordonnées </h4>
+
+<p> Si le code-barres contient des informations de contact encodée dans le format MECARD ou vCard, vous verrez plusieurs boutons en fonction de ce que des éléments d'information de contact sont codés: </p>
+
+<ul>
+  <li> Ajouter un contact. Cette option sera toujours présent, il ajoute les informations de contact au carnet d'adresses de votre appareil. </li>
+  <li> Voir la carte. Si les informations de contact contient une adresse, ce va tenter de montrer l'adresse sur une carte Google Maps. </li>
+  <li> Composez le numéro. Si les informations de contact contient un numéro de téléphone, cela va ouvrir composeur de l'appareil avec le numéro de prêt à composer. </li>
+  <li> Envoyer un email. De même, dans les informations de contact contient une adresse e-mail, cela va ouvrir un client e-mail sur l'appareil pour composer et e-mail à cette adresse. </li>
+</ul>
+
+<h4> Adresse e-mail </h4>
+
+<p> Si le contenu du code à barres sont une adresse e-mail, ou un "mailto:" URI, alors vous serez capable de: </p>
+
+<ul>
+  <li> Ajouter un contact. Cela ajoute les informations de contact au carnet d'adresses de votre appareil contenant uniquement l'adresse e-mail </li>
+  <li> Envoyer un email. Cela va ouvrir un client e-mail sur l'appareil pour composer et e-mail à cette adresse. </li>
+</ul>
+
+<h4> Numéro de téléphone </h4>
+
+<p> De même, si le code-barres ne contient qu'un numéro de téléphone, vous pouvez: </p>
+
+<ul>
+  <li> Ajouter un contact. Cela ajoute les informations de contact au carnet d'adresses de votre appareil ne contenant que le numéro de téléphone </li>
+  <li> Composez le numéro. Ouvre composeur de l'appareil avec le numéro de prêt à composer. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Si le code-barres encode une "sms" ou "mms:" URI, alors vous verrez les boutons suivants: </p>
+
+<ul>
+  <li> Envoyer un SMS. Ouvre l'application de messagerie de l'appareil et compose et SMS, ou un message texte, le numéro dans le code-barres. </li>
+  <li> Envoyer MMS. Idem, mais les tentatives pour composer un MMS, ou message texte multimédia. </li>
+</ul>
+
+<h4> Calendrier </h4>
+
+<p> Codes-barres peut également encoder des informations sur un événement, à un certain moment et le lieu. Si vous scannez un code-barres contenant des informations dans le format vCal, vous serez capable de: </p>
+
+<ul>
+  <li> Ajouter au calendrier. Ouvre application de calendrier de l'appareil et crée un nouvel événement avec les informations contenues dans le code à barres, y compris la date et l'heure, lieu, nom, etc. </li>
+</ul>
+
+<h4> Situation géographique </h4>
+
+<p> Il est possible de stocker un emplacement dans un code-barres, comme un «géo:" URI contenant latitude et longitude. Si l'un de ceux-ci est scannée, puis l'écran de résultat contiendra des boutons qui vous permettent de: </p>
+
+<ul>
+  <li> Voir la carte. Cette tente d'ouvrir Google Maps ou application de cartographie d'autres pour montrer l'emplacement du code à barres sur une carte. </li>
+  <li> Obtenir les directions. Ouvre Google Maps afin d'essayer d'obtenir les directions de l'emplacement actuel de cette situation géographique. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Les codes à barres permet d'encoder les détails d'un réseau Wi-Fi, y compris le nom du réseau, le type et le mot de passe. Une Scanning permet de vous connecter à un réseau wi-fi facilement: </p>
+
+<ul>
+  <li> Se connecter au réseau. Cette tentative de relier l'appareil au réseau Wi-Fi nommé dans le code-barres, en utilisant le type fourni et mot de passe. Vous verrez un écran qui affiche la progression de cette connexion. </li>
+</ul>
+
+<h4> Texte </h4>
+
+<p> Si le contenu du code-barres ne sont pas reconnus comme l'un des types spéciaux ci-dessus, il sera traité comme du texte simple. Dans ce cas, vous pouvez: </p>
+
+<ul>
+  <li> Recherche sur le Web. Recherche pour le texte en interrogeant Google Web Search. </li>
+  <li> Partager par email. Partager le texte en envoyant un e-mail. </li>
+  <li> Partager via SMS. Partager le texte en envoyant un SMS ou un message texte. </li>
+  <li> Recherche personnalisée. Si vous avez défini une URL de recherche personnalisé, ce qui vous permettra de rechercher vos URL de recherche personnalisé pour le texte. </li>
+</ul>
+
+<p>Traduit par Google Translate.</p></body>
+</html>

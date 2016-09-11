@@ -23,6 +23,7 @@ import com.google.zxing.DecodeHintType;
 import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.Map;
@@ -69,9 +70,13 @@ public final class UPCAReader extends UPCEANReader {
   }
 
   @Override
-  protected int decodeMiddle(BitArray row, int[] startRange, StringBuilder resultString)
+  protected int decodeMiddle(int rowNumber,
+                             BitArray row,
+                             int[] startRange,
+                             StringBuilder resultString,
+                             ResultPointCallback resultPointCallback)
       throws NotFoundException {
-    return ean13Reader.decodeMiddle(row, startRange, resultString);
+    return ean13Reader.decodeMiddle(rowNumber, row, startRange, resultString, resultPointCallback);
   }
 
   private static Result maybeReturnResult(Result result) throws FormatException {

@@ -27,8 +27,8 @@ public final class EAN8BlackBox1TestCase extends AbstractBlackBoxTestCase {
 
   public EAN8BlackBox1TestCase() {
     super("src/test/resources/blackbox/ean8-1", new MultiFormatReader(), BarcodeFormat.EAN_8);
-    addTest(8, 8, 0.0f);
-    addTest(8, 8, 180.0f);
+    addTest(7, 7, 0.0f);
+    addTest(7, 7, 180.0f);
   }
 
 }

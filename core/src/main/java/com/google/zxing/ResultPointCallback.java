@@ -26,4 +26,6 @@ public interface ResultPointCallback {
 
   void foundPossibleResultPoint(ResultPoint point);
 
+  void foundPossibleResultPoint(ResultPoint point, String fragment);
+
 }

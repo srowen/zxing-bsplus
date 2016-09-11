@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Skeniranje QR kode </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Poleg tega, da izdelek 1D črtne kode, ki jih vidite vsak dan, je drugačen in bolj zapleten vrsta črtne kode postala popularna v zadnjih letih. Ti črtne kode so lahko na kraju samem, ker kodiranje podatkov na obeh njihovo širino in višino, v matrici kvadratov. Na primer, ste morda že videli črtne kode v QR kode ali format Data Matrix: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Lahko omogočite ali onemogočite pregledovanje teh formatov posebej v Settings. </p>
+
+<p> Te črtne kode je mogoče skenirati podobni izdelek črtne kode. Vsebujejo več informacij kot 1D črtne kode izdelka, in bolj zapletene vrste podatkov. Te oblike lahko kodiranje povezavo do spletne strani, telefonske številke, kontaktne podatke, in še več. </p>
+
+<p> Kot rezultat, rezultat na zaslonu, bo ukrep gumbe boste našli po skeniranju tako črtne kode je odvisna od vrste vsebine za črtne kode. </p>
+
+<h4> Hiperpovezava ali URL </h4>
+
+<p> Najpogosteje, črtne kode vsebuje povezavo na spletno stran. Lahko pritisnete URL sama odpreti brskalnika, da spletne strani, ali kako drugače dostop URI vsebine. Prav tako boste videli več gumbov ukrepe: </p>
+
+<ul>
+  <li> Odpri brskalnik. To tudi dostopi URI na enak način, običajno z odpiranjem naprave brskalnika. Upoštevajte, da nekatere URI-jev, kot so "na trgu:" bo URI-jev, se odprla drug program, "na trgu:" URI je odprl app Android Market, na primer. </li>
+  <li> Share preko e-pošte. Share povezavo s pošiljanjem e-pošte. </li>
+  <li> Share preko SMS. Share povezavo s pošiljanjem SMS, ali sporočila SMS. </li>
+</ul>
+
+<h4> Kontaktne informacije </h4>
+
+<p> Če črtne kode vsebuje kontaktne informacije kodirane v obliki MECARD ali vCard, boste videli več gumbov, odvisno od tega, kaj so kodirani kosov kontaktne podatke: </p>
+
+<ul>
+  <li> Dodaj osebo. Ta možnost bo vedno prisotni, dodaja kontaktne informacije za obravnavo naprave knjigo. </li>
+  <li> Prikaži zemljevid. Če so kontaktne informacije vsebuje naslov, bo to poskušal prikazati naslov na zemljevidu s pomočjo Google Maps. </li>
+  <li> Dial številko. Če so kontaktne informacije vsebuje telefonsko številko, bo to odprlo naprave narečje s številko pripravljen za klicanje. </li>
+  <li> Pošlji e-pošto. Prav tako v kontaktne podatke vsebuje e-poštni naslov, bo odprl e-poštnega odjemalca na napravi za sestavljanje in e-pošti na ta naslov. </li>
+</ul>
+
+<h4> E-mail naslov </h4>
+
+<p> Če je vsebina črtne kode so e-poštni naslov, ali "mailto:" URI, potem boste lahko: </p>
+
+<ul>
+  <li> Dodaj osebo. Ta dodaja kontaktne informacije za obravnavo naprave je knjiga, ki vsebuje samo e-poštni naslov </li>
+  <li> Pošlji e-pošto. To bo odprlo e-poštnega odjemalca na napravi za sestavljanje in e-pošti na ta naslov. </li>
+</ul>
+
+<h4> Telefonska številka </h4>
+
+<p> Podobno je, če črtne kode vsebuje samo telefonsko številko, lahko: </p>
+
+<ul>
+  <li> Dodaj osebo. Ta dodaja kontaktne informacije za obravnavo naprave je knjiga, ki vsebuje le telefonsko številko </li>
+  <li> Dial številko. Odpre naprave narečje s številko pripravljen za klicanje. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Če črtne kode kodira "sms:" ali "mms:" URI, potem boste videli gumbe, da: </p>
+
+<ul>
+  <li> Pošlji SMS. Odpre naprave sporočil uporabo in komponira in SMS, ali sporočilo, da se je število v črtno kodo. </li>
+  <li> Pošlji MMS. Same, ampak poskuša sestaviti MMS, ali večpredstavnostno sporočilo. </li>
+</ul>
+
+<h4> Koledar </h4>
+
+<p> Črtne kode lahko tudi kodirajo informacije o dogodku, ob določenem času in kraju. Če skeniranje črtne kode, ki vsebuje informacije v vcal formatu, boste lahko: </p>
+
+<ul>
+  <li> Dodaj v koledar. Odpre naprave koledar vlogo in ustvarja nov dogodek z informacijami v črtno kodo, vključno z datumom in uro, kraj, ime, in tako naprej. </li>
+</ul>
+
+<h4> Geografska lokacija </h4>
+
+<p> To je mogoče shraniti lokacijo v črtno kodo, kot "geo:" URI, ki vsebuje zemljepisno širino in dolžino. Če je skenirana eno od teh, potem bo rezultat zaslon vsebuje gumbe, ki vam omogočajo, da: </p>
+
+<ul>
+  <li> Prikaži zemljevid. To odpira Google Maps ali drugo kartiranje uporabi za prikaz lokacije iz črtne kode na zemljevidu. </li>
+  <li> Pridobite navodila. Odpre Google Maps, da bi poskušali dobiti smeri od trenutne lokacije na to geografsko lokacijo. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Črtne kode lahko encode podrobnosti omrežja wi-fi, vključno z omrežno ime, vrsto in geslom. Skeniranje tistega, ki ga omogoča povezavo z omrežjem wi-fi brez težav: </p>
+
+<ul>
+  <li> Povezava z mrežo. To poskuša povezati napravo na omrežje wi-fi imenovan v črtno kodo, s priloženim vrsto in geslom. Videli boste zaslon, ki prikazuje napredek te povezave. </li>
+</ul>
+
+<h4> Besedilo </h4>
+
+<p> Če je vsebina črtne kode ne prepozna kot katere koli posebne vrste zgoraj, je treba obravnavati kot enostavna besedila. V tem primeru lahko: </p>
+
+<ul>
+  <li> Iskanje po spletu. Iskanje besedila, s poizvedbami Google Web Search. </li>
+  <li> Share preko e-pošte. Share besedilo tako, da pošljejo e-mail. </li>
+  <li> Share preko SMS. Share besedilo s pošiljanjem SMS, ali sporočila SMS. </li>
+  <li> Iskanje po meri. Če ste nastavili po meri iskanja URL, bo to omogočilo, da iskanje po meri URL iskanje za besedilo. </li>
+</ul>
+
+<p>Prevedla Google Translate.</p></body>
+</html>

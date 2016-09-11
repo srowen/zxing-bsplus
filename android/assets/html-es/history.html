@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Historial de escaneado de códigos de barras</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p><strong class="notranslate">Barcode Scanner+</strong> almacena un historial de códigos de barras que haya escaneado. Esto incluye el contenido, el tiempo, el formato, y otra información relacionada. Puede acceder a la historia pulsando el botón Menú y, a continuación, seleccionar la Historia. </p>
+
+<p> Usted verá una lista de los análisis anteriores. Pulse una de recordar los detalles de la exploración en la pantalla, y actuar sobre ella como si hubiera sido escaneados de nuevo. Mantenga pulsado para borrar un elemento. Usted puede borrar el historial por pulsar el botón Menú y luego seleccionando "Borrar historial". </p>
+
+<h3> La historia de exportación </h3>
+
+<p> Puede exportar los datos en su historial de exploración, de manera que pueda ser leído y procesado por una aplicación externa. Los datos se exportan en formato de valores separados por comas (CSV). La salida de columnas, en orden, son los siguientes: </p>
+
+<ul>
+  <li> Contenido en bruto </li>
+  <li> Pantalla con formato de contenido </li>
+  <li> Formato <span class="notranslate">(e.g. QR_CODE)</span></li>
+  <li> Fecha y hora, en milisegundos desde la época <span class="notranslate">(e.g. 1315175453569)</span></li>
+  <li> Fecha y hora con formato <span class="notranslate">(e.g. Sep 4, 2011 11:30:53 PM)</span></li>
+  <li> Otra información </li>
+</ul>
+
+<p> Pulse Menú y seleccione "Enviar historia". Usted podrá elegir entre las aplicaciones del dispositivo que es capaz de enviar los datos en alguna parte, como una aplicación de correo electrónico con la que puede enviar los datos CSV a su dirección de correo electrónico. Tenga en cuenta que después de enviar los datos, también se guardará en la tarjeta SD en un directorio llamado " <code class="notranslate">BarcodeScanner/History</code> ". </p>
+
+<h3> Copia en el portapapeles </h3>
+
+<p> Por defecto, el contenido de cada análisis se copia en el portapapeles también. Para desactivar esta opción, desactive la opción "Copiar al portapapeles" en la configuración. </p>
+
+<h3> El modo de escaneado a granel </h3>
+
+<p> Algunos usuarios necesitan para escanear códigos de barras muchos, con el fin de almacenar y después exportar el historial de exploración. Para hacer esto más fácil, permite "el modo de exploración a granel" en Configuración. Después de cada exploración exitosa, la aplicación se prepare para leer otro código de barras, en lugar de mostrar la pantalla de resultados. </p>
+
+<h3> Varios ciclos de un código de barras </h3>
+
+<p> Por defecto, si un código de barras se escanea varias veces, la única historia registrará el análisis más reciente de ese código de barras. Esto se puede cambiar al permitir "Recuerde duplicados" en la configuración. Esto hará que la historia de registrar todos los análisis. </p>
+
+<p>Traducido por Google Translate.</p></body>
+</html>

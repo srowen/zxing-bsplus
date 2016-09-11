@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">बारकोड स्कैनर</string>
+  <string name="app_name">बारकोड स्कैनर +</string>
   <string name="app_picker_name">अनुप्रयोगों</string>
   <string name="bookmark_picker_name">बुकमार्क्स</string>
   <string name="button_add_calendar">कैलेंडर के लिए जोड़ें</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">अभी तक कोई बारकोड स्कैन दर्ज किया गया है</string>
   <string name="history_send">इतिहास भेजें</string>
   <string name="history_title">इतिहास</string>
+  <string name="menu_decode_image">डिकोड छवि</string>
   <string name="menu_encode_mecard">MECARD का प्रयोग करें</string>
   <string name="menu_encode_vcard">vCard का प्रयोग करें</string>
   <string name="menu_help">मदद</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">शेयर</string>
   <string name="msg_bulk_mode_scanned">थोक मोड: बारकोड स्कैन और बचाया</string>
   <string name="msg_camera_framework_bug">क्षमा करें, Android कैमरा एक समस्या का सामना करना पड़ा. आप डिवाइस को पुनरारंभ करने की आवश्यकता हो सकती है.</string>
+  <string name="msg_decode_image_failed">कोई बारकोड छवि में पाया गया था.</string>
   <string name="msg_default_format">प्रारूप</string>
   <string name="msg_default_meta">मेटाडाटा</string>
   <string name="msg_default_mms_subject">हाय</string>
-  <string name="msg_default_status">दृश्यदर्शी आयत के अंदर एक बारकोड प्लेस इसे स्कैन.</string>
   <string name="msg_default_time">समय</string>
   <string name="msg_default_type">टाइप</string>
   <string name="msg_encode_contents_failed">उपलब्ध कराए गए आंकड़ों से एक बारकोड सांकेतिक शब्दों में बदलना नहीं कर सका.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">तुम्हें यकीन है?</string>
   <string name="msg_unmount_usb">क्षमा करें, एसडी कार्ड सुलभ नहीं है.</string>
   <string name="preferences_actions_title">जब एक बारकोड पाया जाता है\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">त्यागें बारकोड मिलान नहीं नियमित अभिव्यक्ति</string>
+  <string name="preferences_allowed_content_pattern_title">पैटर्न मिलान केवल</string>
   <string name="preferences_auto_focus_title">ऑटो फोकस का उपयोग करें</string>
   <string name="preferences_auto_open_web_title">वेब पृष्ठों को स्वचालित रूप से खोलें</string>
   <string name="preferences_bulk_mode_summary">स्कैन और कई बारकोड लगातार बचाने के</string>
@@ -98,20 +101,25 @@
   <string name="preferences_decode_1D_product_title">1D उत्पाद</string>
   <string name="preferences_decode_Aztec_title">एज़्टेक</string>
   <string name="preferences_decode_Data_Matrix_title">डाटा मैट्रिक्स</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR कोड</string>
-  <string name="preferences_device_bug_workarounds_title">युक्ति बग वर्कअराउन्ड</string>
+  <string name="preferences_device_bug_workarounds_title">डिवाइस बग workarounds</string>
   <string name="preferences_disable_barcode_scene_mode_title">कोई बारकोड दृश्य विधा</string>
   <string name="preferences_disable_continuous_focus_summary">केवल मानक फोकस मोड का उपयोग करें</string>
   <string name="preferences_disable_continuous_focus_title">कोई निरंतर ध्यान</string>
   <string name="preferences_disable_exposure_title">कोई जोखिम</string>
   <string name="preferences_disable_metering_title">कोई पैमाइश</string>
+  <string name="preferences_force_camera_orientation_front_summary">केवल सक्षम अगर सामने छवि घुमाया जा रहा है</string>
+  <string name="preferences_force_camera_orientation_front_title">सामने कैमरा अभिविन्यास अध्यारोहित करें</string>
+  <string name="preferences_force_camera_orientation_summary">केवल सक्षम अगर छवि घुमाया जा रहा है</string>
+  <string name="preferences_force_camera_orientation_title">कैमरा अभिविन्यास अध्यारोहित करें</string>
+  <string name="preferences_front_camera_title">सामने कैमरा पसंद करते हैं</string>
   <string name="preferences_front_light_auto">स्वचालित</string>
   <string name="preferences_front_light_off">निष्क्रिय</string>
   <string name="preferences_front_light_on">सक्रिय</string>
-  <string name="preferences_front_light_summary">कुछ फोन पर कम रोशनी में स्कैनिंग बढ़ाता है, लेकिन चमक का कारण हो सकता है. सभी फोन पर काम नहीं करता.</string>
+  <string name="preferences_front_light_summary">कुछ फोन पर कम रोशनी में स्कैनिंग बढ़ाता है, लेकिन चमक का कारण हो सकता है. कुछ उपकरणों पर उपलब्ध नहीं है.</string>
   <string name="preferences_front_light_title">सामने प्रकाश का उपयोग करें</string>
-  <string name="preferences_general_title">सामान्य सेटिंग्स</string>
   <string name="preferences_history_summary">इतिहास में अपने स्कैन स्टोर</string>
   <string name="preferences_history_title">इतिहास में जोड़ें</string>
   <string name="preferences_invert_scan_summary">काली पृष्ठभूमि पर सफेद बारकोड के लिए स्कैन करें. कुछ उपकरणों पर उपलब्ध नहीं है.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">इतिहास में एक ही बारकोड के स्टोर एकाधिक स्कैन</string>
   <string name="preferences_remember_duplicates_title">डुप्लिकेट याद रखें</string>
   <string name="preferences_result_title">नतीजे सेटिंग्स</string>
+  <string name="preferences_scan_title">स्कैन सेटिंग्स</string>
   <string name="preferences_scanning_title">जब बारकोड स्कैनिंग के लिए व्याख्या करना\u2026</string>
   <string name="preferences_search_country">खोज देश</string>
   <string name="preferences_supplemental_summary">बारकोड सामग्री के बारे में में अधिक जानकारी पुनः प्राप्त करने की कोशिश करो</string>
   <string name="preferences_supplemental_title">अधिक जानकारी पुनर्प्राप्त</string>
   <string name="preferences_vibrate_title">कांपना</string>
-  <string name="result_address_book">मिला संपर्क जानकारी</string>
-  <string name="result_calendar">मिला कैलेंडर घटना</string>
-  <string name="result_email_address">मिला ईमेल पते</string>
-  <string name="result_geo">मिला भौगोलिक निर्देशांक</string>
-  <string name="result_isbn">मिला किताब</string>
-  <string name="result_product">मिला उत्पाद</string>
-  <string name="result_sms">मिला एसएमएस पता</string>
-  <string name="result_tel">मिला फोन नंबर</string>
-  <string name="result_text">मिला सादा पाठ</string>
-  <string name="result_uri">मिला यूआरएल</string>
-  <string name="result_wifi">मिला WLAN विन्यास</string>
   <string name="sbc_name">Google पुस्तक खोज</string>
   <string name="wifi_changing_network">नेटवर्क के लिए कनेक्शन का अनुरोध कर रहा है \u2026</string>
 </resources>

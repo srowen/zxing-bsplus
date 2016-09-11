@@ -26,10 +26,8 @@ package com.google.zxing;
  *
  * @author dswitkin@google.com (Daniel Switkin)
  */
-public final class PlanarYUVLuminanceSource extends LuminanceSource {
+public final class PlanarYUVLuminanceSource extends RenderableLuminanceSource {
 
-  private static final int THUMBNAIL_SCALE_FACTOR = 2;
-  
   private final byte[] yuvData;
   private final int dataWidth;
   private final int dataHeight;
@@ -121,6 +119,7 @@ public final class PlanarYUVLuminanceSource extends LuminanceSource {
                                         false);
   }
 
+  @Override
   public int[] renderThumbnail() {
     int width = getWidth() / THUMBNAIL_SCALE_FACTOR;
     int height = getHeight() / THUMBNAIL_SCALE_FACTOR;
@@ -137,20 +136,6 @@ public final class PlanarYUVLuminanceSource extends LuminanceSource {
       inputOffset += dataWidth * THUMBNAIL_SCALE_FACTOR;
     }
     return pixels;
-  }
-  
-  /**
-   * @return width of image from {@link #renderThumbnail()}
-   */
-  public int getThumbnailWidth() {
-    return getWidth() / THUMBNAIL_SCALE_FACTOR;
-  }
-  
-  /**
-   * @return height of image from {@link #renderThumbnail()}
-   */  
-  public int getThumbnailHeight() {
-    return getHeight() / THUMBNAIL_SCALE_FACTOR;
   }
 
   private void reverseHorizontal(int width, int height) {

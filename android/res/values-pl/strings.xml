@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">Aplikacje</string>
   <string name="bookmark_picker_name">Zakładki</string>
   <string name="button_add_calendar">Dodaj do kalendarza</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">Brak zeskanowanych kodów</string>
   <string name="history_send">Wyślij historię</string>
   <string name="history_title">Historia</string>
+  <string name="menu_decode_image">Grafika Decode</string>
   <string name="menu_encode_mecard">Użyj MECARD</string>
   <string name="menu_encode_vcard">Użyj vCard</string>
   <string name="menu_help">Pomoc</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">Udostępnij</string>
   <string name="msg_bulk_mode_scanned">Tryb zbiorczy: skanowanie i zapisywanie kodów kreskowych w trybie ciągłym</string>
   <string name="msg_camera_framework_bug">Przepraszamy, aparat Android napotkał problem. Może wystąpić potrzeba ponownego uruchomienia urządzenia.</string>
+  <string name="msg_decode_image_failed">Brak kodów kreskowych został znaleziony w obrazie.</string>
   <string name="msg_default_format">Format</string>
   <string name="msg_default_meta">Metadanych</string>
   <string name="msg_default_mms_subject">Cześć</string>
-  <string name="msg_default_status">Umieść kod paskowy w prostokącie wizjera aby zeskanować.</string>
   <string name="msg_default_time">Czas</string>
   <string name="msg_default_type">Typ</string>
   <string name="msg_encode_contents_failed">Nie można zakodować kodu paskowego z dostarczonych danych.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">Czy na pewno?</string>
   <string name="msg_unmount_usb">Niestety, karta SD nie jest dostępna.</string>
   <string name="preferences_actions_title">Akcja po odnalezieniu kodu\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">Kody odrzutów nie pasujące do wyrażenia regularnego</string>
+  <string name="preferences_allowed_content_pattern_title">Dopasowanie wzorca tylko</string>
   <string name="preferences_auto_focus_title">Ustaw ostrość</string>
   <string name="preferences_auto_open_web_title">Otwieranie stron internetowych automatycznie</string>
   <string name="preferences_bulk_mode_summary">Skanowanie i zapisywanie wielu kodów kreskowych jeden po drugim w trybie ciągłym</string>
@@ -98,20 +101,25 @@
   <string name="preferences_decode_1D_product_title">1D wyrobów</string>
   <string name="preferences_decode_Aztec_title">Aztek</string>
   <string name="preferences_decode_Data_Matrix_title">Dekoduj Decode Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">Dekoduj kody QR</string>
-  <string name="preferences_device_bug_workarounds_title">Obejścia błędów urządzeń</string>
+  <string name="preferences_device_bug_workarounds_title">Obejścia Bug urządzenia</string>
   <string name="preferences_disable_barcode_scene_mode_title">Brak trybu sceny barcode</string>
   <string name="preferences_disable_continuous_focus_summary">Używaj tylko standardowego trybu ostrości</string>
   <string name="preferences_disable_continuous_focus_title">Ostrość</string>
   <string name="preferences_disable_exposure_title">Bez ekspozycji</string>
   <string name="preferences_disable_metering_title">Bez pomiaru</string>
+  <string name="preferences_force_camera_orientation_front_summary">Tylko umożliwiają, jeśli obraz jest obracany przedni</string>
+  <string name="preferences_force_camera_orientation_front_title">Przesłonić przednią orientacji aparatu</string>
+  <string name="preferences_force_camera_orientation_summary">Tylko umożliwiają, jeśli obraz jest obracany</string>
+  <string name="preferences_force_camera_orientation_title">Przesłonić orientacji aparatu</string>
+  <string name="preferences_front_camera_title">Najlepsze przedniej kamery</string>
   <string name="preferences_front_light_auto">Automatyczny</string>
   <string name="preferences_front_light_off">Nieaktywny</string>
   <string name="preferences_front_light_on">Aktywny</string>
   <string name="preferences_front_light_summary">Polepsza skanowanie przy słabym świetle w niektórych telefonach, ale może powodować odbłysk. Nie działa na wszystkich telefonach.</string>
   <string name="preferences_front_light_title">Używaj lampy frontowej</string>
-  <string name="preferences_general_title">Ustawienia ogólne</string>
   <string name="preferences_history_summary">Przechowywanie skanów w historii</string>
   <string name="preferences_history_title">Dodaj do historii</string>
   <string name="preferences_invert_scan_summary">Skanowanie białych kodów kreskowych na czarnym tle. Nie dostępne w niektórych urządzeniach.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">Przechowuj powtarzane skany tego samego kodu w historii</string>
   <string name="preferences_remember_duplicates_title">Przechowuj duplikaty</string>
   <string name="preferences_result_title">Ustawienia wyników</string>
+  <string name="preferences_scan_title">Ustawienia skanowania</string>
   <string name="preferences_scanning_title">Podczas skanowania kodów kreskowych\u2026</string>
   <string name="preferences_search_country">Szukaj kraju</string>
   <string name="preferences_supplemental_summary">Spróbuj wyszukać więcej informacji o treści kodu</string>
   <string name="preferences_supplemental_title">Pobierz więcej informacji</string>
   <string name="preferences_vibrate_title">Wibruj</string>
-  <string name="result_address_book">Znaleziono dane kontaktu</string>
-  <string name="result_calendar">Znaleziono wydarzenie z kalendarza</string>
-  <string name="result_email_address">Znaleziono adres email</string>
-  <string name="result_geo">Znaleziono współrzędne geograficzne</string>
-  <string name="result_isbn">Znaleziono książkę</string>
-  <string name="result_product">Znaleziono produkt</string>
-  <string name="result_sms">Znaleziono adres SMS</string>
-  <string name="result_tel">Znaleziono numer telefonu</string>
-  <string name="result_text">Znaleziono zwykły tekst</string>
-  <string name="result_uri">Znaleziono URL</string>
-  <string name="result_wifi">Znaleziono konfiguracje sieci</string>
   <string name="sbc_name">Wyszukiwanie książek Google</string>
   <string name="wifi_changing_network">Trwa próba podłączenia się do sieci\u2026</string>
 </resources>

@@ -16,14 +16,27 @@
  -->
 <resources>
 
-  <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
-    <item name="android:layout_width">0dip</item>
-    <item name="android:layout_height">wrap_content</item>
+  <style name="ResultButtonLandscape" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/action_button_height</item>
     <item name="android:layout_weight">1</item>
+    <item name="android:textAllCaps">true</item>
   </style>
-  <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+  <style name="ResultButtonPortrait" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">@dimen/action_button_height</item>
+    <item name="android:textAllCaps">true</item> 
+  </style>
+  
+  <style name="ResultField">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/result_minor_text</item>
+    <item name="android:textIsSelectable">false</item>
+  </style>
+  <style name="ResultFieldLabel" parent="@style/ResultField">
+    <item name="android:textColor">@color/result_minor_text_label</item>    
+    <item name="android:textAllCaps">true</item>
   </style>
 
 </resources>

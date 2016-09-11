@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Szkennelés QR kódok </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Amellett, hogy az 1D termék barcodes, amit látsz minden nap más és bonyolultabb fajta vonalkód vált népszerűvé az elmúlt években. Ezek a vonalkódok könnyű észrevenni, mert kódolni adatok mellett mind a szélesség és a magasság, a mátrix terek. Például, lehet, hogy már láttam a vonalkód a QR-kód vagy a Data Matrix formátum: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Itt engedélyezheti vagy letilthatja keresés ezen formátumok külön-külön a Beállítások. </p>
+
+<p> Ezeket a vonalkódokat is beolvasott hasonló termék vonalkódokat. Ha több információt, mint egy 1D vonalkód a termék, és bonyolultabb típusú információkat. Ezek a formátumok képes kódolni egy linket a honlapon, egy telefonszámot, elérhetőségi adatokat, és így tovább. </p>
+
+<p> Ennek eredményeként az eredményre képernyőn, az intézkedés gombok talál szkennelés után egy ilyen vonalkód típusától függ a vonalkód tartalmát. </p>
+
+<h4> Hiperhivatkozás vagy URL </h4>
+
+<p> Leggyakrabban, a vonalkód tartalmaz egy hivatkozást egy weboldalon. Akkor nyomja meg az URL-t is megnyitni a böngészőt, hogy véleménye szerint weboldalra, vagy más módon hozzáférhet a URI tartalmát. Azt is látni több akció gombok: </p>
+
+<ul>
+  <li> Nyílt böngészőt. Ez is hozzáfér az URI ugyanúgy, jellemzően megnyitásával a készülék böngészőjében. Megjegyzendő, hogy bizonyos URI, mint a "piaci" URI, nyitja meg egy másik alkalmazás, "piaci" URI által nyitott az Android Market app például. </li>
+  <li> Megosztás e-mailben. Ossza meg a linket küld egy e-mailt. </li>
+  <li> Ossza meg SMS-ben. Ossza meg a kapcsolatot küldjön egy SMS-t, vagy szöveges üzenet érkezésekor. </li>
+</ul>
+
+<h4> Elérhetőség </h4>
+
+<p> Ha a vonalkód tartalmazza a kapcsolattartási információkat kódolt a MECARD vagy vCard formátumban, látni fogja, több gomb attól függően, hogy milyen darabok kapcsolattartási információkat kódolt: </p>
+
+<ul>
+  <li> Új partner. Ez a lehetőség mindig jelen, hanem felveszi a kapcsolatot a készüléken a címjegyzékben. </li>
+  <li> Térkép. Ha a partner adatait tartalmazza egy címet, ez megpróbálja bemutatni a címet a térképen a Google Maps. </li>
+  <li> Tárcsázza a számot. Ha a partner adatait tartalmazza a telefonszámot, megnyílik a készülék kommunikátor a szám készen áll a tárcsázásra. </li>
+  <li> Küldjön e-mailt. Hasonlóképpen az a partner adatait tartalmazó e-mail címét, megnyílik egy e-mail kliens a készülék össze és e-mail arra a címre. </li>
+</ul>
+
+<h4> E-mail cím </h4>
+
+<p> Ha a tartalma a vonalkód van egy e-mail címet, vagy a "mailto:" URI, akkor képes lesz: </p>
+
+<ul>
+  <li> Új partner. Ez növeli a partner adatait, hogy a készülék címjegyzék, amely kizárólag az e-mail címét </li>
+  <li> Küldjön e-mailt. Ez megnyitja az e-mail kliens a készülék össze és e-mail arra a címre. </li>
+</ul>
+
+<h4> Telefonszám </h4>
+
+<p> Hasonlóképpen, ha a vonalkód amely csak egy telefonszámot, akkor: </p>
+
+<ul>
+  <li> Új partner. Ez növeli a partner adatait, hogy a készülék címjegyzék, amely csak a telefonszám </li>
+  <li> Tárcsázza a számot. Megnyitja a készülék kommunikátor a szám készen áll a tárcsázásra. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Ha a vonalkód kódolja egy "sms" vagy a "mms:" URI, akkor látni fogja, gombok: </p>
+
+<ul>
+  <li> Küldj SMS-t. Megnyitja a készülék üzenetküldő alkalmazás és komponál és az SMS, vagy szöveges üzenet, hogy a számot a vonalkód. </li>
+  <li> MMS küldése. Ugyanaz, de megpróbálja össze MMS, vagy multimédiás üzenetet. </li>
+</ul>
+
+<h4> Naptár </h4>
+
+<p> Vonalkódokat is kódolni információk egy esemény, egy bizonyos időben és helyen. Ha be tudja olvasni a vonalkód, amely információkat a vCal formátumú, akkor képes lesz: </p>
+
+<ul>
+  <li> Add a naptárhoz. Megnyitja a készülék naptár alkalmazás, és létrehoz egy új esemény az információkat a vonalkód, beleértve a dátumot és az időt, helyet, nevet, és így tovább. </li>
+</ul>
+
+<h4> Földrajzi elhelyezkedés </h4>
+
+<p> Lehetőség van tárolni egy helyet a vonalkód, mint a "geo:" URI tartalmazó szélességi és hosszúsági fok. Ha ezek közül is beolvasott, akkor az eredmény képernyő tartalmaz gombok, amelyek lehetővé teszik, hogy: </p>
+
+<ul>
+  <li> Térkép. Ezt próbálja megnyitni a Google Maps, vagy más térképészeti alkalmazás megmutatni a helyet a vonalkód a térképen. </li>
+  <li> Útvonal. Megnyitja a Google Maps, hogy meg kell kérni irányban a jelenlegi helyét, hogy a földrajzi elhelyezkedés. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Vonalkódokat lehet kódolni az adatokat egy wi-fi hálózat, beleértve a hálózat nevét, típusát és a jelszót. Scanning ONE segítségével, hogy csatlakozik a wi-fi hálózat könnyen: </p>
+
+<ul>
+  <li> Csatlakozás Network. Ez megpróbál csatlakozni a készülék a Wi-Fi hálózat nevét a vonalkód, a mellékelt típusát és a jelszót. Látni fogja, egy képernyő, amely mutatja a fejlődés e tekintetben. </li>
+</ul>
+
+<h4> Szöveg </h4>
+
+<p> Ha a tartalma a vonalkód nem ismerik el sem a speciális fent, akkor kell kezelni, mint egyszerű szöveget. Ebben az esetben a következőket teheti: </p>
+
+<ul>
+  <li> Internetes keresés. Keresés a szöveg lekérdezésével Google internetes kereső. </li>
+  <li> Megosztás e-mailben. Ossza meg a szöveget küldjön egy e-mailt. </li>
+  <li> Ossza meg SMS-ben. Ossza meg a szöveget küldjön egy SMS-t, vagy szöveges üzenet érkezésekor. </li>
+  <li> Egyéni keresést. Ha beállította egyéni keresési URL-t, ez lehetővé teszi a keresést az egyéni keresési URL a szöveget. </li>
+</ul>
+
+<p>Fordította Google Translate.</p></body>
+</html>

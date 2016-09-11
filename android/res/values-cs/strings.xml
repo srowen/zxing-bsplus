@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">Aplikace</string>
   <string name="bookmark_picker_name">Záložky</string>
   <string name="button_add_calendar">Přidat do kalendáře</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">Žádný čárové kódy nebyly ještě zaznamenány</string>
   <string name="history_send">Zaslat historii</string>
   <string name="history_title">Historie</string>
+  <string name="menu_decode_image">Dekódování obrazu</string>
   <string name="menu_encode_mecard">Použij MECARD</string>
   <string name="menu_encode_vcard">Použij vCard</string>
   <string name="menu_help">Pomoc!</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">Sdílet</string>
   <string name="msg_bulk_mode_scanned">Dávkový režim: čárové kódy naskenované a uložené</string>
   <string name="msg_camera_framework_bug">Omlouváme se, zjistili jsem problém s fotoaparátem. Možná bude nutné restartovat zařízení.</string>
+  <string name="msg_decode_image_failed">Žádný čárový kód byl nalezen v obraze.</string>
   <string name="msg_default_format">Formát</string>
   <string name="msg_default_meta">Metadata</string>
   <string name="msg_default_mms_subject">Ahoj</string>
-  <string name="msg_default_status">Zaměřte čtvercem na čárový kód</string>
   <string name="msg_default_time">Čas</string>
   <string name="msg_default_type">Typ</string>
   <string name="msg_encode_contents_failed">Z poskytnutých údajů se nepodařilo rozkódovat čárový kód.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">Jste si jisti?</string>
   <string name="msg_unmount_usb">Omlouváme se, karta SD není přístupná.</string>
   <string name="preferences_actions_title">Byl nalezen čárový kód.\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">Zahodit čárové kódy neodpovídá regulárnímu výrazu</string>
+  <string name="preferences_allowed_content_pattern_title">Odpovídající vzor pouze</string>
   <string name="preferences_auto_focus_title">Automatické zaostření</string>
   <string name="preferences_auto_open_web_title">Otevřete webové stránky automaticky</string>
   <string name="preferences_bulk_mode_summary">Skenování více čárových kódú bez přerušení, vhodné na dávkové zpracování velkého množství čárových kódú</string>
@@ -98,6 +101,7 @@
   <string name="preferences_decode_1D_product_title">1D produktu</string>
   <string name="preferences_decode_Aztec_title">Aztécký</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR kódy</string>
   <string name="preferences_device_bug_workarounds_title">Možná zástupná řešení chyb zařízení</string>
@@ -106,12 +110,16 @@
   <string name="preferences_disable_continuous_focus_title">Soustavné ostření</string>
   <string name="preferences_disable_exposure_title">Vypnuta expozice</string>
   <string name="preferences_disable_metering_title">Vypnuto měření</string>
+  <string name="preferences_force_camera_orientation_front_summary">Povolit pouze v případě čelní obrázek je otočen</string>
+  <string name="preferences_force_camera_orientation_front_title">Přepsat orientaci přední kamery</string>
+  <string name="preferences_force_camera_orientation_summary">Povolit pouze v případě obrázku se otáčí</string>
+  <string name="preferences_force_camera_orientation_title">Přepsat orientaci kamery</string>
+  <string name="preferences_front_camera_title">Přednost před kamerou</string>
   <string name="preferences_front_light_auto">Automatický</string>
   <string name="preferences_front_light_off">Neaktivní</string>
   <string name="preferences_front_light_on">Aktivní</string>
   <string name="preferences_front_light_summary">Zlepšuje skenování při slabém osvětlení na některých telefonech, ale může způsobit oslnění. Nefunguje na všech telefonech.</string>
   <string name="preferences_front_light_title">Použít světlo</string>
-  <string name="preferences_general_title">Hlavní nastavení</string>
   <string name="preferences_history_summary">Uložte si skeny v historii</string>
   <string name="preferences_history_title">Přidat do dějin</string>
   <string name="preferences_invert_scan_summary">Skenování čárových kódů - bílé na černém pozadí. Není k dispozici v některých zařízeních.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">Duplicity čárových kódú v historii ukládat samostatně, nebo jako jeden čárový kód</string>
   <string name="preferences_remember_duplicates_title">Zapomatovat všechny duplicity</string>
   <string name="preferences_result_title">Výsledek nastavení</string>
+  <string name="preferences_scan_title">Nastavení skenování</string>
   <string name="preferences_scanning_title">Během skenování čárových kódů, dekódovat\u2026</string>
   <string name="preferences_search_country">Hledání země</string>
   <string name="preferences_supplemental_summary">Získat více informací o obsahu čárového kódu</string>
   <string name="preferences_supplemental_title">Získat více informací</string>
   <string name="preferences_vibrate_title">Vibrace</string>
-  <string name="result_address_book">Kontakt nalezen</string>
-  <string name="result_calendar">Kalendář nalezen</string>
-  <string name="result_email_address">Email nalezen</string>
-  <string name="result_geo">Nalezeny zeměpisné informace</string>
-  <string name="result_isbn">Nalezena Kniha</string>
-  <string name="result_product">Nalezen produkt</string>
-  <string name="result_sms">Nalezena SMS adresa</string>
-  <string name="result_tel">Nalezeno telefoní číslo</string>
-  <string name="result_text">Nalezen nějaký text</string>
-  <string name="result_uri">Nalezeno URL</string>
-  <string name="result_wifi">Nalezeno bezdrátová konfigurace</string>
   <string name="sbc_name">Google Book Search</string>
   <string name="wifi_changing_network">Vyžaduje připojení k síti\u2026</string>
 </resources>

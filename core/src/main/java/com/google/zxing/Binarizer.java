@@ -76,11 +76,11 @@ public abstract class Binarizer {
    */
   public abstract Binarizer createBinarizer(LuminanceSource source);
 
-  public final int getWidth() {
+  public int getWidth() {
     return source.getWidth();
   }
 
-  public final int getHeight() {
+  public int getHeight() {
     return source.getHeight();
   }
 

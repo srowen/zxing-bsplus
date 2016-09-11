@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">Anwendungen</string>
   <string name="bookmark_picker_name">Lesezeichen</string>
   <string name="button_add_calendar">Termin hinzufügen</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">Es wurden keine Barcodes aufgezeichnet.</string>
   <string name="history_send">Verlauf senden</string>
   <string name="history_title">Verlauf</string>
+  <string name="menu_decode_image">Bild Lesen</string>
   <string name="menu_encode_mecard">MECARD verwenden</string>
   <string name="menu_encode_vcard">vCard verwenden</string>
   <string name="menu_help">Hilfe</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">Senden</string>
   <string name="msg_bulk_mode_scanned">Bulk-Modus: Barcode gescannt und gespeichert</string>
   <string name="msg_camera_framework_bug">Mit der Android-Kamera ist leider ein Fehler aufgetreten. Es könnte sein, dass Sie das Gerät neu starten müssen.</string>
+  <string name="msg_decode_image_failed">Es wurde kein Barcode im Bild gefunden.</string>
   <string name="msg_default_format">Format</string>
   <string name="msg_default_meta">Metadaten</string>
   <string name="msg_default_mms_subject">Hi</string>
-  <string name="msg_default_status">Positionieren Sie den Barcode innerhalb des Rechteckes.</string>
   <string name="msg_default_time">Zeit</string>
   <string name="msg_default_type">Typ</string>
   <string name="msg_encode_contents_failed">Aus den Daten kann kein Barcode erzeugt werden.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">Sind Sie sicher?</string>
   <string name="msg_unmount_usb">Leider kann nicht auf die SD-Karte zugegriffen werden.</string>
   <string name="preferences_actions_title">Wenn ein Barcode erkannt wurde\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">Verwerfen der Barcodes bei nicht passenden regulären Ausdruck</string>
+  <string name="preferences_allowed_content_pattern_title">Passende Muster nur</string>
   <string name="preferences_auto_focus_title">Autofokus verwenden</string>
   <string name="preferences_auto_open_web_title">Öffnen Sie Webseiten automatisch</string>
   <string name="preferences_bulk_mode_summary">Scannt und speichert mehrere Barcodes nacheinander</string>
@@ -98,6 +101,7 @@
   <string name="preferences_decode_1D_product_title">1D-Produkt</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR Codes</string>
   <string name="preferences_device_bug_workarounds_title">Geräteabhängige Problemumgehung</string>
@@ -106,12 +110,16 @@
   <string name="preferences_disable_continuous_focus_title">Kein kontinuierlicher Fokus</string>
   <string name="preferences_disable_exposure_title">Keine Belichtungsmessung</string>
   <string name="preferences_disable_metering_title">Keine Dosierung</string>
+  <string name="preferences_force_camera_orientation_front_summary">Nur aktivieren, wenn das Bild der Frontalkamera gedreht wird</string>
+  <string name="preferences_force_camera_orientation_front_title">Frontalkamera-Ausrichtung erzwingen</string>
+  <string name="preferences_force_camera_orientation_summary">Nur aktivieren, wenn das Bild gedreht wird</string>
+  <string name="preferences_force_camera_orientation_title">Kamera-Ausrichtung erzwingen</string>
+  <string name="preferences_front_camera_title">Frontalkamera bevorzugen</string>
   <string name="preferences_front_light_auto">Automatisch</string>
   <string name="preferences_front_light_off">Aus</string>
   <string name="preferences_front_light_on">Ein</string>
   <string name="preferences_front_light_summary">Verbessert bei einigen Mobiltelefonen das Scannen bei schwachem Licht, kann aber Überbelichtung verursachen. Funktioniert nicht mit allen Handys.</string>
   <string name="preferences_front_light_title">Foto LED einschalten</string>
-  <string name="preferences_general_title">Allgemeine Einstellungen</string>
   <string name="preferences_history_summary">Speichern Sie Ihre Scans im Verlauf</string>
   <string name="preferences_history_title">Speichern im Verlauf</string>
   <string name="preferences_invert_scan_summary">Für weiße Barcodes auf schwarzem Hintergrund. Nicht bei allen Geräten verfügbar.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">Speichern mehrerer Scans des gleichen Barcodes im Verlauf</string>
   <string name="preferences_remember_duplicates_title">Duplikate speichern</string>
   <string name="preferences_result_title">Ergebnis-Einstellungen</string>
+  <string name="preferences_scan_title">Scan-Einstellungen</string>
   <string name="preferences_scanning_title">Beim Scannen von Barcodes, dekodieren\u2026</string>
   <string name="preferences_search_country">Land für die Suche</string>
   <string name="preferences_supplemental_summary">Erfahren Sie mehr über den Barcode</string>
   <string name="preferences_supplemental_title">Weitere Informationen abrufen</string>
   <string name="preferences_vibrate_title">Vibrieren</string>
-  <string name="result_address_book">Kontakt gefunden</string>
-  <string name="result_calendar">Termin gefunden</string>
-  <string name="result_email_address">E-Mail-Adresse gefunden</string>
-  <string name="result_geo">Koordinaten gefunden</string>
-  <string name="result_isbn">Buch gefunden</string>
-  <string name="result_product">Produkt gefunden</string>
-  <string name="result_sms">SMS-Adresse gefunden</string>
-  <string name="result_tel">Telefonnummer gefunden</string>
-  <string name="result_text">Text gefunden</string>
-  <string name="result_uri">URL gefunden</string>
-  <string name="result_wifi">WLAN-Konfiguration gefunden</string>
   <string name="sbc_name">Google Book Search</string>
   <string name="wifi_changing_network">Verbindung zum Netzwerk anfordern\u2026</string>
 </resources>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Skenovanie QR kódov </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Okrem výrobkov 1D čiarové kódy, ktoré vidíte každý deň iné a zložitejšie typ čiarového kódu sa stala populárnou v posledných rokoch. Tieto čiarové kódy sú ľahko odhaliť, pretože sa zašifrovanie dát na oboch ich šírku a výšku, v matici štvorcov. Napríklad môžete mať už videli čiarový kód na QR Code alebo Data Matrix formát: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Môžete zapnúť alebo vypnúť testovanie týchto formátov individuálne v nastavení. </p>
+
+<p> Tieto čiarové kódy môžu byť testované ako výrobok čiarových kódov. Obsahujú viac informácií než 1D čiarových kódov výrobkov, a zložitejšie typy informácií. Tieto formáty vie kódovať odkaz na webové stránky, telefónne číslo, kontaktné informácie a ďalšie. </p>
+
+<p> V dôsledku toho sa na obrazovke by, akčných tlačidiel nájdete po skenovaní ako čiarového kódu závisí od typu čiarového kódu je obsah. </p>
+
+<h4> Hypertextové prepojenie alebo URL </h4>
+
+<p> Najviac obyčajne, čiarový kód obsahuje hypertextový odkaz na webové stránky. Môžete stlačiť URL priamo otvoriť prehliadač názor, že webové stránky alebo inak získať prístup k URI jeho obsah. Uvidíte tiež niekoľko akčných tlačidiel: </p>
+
+<ul>
+  <li> Otvoriť prehliadač. To tiež pristupuje k URI rovnakým spôsobom, typicky po otvorení zariadenia prehliadača. Všimnite si, že niektoré identifikátory URI, ako je "trh:" URI, začne ďalšie aplikácie, "na trhu:" URI sú otvorené v aplikácii Android Market napríklad. </li>
+  <li> Zdieľať cez e-mail. Podeľte sa o odkaz na e-mail. </li>
+  <li> Zdieľať cez SMS. Podeľte sa o odkaz zaslaním SMS, alebo textovej správe. </li>
+</ul>
+
+<h4> Kontaktné informácie </h4>
+
+<p> Ak je čiarový kód obsahuje kontaktné informácie zakódované v MECARD alebo formáte vCard, uvidíte niekoľko tlačidiel v závislosti na tom, aké kontaktné údaje sú zakódované: </p>
+
+<ul>
+  <li> Pridať kontakt. Táto voľba bude vždy prítomný, ale pridá kontakt do vášho zariadenia adresári. </li>
+  <li> Zobraziť mapu. Ak sa kontaktné informácie obsahuje adresu, bude tento pokus ukázať adresu na mape pomocou Google Maps. </li>
+  <li> Vytočiť číslo. Ak sa kontaktné informácie obsahuje telefónne číslo, otvorí zariadenie komunikátor s číslom pripravený na vytáčanie. </li>
+  <li> Poslať e-mail. Podobne v kontaktných údajov obsahuje e-mailovú adresu, otvorí e-mailového klienta na zariadenia skladať a e-mail na túto adresu. </li>
+</ul>
+
+<h4> E-mailová adresa </h4>
+
+<p> If obsah barcode are jeden e-mailovú adresu, alebo "mailto:" URI, potom budete schopní: </p>
+
+<ul>
+  <li> Pridať kontakt. Toto pridá kontakt do vášho zariadenia adresára, ktoré obsahujú iba e-mailovú adresu </li>
+  <li> Poslať e-mail. Tým sa otvorí e-mailového klienta na zariadenia skladať a e-mail na túto adresu. </li>
+</ul>
+
+<h4> Telefónne číslo </h4>
+
+<p> Podobne, ak čiarový kód obsahuje len telefónne číslo, môžete: </p>
+
+<ul>
+  <li> Pridať kontakt. Toto pridá kontakt do vášho zariadenia adresára, ktoré obsahujú iba telefónne číslo </li>
+  <li> Vytočiť číslo. Otvorí zariadenie komunikátor s číslom pripravený na vytáčanie. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Ak je čiarový kód zakóduje "sms:" alebo "mms:" URI, potom uvidíte tlačidlá: </p>
+
+<ul>
+  <li> Pošlite SMS. Otvorí zariadenia messaging aplikácií a komponuje a SMS, alebo textové správy, na číslo v čiarovom kóde. </li>
+  <li> Poslať MMS. Rovnaké, ale pokúša sa skladať MMS, alebo multimediálne textové správy. </li>
+</ul>
+
+<h4> Kalendár </h4>
+
+<p> Čiarové kódy môžu tiež zakódovať informáciu o akcii, v určitom čase a mieste. Ak máte skenovať čiarový kód obsahujúci informácie vo formáte vCal, budete schopní: </p>
+
+<ul>
+  <li> Pridať do kalendára. Otvorí zariadenia kalendári aplikácie a vytvorí novú akciu s informáciami v čiarovom kóde, vrátane dátumu a času, miesta, meno, a tak ďalej. </li>
+</ul>
+
+<h4> Geografická poloha </h4>
+
+<p> Je možné uložiť do určitého umiestnenia v čiarový kód, ako "geo:" URI obsahujúce zemepisnej šírky a dĺžky. Ak jeden z nich je skenovanie, potom výsledok obrazovka bude obsahovať tlačidlá, ktoré umožňujú: </p>
+
+<ul>
+  <li> Zobraziť mapu. To sa pokúsi otvoriť Google mapy alebo iné mapovanie Aplikácia zobrazuje polohu z čiarového kódu na mape. </li>
+  <li> Získať smery. Otvára Google Maps s cieľom pokúsiť sa dostať pokyny od aktuálneho umiestnenia do tejto zemepisnej polohe. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Čiarové kódy je možné zakódovať informácie o wi-fi sieť, vrátane siete, názov, druh a heslo. Skenovanie One umožňuje pripojenie k wi-fi sieť jednoducho: </p>
+
+<ul>
+  <li> Pripojenie k sieti. To sa pokúsi pripojiť zariadenie k sieti Wi-Fi siete s názvom v čiarovom kóde, pomocou dodaného typu a heslo. Uvidíte obrazovku, ktorá zobrazuje priebeh tohto spojenia. </li>
+</ul>
+
+<h4> Text </h4>
+
+<p> Ak je obsah čiarového kódu nie sú považované za niektoré zo špeciálnych typov vyššie, bude to považovať za obyčajný text. V takom prípade môžete: </p>
+
+<ul>
+  <li> Vyhľadávanie na webe. Vyhľadávanie textu otázky Google Web Search. </li>
+  <li> Zdieľať cez e-mail. Podeľte sa o text e-mailu. </li>
+  <li> Zdieľať cez SMS. Podeľte sa o text SMS, alebo textovej správe. </li>
+  <li> Vlastné vyhľadávanie. Ak máte nastaviť vlastné hľadanie URL, bude vám umožňujú hľadať vlastné hľadanie URL pre text. </li>
+</ul>
+
+<p>Prekladal Google Translate.</p></body>
+</html>

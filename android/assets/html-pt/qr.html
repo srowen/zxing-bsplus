@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Leitura de Códigos QR</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Além dos códigos de barras 1D produto que você vê todos os dias, um tipo diferente e mais complexo de código de barras se tornou popular nos últimos anos. Esses códigos de barras são fáceis de detectar, porque eles codificam os dados ao longo da largura e altura a sua, em uma matriz de quadrados. Por exemplo, você já pode ter visto um código de barras no Código QR ou formato de Data Matrix: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Você pode ativar ou desativar a verificação destes formatos individualmente em Configurações. </p>
+
+<p> Esses códigos de barras podem ser digitalizados, como códigos de barras do produto. Eles contêm mais informações do que um código de barras do produto 1D, e tipos mais complexos de informação. Estes formatos podem codificar um link para o site, um número de telefone, informações de contato, e muito mais. </p>
+
+<p> Como resultado, na tela de resultado, os botões de ação você vai encontrar após a digitalização como um código de barras dependem do tipo do conteúdo do código de barras. </p>
+
+<h4> Hiperlink ou URL </h4>
+
+<p> Mais comumente, o código de barras contém um hiperlink para um site web. Você pode pressionar a URL própria para abrir um navegador para exibir a página web, ou acessar o conteúdo do URI. Você também verá vários botões de ação: </p>
+
+<ul>
+  <li> Browser aberto. Isto também acessa o URI da mesma forma, geralmente abrindo browser do dispositivo. Observe que alguns URIs, como "de mercado:" URIs, será aberto por outro aplicativo "; mercado:" URIs são abertas pelo aplicativo do Android Market por exemplo. </li>
+  <li> Share via e-mail. Compartilhar o link, enviando um e-mail. </li>
+  <li> Share via SMS. Compartilhar o link, enviando um SMS, ou mensagem de texto. </li>
+</ul>
+
+<h4> Informação de contato </h4>
+
+<p> Se o código de barras contém informações de contato codificados no formato vCard ou MECARD, você verá vários botões, dependendo do que pedaços de informações de contato são codificados: </p>
+
+<ul>
+  <li> Adicionar contato. Esta opção estará sempre presente, que adiciona as informações de contato para reservar o seu dispositivo de endereço. </li>
+  <li> Mostrar mapa. Se as informações de contato contém um endereço, este tentará mostrar o endereço em um mapa usando o Google Maps. </li>
+  <li> Discar o número. Se as informações de contato contém um número de telefone, isto abrirá discador do aparelho com o número pronto para marcar. </li>
+  <li> Enviar e-mail. Da mesma forma as informações de contato contém um endereço de e-mail, isso vai abrir um cliente de e-mail no dispositivo para compor e e-mail para esse endereço. </li>
+</ul>
+
+<h4> E-mail </h4>
+
+<p> Se o conteúdo do código de barras é um endereço de e-mail, ou um "mailto:" URI, então você será capaz de: </p>
+
+<ul>
+  <li> Adicionar contato. Isso adiciona as informações de contato para reservar o seu dispositivo de endereços contendo apenas o endereço de e-mail </li>
+  <li> Enviar e-mail. Isto irá abrir um cliente de e-mail no dispositivo para compor e e-mail para esse endereço. </li>
+</ul>
+
+<h4> Número de telefone </h4>
+
+<p> Da mesma forma, se o código de barras contém apenas um número de telefone, você pode: </p>
+
+<ul>
+  <li> Adicionar contato. Isso adiciona as informações de contato para reservar o seu dispositivo de endereço que contenha apenas o número do telefone </li>
+  <li> Discar o número. Abre discador do aparelho com o número pronto para marcar. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Se o código de barras codifica um "sms:" ou "mms:" URI, então você vai ver botões para: </p>
+
+<ul>
+  <li> Enviar SMS. Abre a aplicação do dispositivo de mensagens e compõe e SMS, ou mensagem de texto, com o número do código de barras. </li>
+  <li> Enviar MMS. Mesmo, mas as tentativas de compor uma MMS, ou mensagem de texto multimídia. </li>
+</ul>
+
+<h4> Calendário </h4>
+
+<p> Códigos de barras também pode codificar a informação sobre um evento, em um determinado momento e lugar. Se você digitalizar um código de barras que contém informações no formato vCal, você será capaz de: </p>
+
+<ul>
+  <li> Adicionar ao calendário. Abre a aplicação do dispositivo de calendário e cria um novo evento com a informação no código de barras, incluindo a data e hora, lugar, nome, e assim por diante. </li>
+</ul>
+
+<h4> Localização geográfica </h4>
+
+<p> É possível armazenar um local em um código de barras, como uma "geo:" URI contendo latitude e longitude. Se um desses é digitalizado, a tela resultado irá conter botões que permitem: </p>
+
+<ul>
+  <li> Mostrar mapa. Esta tentativa de abrir o Google Maps ou outro aplicativo de mapeamento para mostrar o local a partir do código de barras em um mapa. </li>
+  <li> Obter direcções. Abre o Google Maps, a fim de tentar obter direcções a partir do local atual para que a localização geográfica. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Códigos de barras pode codificar os detalhes de uma rede wi-fi, incluindo o tipo de rede, nome e senha. Uma digitalização permite que você conecte a uma rede wi-fi com facilidade: </p>
+
+<ul>
+  <li> Conectar a rede. Este tenta se conectar o dispositivo à rede wi-fi chamado no código de barras, usando o tipo ea senha fornecidos. Você verá uma tela que mostra o progresso desta conexão. </li>
+</ul>
+
+<h4> Texto </h4>
+
+<p> Se o conteúdo do código de barras não são reconhecidos como qualquer um dos tipos especiais acima, ele será tratado como texto simples. Nesse caso, você pode: </p>
+
+<ul>
+  <li> Pesquisa na web. Procure o texto, consultando o Google Web Search. </li>
+  <li> Share via e-mail. Compartilhar o texto, enviando um e-mail. </li>
+  <li> Share via SMS. Compartilhar o texto, enviando um SMS, ou mensagem de texto. </li>
+  <li> Pesquisa personalizada. Se você tiver definido uma URL de pesquisa personalizada, isso permitirá que você procure em seu URL de pesquisa personalizada para o texto. </li>
+</ul>
+
+<p>Traduzido pelo Google Translate.</p></body>
+</html>

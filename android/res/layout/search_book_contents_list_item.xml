@@ -14,19 +14,21 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  -->
-<com.google.zxing.client.android.book.SearchBookContentsListItem
+<com.srowen.bs.android.book.SearchBookContentsListItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/standard_padding">
+    android:background="@color/transparent"
+    android:padding="@dimen/half_padding">
 
   <TextView android:id="@+id/page_number_view"
-            android:layout_width="75dip"
+            android:layout_width="@dimen/book_search_page_number_width"
             android:layout_height="wrap_content"
             android:layout_gravity="left|top"
             android:layout_marginRight="@dimen/standard_padding"
             android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
             android:textIsSelectable="false"/>
 
@@ -35,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|top"
             android:singleLine="false"
-            android:textIsSelectable="false"/>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"/>
 
-</com.google.zxing.client.android.book.SearchBookContentsListItem>
+</com.srowen.bs.android.book.SearchBookContentsListItem>

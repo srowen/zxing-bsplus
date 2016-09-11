@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Skanning av QR-koder</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> I tillegg til 1D produktet strekkoder som du ser hver dag, en annerledes og mer komplekse form for strekkode har blitt populært de siste årene. Disse strekkoder er lett å få øye, fordi de kode data langs både deres bredde og høyde, i en matrise av kvadrater. For eksempel kan du allerede har sett en strekkode i QR-kode eller Data Matrix format: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Du kan aktivere eller deaktivere skanning av disse formatene individuelt i Innstillinger. </p>
+
+<p> Disse strekkoder kan skannes som produktanmeldelser strekkoder. De inneholder mer informasjon enn et 1D produkt strekkode, og mer komplekse typer informasjon. Disse formatene kan kode en link til nettstedet, et telefonnummer, kontaktinformasjon, og mer. </p>
+
+<p> Som et resultat, på resultat-skjermen, action knappene du finner etter skanning slik en strekkode avhenger av strekkode innhold. </p>
+
+<h4> Hyperlenke eller en URL </h4>
+
+<p> Oftest inneholder strekkoden en hyperkobling til et nettsted. Du kan trykke selve webadressen for å åpne en nettleser for å vise denne websiden, eller på annen måte få tilgang til URI innhold. Du vil også se flere handlingsknapper: </p>
+
+<ul>
+  <li> Åpne nettleser. Dette åpner også URI i samme måte, vanligvis ved å åpne enhetens nettleser. Vær oppmerksom på at noen URIer, som "markedet:" URIer, vil bli åpnet av et annet program, "markedet:" URIer åpnes av Android Market-appen for eksempel. </li>
+  <li> Del via e-post. Dele koblingen ved å sende en e-post. </li>
+  <li> Del via SMS. Dele koblingen ved å sende en SMS eller tekstmelding. </li>
+</ul>
+
+<h4> Kontaktinformasjon </h4>
+
+<p> Hvis strekkoden inneholder kontaktinformasjon kodet i MECARD eller vCard-format, vil du se flere knapper avhengig av hva deler av kontaktinformasjon er kodet: </p>
+
+<ul>
+  <li> Legg til kontakt. Denne muligheten vil alltid være til stede, det legger kontaktinformasjonen til enhetens adressebok. </li>
+  <li> Vis kart. Hvis kontaktinformasjonen inneholder en adresse, vil dette forsøke å vise adressen på et kart ved hjelp av Google Maps. </li>
+  <li> Slå nummer. Hvis kontaktinformasjonen inneholder et telefonnummer, vil dette åpne enhetens dialer med nummer klar til å ringe. </li>
+  <li> Send e-post. Likeledes i kontaktinformasjonen inneholder en e-postadresse, vil dette åpne en e-postklient på enheten for å komponere og e-post til den adressen. </li>
+</ul>
+
+<h4> E-postadresse </h4>
+
+<p> Hvis innholdet i strekkoden er en e-postadresse eller en "mailto:" URI, vil du være i stand til å: </p>
+
+<ul>
+  <li> Legg til kontakt. Dette legger til kontaktinformasjonen til enhetens adressebok som inneholder bare e-post adresse </li>
+  <li> Send e-post. Dette vil åpne en e-postklient på enheten for å komponere og e-post til den adressen. </li>
+</ul>
+
+<h4> Telefonnummer </h4>
+
+<p> Tilsvarende, hvis strekkoden inneholder kun et telefonnummer, kan du: </p>
+
+<ul>
+  <li> Legg til kontakt. Dette legger til kontaktinformasjonen til enhetens adressebok som inneholder bare telefonnummeret </li>
+  <li> Slå nummer. Åpner enhetens dialer med nummer klar til å ringe. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Hvis strekkoden koder en "sms:" eller "mms:" URI, så vil du se knapper til: </p>
+
+<ul>
+  <li> Send SMS. Åpner enhetens meldingsprogrammet og komponerer og SMS, eller en tekstmelding, til tallet i strekkoden. </li>
+  <li> Send MMS. Samme, men forsøk å gjøre en MMS, eller multimedia tekstmelding. </li>
+</ul>
+
+<h4> Kalender </h4>
+
+<p> Strekkoder kan også kryptere informasjon om en hendelse, på et bestemt tidspunkt og sted. Hvis du skanner en strekkode som inneholder informasjon i vCal format, vil du kunne: </p>
+
+<ul>
+  <li> Legg til i kalender. Åpner enhetens kalenderen søknad og oppretter en ny hendelse med informasjonen i strekkoden, inkludert dato og klokkeslett, sted, navn og så videre. </li>
+</ul>
+
+<h4> Geografisk plassering </h4>
+
+<p> Det er mulig å lagre et sted i en strekkode, som en "geo:" URI inneholder breddegrad og lengdegrad. Hvis en av disse er skannet, så resultatet skjermen vil inneholde knapper som lar deg: </p>
+
+<ul>
+  <li> Vis kart. Dette forsøk på å åpne Google Maps eller andre kartprogram for å vise plasseringen fra strekkoden på et kart. </li>
+  <li> Få veibeskrivelse. Åpner Google Maps for å prøve å få veibeskrivelser fra gjeldende plassering til at den geografiske plasseringen. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Strekkoder kan kode detaljene i en wi-fi-nettverk, inkludert nettverk navn, type og passord. Skanning One kan du koble til et Wi-Fi-nettverk enkelt: </p>
+
+<ul>
+  <li> Koble til nettverk. Dette prøver å koble enheten til wi-fi-nettverk navngitt i strekkoden ved hjelp av den medfølgende type og passord. Du vil se et skjermbilde som viser fremdriften av denne forbindelsen. </li>
+</ul>
+
+<h4> Tekst </h4>
+
+<p> Hvis innholdet i strekkoden ikke gjenkjennes som noen av de spesielle typene ovenfor, vil det bli behandlet som enkel tekst. I så fall, kan du: </p>
+
+<ul>
+  <li> Nettsøk. Søk etter teksten ved å spørre Google Web Search. </li>
+  <li> Del via e-post. Del teksten ved å sende en e-post. </li>
+  <li> Del via SMS. Del teksten ved å sende en SMS eller tekstmelding. </li>
+  <li> Tilpassede søk. Hvis du har angitt en egendefinert søk URL, vil dette tillate deg å søke på tilpassede søk URL for teksten. </li>
+</ul>
+
+<p>Oversatt av Google Translate.</p></body>
+</html>

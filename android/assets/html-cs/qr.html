@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Skenování QR kódů </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Kromě výrobků 1D čárové kódy, které vidíte každý den jiné a složitější typ čárového kódu se stala populární v posledních letech. Tyto čárové kódy jsou snadno odhalit, protože se zašifrování dat na obou jejich šířku a výšku, v matici čtverců. Například můžete mít již viděli čárový kód na QR Code nebo Data Matrix formát: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Můžete zapnout nebo vypnout testování těchto formátů individuálně v nastavení. </p>
+
+<p> Tyto čárové kódy mohou být testovány jako výrobek čárových kódů. Obsahují více informací než 1D čárových kódů výrobků, a složitější typy informací. Tyto formáty umí kódovat odkaz na webové stránky, telefonní číslo, kontaktní informace a další. </p>
+
+<p> V důsledku toho se na obrazovce by, akčních tlačítek najdete po skenování jako čárového kódu závisí na typu čárového kódu je obsah. </p>
+
+<h4> Hypertextový odkaz nebo URL </h4>
+
+<p> Nejvíce obyčejně, čárový kód obsahuje hypertextový odkaz na webové stránky. Můžete stisknout URL přímo otevřít prohlížeč názor, že webové stránky nebo jinak získat přístup k URI jeho obsah. Uvidíte také několik akčních tlačítek: </p>
+
+<ul>
+  <li> Otevřít prohlížeč. To také přistupuje k URI stejným způsobem, typicky po otevření zařízení prohlížeče. Všimněte si, že některé identifikátory URI, jako je "trh:" URI, zahájí další aplikace, "na trhu:" URI jsou otevřeny v aplikaci Android Market například. </li>
+  <li> Sdílet přes e-mail. Podělte se o odkaz na e-mail. </li>
+  <li> Sdílet přes SMS. Podělte se o odkaz zasláním SMS, nebo textové zprávě. </li>
+</ul>
+
+<h4> Kontaktní informace </h4>
+
+<p> Pokud je čárový kód obsahuje kontaktní informace zakódované v MECARD nebo formátu vCard, uvidíte několik tlačítek v závislosti na tom, jaké kontaktní údaje jsou zakódovány: </p>
+
+<ul>
+  <li> Přidat kontakt. Tato volba bude vždy přítomen, ale přidá kontakt do vašeho zařízení adresáři. </li>
+  <li> Zobrazit mapu. Pokud se kontaktní informace obsahuje adresu, bude tento pokus ukázat adresu na mapě pomocí Google Maps. </li>
+  <li> Vytočit číslo. Pokud se kontaktní informace obsahuje telefonní číslo, otevře zařízení komunikátor s číslem připraven k vytáčení. </li>
+  <li> Poslat e-mail. Podobně v kontaktních údajů obsahuje e-mailovou adresu, otevře e-mailového klienta na zařízení skládat a e-mail na tuto adresu. </li>
+</ul>
+
+<h4> E-mailová adresa </h4>
+
+<p> Je-li obsah čárového kódu jsou e-mailovou adresu, nebo "mailto:" URI, pak budete schopni: </p>
+
+<ul>
+  <li> Přidat kontakt. Toto přidá kontakt do vašeho zařízení adresáře, které obsahují pouze e-mailovou adresu </li>
+  <li> Poslat e-mail. Tím se otevře e-mailového klienta na zařízení skládat a e-mail na tuto adresu. </li>
+</ul>
+
+<h4> Telefonní číslo </h4>
+
+<p> Podobně, jestliže čárový kód obsahuje pouze telefonní číslo, můžete: </p>
+
+<ul>
+  <li> Přidat kontakt. Toto přidá kontakt do vašeho zařízení adresáře, které obsahují pouze telefonní číslo </li>
+  <li> Vytočit číslo. Otevře zařízení komunikátor s číslem připraven k vytáčení. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Pokud je čárový kód zakóduje "sms:" nebo "mms:" URI, pak uvidíte tlačítka: </p>
+
+<ul>
+  <li> Pošlete SMS. Otevře zařízení messaging aplikací a komponuje a SMS, nebo textové zprávy, na číslo v čárovém kódu. </li>
+  <li> Poslat MMS. Stejné, ale pokouší se skládat MMS, nebo multimediální textové zprávy. </li>
+</ul>
+
+<h4> Kalendář </h4>
+
+<p> Čárové kódy mohou také zakódovat informaci o akci, v určitém čase a místě. Máte-li skenovat čárový kód obsahující informace ve formátu vCal, budete schopni: </p>
+
+<ul>
+  <li> Přidat do kalendáře. Otevře zařízení kalendáři aplikace a vytvoří novou akci s informacemi v čárovém kódu, včetně data a času, místa, jméno, a tak dále. </li>
+</ul>
+
+<h4> Geografická poloha </h4>
+
+<p> Je možné uložit do určitého umístění v čárový kód, jako "geo:" URI obsahující zeměpisné šířky a délky. Pokud jeden z nich je skenování, pak výsledek obrazovka bude obsahovat tlačítka, které umožňují: </p>
+
+<ul>
+  <li> Zobrazit mapu. To se pokusí otevřít Google mapy nebo jiné mapování Aplikace zobrazuje polohu z čárového kódu na mapě. </li>
+  <li> Získat směry. Otevírá Google Maps s cílem pokusit se dostat pokyny od aktuálního umístění do této zeměpisné poloze. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Čárové kódy je možné zakódovat informace o wi-fi síť, včetně sítě, název, druh a heslo. Skenování One umožňuje připojení k wi-fi síť jednoduše: </p>
+
+<ul>
+  <li> Připojení k síti. To se pokusí připojit zařízení k síti Wi-Fi sítě s názvem v čárovém kódu, pomocí dodaného typu a heslo. Uvidíte obrazovku, která zobrazuje průběh tohoto spojení. </li>
+</ul>
+
+<h4> Text </h4>
+
+<p> Je-li obsah čárového kódu nejsou považovány za některé ze speciálních typů výše, bude to považovat za prostý text. V takovém případě můžete: </p>
+
+<ul>
+  <li> Vyhledávání na webu. Hledání textu dotazu Google Web Search. </li>
+  <li> Sdílet přes e-mail. Podělte se o text e-mailu. </li>
+  <li> Sdílet přes SMS. Podělte se o text SMS, nebo textové zprávě. </li>
+  <li> Vlastní vyhledávání. Máte-li nastavit vlastní hledání URL, bude vám umožňují hledat vlastní hledání URL pro text. </li>
+</ul>
+
+<p>Překládal Google Translate.</p></body>
+</html>

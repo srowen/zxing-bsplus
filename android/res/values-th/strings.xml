@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
  Copyright (C) 2014 ZXing authors
 
@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">แอพพลิเคชั่น</string>
   <string name="bookmark_picker_name">บุ๊คมาร์ก</string>
   <string name="button_add_calendar">เพิ่มไปยังปฏิทิน</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">ไม่มีบาร์โค้ดที่ถูกบันทึกไว้</string>
   <string name="history_send">ส่งประวัติ</string>
   <string name="history_title">ประวัติ</string>
+  <string name="menu_decode_image">ถอดรหัสภาพ</string>
   <string name="menu_encode_mecard">ใช้ MECARD</string>
   <string name="menu_encode_vcard">ใช้ vCard</string>
   <string name="menu_help">ช่วยเหลือ</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">แบ่งปัน</string>
   <string name="msg_bulk_mode_scanned">โหมดเป็นกลุ่ม: บาร์โค้ดที่สแกนและบันทึกไว้</string>
   <string name="msg_camera_framework_bug">ขออภัย พบปัญหาของกล้อง Android คุณอาจจะต้องรีสตาร์ทอุปกรณ์</string>
+  <string name="msg_decode_image_failed">ไม่มีบาร์โค้ดที่พบในภาพ</string>
   <string name="msg_default_format">รูปแบบ</string>
   <string name="msg_default_meta">ข้อมูลเมตา</string>
   <string name="msg_default_mms_subject">สวัสดี</string>
-  <string name="msg_default_status">วางบาร์โค้ดภายในสี่เหลี่ยมผืนผ้าที่ช่องมองภาพเพื่อสแกน</string>
   <string name="msg_default_time">เวลา</string>
   <string name="msg_default_type">ชนิด</string>
   <string name="msg_encode_contents_failed">ไม่สามารถเข้ารหัสบาร์โค้ดจากข้อมูลที่มี</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">คุณแน่ใจหรือไม่?</string>
   <string name="msg_unmount_usb">ขออภัย ไม่สามารถเข้าถึง SD การ์ดได้</string>
   <string name="preferences_actions_title">เมื่อพบบาร์โค้ด\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">บาร์โค้ดยกเลิกไม่ตรงกับการแสดงออกปกติ</string>
+  <string name="preferences_allowed_content_pattern_title">รูปแบบการจับคู่เพียง</string>
   <string name="preferences_auto_focus_title">ใช้ระบบโฟกัสอัตโนมัติ</string>
   <string name="preferences_auto_open_web_title">เปิดหน้าเว็บโดยอัตโนมัติ</string>
   <string name="preferences_bulk_mode_summary">สแกนและบันทึกบาร์โค้ดเป็นจำนวนมากอย่างต่อเนื่อง</string>
@@ -98,6 +101,7 @@
   <string name="preferences_decode_1D_product_title">1D สินค้า</string>
   <string name="preferences_decode_Aztec_title">แอซเท็ก</string>
   <string name="preferences_decode_Data_Matrix_title">ข้อมูลเมทริกซ์</string>
+  <string name="preferences_decode_NFC_title">เอ็นเอฟซี</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">คิวอาร์โค้ด</string>
   <string name="preferences_device_bug_workarounds_title">วิธีการแก้ปัญหาจุดบกพร่องของอุปกรณ์</string>
@@ -106,12 +110,16 @@
   <string name="preferences_disable_continuous_focus_title">ไม่มีการโฟกัสอย่างต่อเนื่อง</string>
   <string name="preferences_disable_exposure_title">ไม่มีการการเปิดรับแสง</string>
   <string name="preferences_disable_metering_title">ไม่มีการวัดแสง</string>
+  <string name="preferences_force_camera_orientation_front_summary">ถ้าเพียง แต่ช่วยให้ภาพด้านหน้าจะหมุน</string>
+  <string name="preferences_force_camera_orientation_front_title">แทนที่การปฐมนิเทศกล้องด้านหน้า</string>
+  <string name="preferences_force_camera_orientation_summary">ถ้าเพียง แต่ช่วยให้ภาพที่จะหมุน</string>
+  <string name="preferences_force_camera_orientation_title">ปฐมนิเทศกล้องแทนที่</string>
+  <string name="preferences_front_camera_title">ชอบกล้องด้านหน้า</string>
   <string name="preferences_front_light_auto">อัตโนมัติ</string>
   <string name="preferences_front_light_off">ปิด</string>
   <string name="preferences_front_light_on">เปิด</string>
   <string name="preferences_front_light_summary">ปรับปรุงการสแกนในที่มีแสงน้อยบนโทรศัพท์บางรุ่น แต่อาจก่อให้เกิดแสงจ้า ไม่ได้ทำงานบนโทรศัพท์ทุกรุ่น</string>
   <string name="preferences_front_light_title">ใช้แฟลช</string>
-  <string name="preferences_general_title">การตั้งค่าทั่วไป</string>
   <string name="preferences_history_summary">เก็บภาพสแกนในประวัติศาสตร์</string>
   <string name="preferences_history_title">เพิ่มลงในประวัติศาสตร์</string>
   <string name="preferences_invert_scan_summary">สแกนบาร์โค้ดสีขาวบนพื้นหลังสีดำ ไม่สามารถใช้ได้บนบางอุปกรณ์</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">จัดเก็บการสแกนบาร์โค้ดที่เหมือนกันหลายครั้งในประวัติ</string>
   <string name="preferences_remember_duplicates_title">จดจำรายการที่ซ้ำกัน</string>
   <string name="preferences_result_title">ผลการตั้งค่า</string>
+  <string name="preferences_scan_title">ตั้งค่าการสแกน</string>
   <string name="preferences_scanning_title">เมื่อสแกนหาบาร์โค้ด, ถอดรหัส\u2026</string>
   <string name="preferences_search_country">ประเทศที่ค้นหา</string>
   <string name="preferences_supplemental_summary">พยายามที่จะเรียกข้อมูลเพิ่มเติมเกี่ยวกับเนื้อหาของบาร์โค้ด</string>
   <string name="preferences_supplemental_title">เรียกข้อมูลเพิ่มเติม</string>
   <string name="preferences_vibrate_title">การสั่น</string>
-  <string name="result_address_book">พบข้อมูลผู้ติดต่อ</string>
-  <string name="result_calendar">พบเหตุการณ์ในปฏิทิน</string>
-  <string name="result_email_address">พบที่อยู่อีเมล</string>
-  <string name="result_geo">พบพิกัดทางภูมิศาสตร์</string>
-  <string name="result_isbn">พบหนังสือ</string>
-  <string name="result_product">พบสินค้า</string>
-  <string name="result_sms">พบที่อยู่ SMS</string>
-  <string name="result_tel">พบเบอร์โทรศัพท์</string>
-  <string name="result_text">พบข้อความธรรมดา</string>
-  <string name="result_uri">พบ URL</string>
-  <string name="result_wifi">พบการกำหนดค่า WLAN</string>
   <string name="sbc_name">ค้นหาหนังสือจาก Google</string>
   <string name="wifi_changing_network">กำลังร้องขอการเชื่อมต่อกับเครือข่าย\u2026</string>
 </resources>

@@ -53,6 +53,9 @@ public enum BarcodeFormat {
   /** MaxiCode 2D barcode format. */
   MAXICODE,
 
+  /** NFC (OK, not really a barcode) */
+  NFC,
+
   /** PDF417 format. */
   PDF_417,
 

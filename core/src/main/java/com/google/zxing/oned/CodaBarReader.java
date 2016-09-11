@@ -21,6 +21,7 @@ import com.google.zxing.DecodeHintType;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.Arrays;
@@ -77,7 +78,11 @@ public final class CodaBarReader extends OneDReader {
   }
 
   @Override
-  public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints) throws NotFoundException {
+  public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints)
+      throws NotFoundException {
+
+    ResultPointCallback resultPointCallback = hints == null ? null :
+        (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
 
     Arrays.fill(counters, 0);
     setCounters(row);
@@ -93,7 +98,12 @@ public final class CodaBarReader extends OneDReader {
       // Hack: We store the position in the alphabet table into a
       // StringBuilder, so that we can access the decoded patterns in
       // validatePattern. We'll translate to the actual characters later.
-      decodeRowResult.append((char) charOffset);
+      char decodedChar = (char) charOffset;
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(nextStart, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, String.valueOf(decodedChar));
+      }
+      decodeRowResult.append(decodedChar);
       nextStart += 8;
       // Stop as soon as we see the end character.
       if (decodeRowResult.length() > 1 &&

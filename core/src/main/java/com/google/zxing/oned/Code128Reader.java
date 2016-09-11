@@ -23,6 +23,7 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.ArrayList;
@@ -236,6 +237,9 @@ public final class Code128Reader extends OneDReader {
   public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints)
       throws NotFoundException, FormatException, ChecksumException {
 
+    ResultPointCallback resultPointCallback = hints == null ? null :
+        (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
+
     boolean convertFNC1 = hints != null && hints.containsKey(DecodeHintType.ASSUME_GS1);
 
     int[] startPatternInfo = findStartPattern(row);
@@ -319,16 +323,16 @@ public final class Code128Reader extends OneDReader {
         case CODE_CODE_A:
           if (code < 64) {
             if (shiftUpperMode == upperMode) {
-              result.append((char) (' ' + code));
+              append(String.valueOf((char) (' ' + code)), result, nextStart, rowNumber, resultPointCallback);
             } else {
-              result.append((char) (' ' + code + 128));
+              append(String.valueOf((char) (' ' + code + 128)), result, nextStart, rowNumber, resultPointCallback);
             }
             shiftUpperMode = false;
           } else if (code < 96) {
             if (shiftUpperMode == upperMode) {
-              result.append((char) (code - 64));
+              append(String.valueOf((char) (code - 64)), result, nextStart, rowNumber, resultPointCallback);
             } else {
-              result.append((char) (code + 64));
+              append(String.valueOf((char) (code + 64)), result, nextStart, rowNumber, resultPointCallback);
             }
             shiftUpperMode = false;
           } else {
@@ -384,9 +388,9 @@ public final class Code128Reader extends OneDReader {
         case CODE_CODE_B:
           if (code < 96) {
             if (shiftUpperMode == upperMode) {
-              result.append((char) (' ' + code));
+              append(String.valueOf((char) (' ' + code)), result, nextStart, rowNumber, resultPointCallback);
             } else {
-              result.append((char) (' ' + code + 128));
+              append(String.valueOf((char) (' ' + code + 128)), result, nextStart, rowNumber, resultPointCallback);
             }
             shiftUpperMode = false;
           } else {
@@ -439,10 +443,13 @@ public final class Code128Reader extends OneDReader {
           break;
         case CODE_CODE_C:
           if (code < 100) {
+            String numeric;
             if (code < 10) {
-              result.append('0');
+              numeric = "0" + code;
+            } else {
+              numeric = String.valueOf(code);
             }
-            result.append(code);
+            append(numeric, result, nextStart, rowNumber, resultPointCallback);
           } else {
             if (code != CODE_STOP) {
               lastCharacterWasPrintable = false;
@@ -503,7 +510,7 @@ public final class Code128Reader extends OneDReader {
     // Need to pull out the check digits from string
     int resultLength = result.length();
     if (resultLength == 0) {
-      // false positive
+      // false position
       throw NotFoundException.getNotFoundInstance();
     }
 
@@ -534,6 +541,18 @@ public final class Code128Reader extends OneDReader {
             new ResultPoint(right, rowNumber)},
         BarcodeFormat.CODE_128);
 
+  }
+  
+  private static void append(String fragment,
+                             StringBuilder result,
+                             int col,
+                             int row,
+                             ResultPointCallback resultPointCallback) {
+    if (resultPointCallback != null) {
+      ResultPoint point = new ResultPoint(col, row);
+      resultPointCallback.foundPossibleResultPoint(point, fragment);
+    }
+    result.append(fragment);
   }
 
 }
