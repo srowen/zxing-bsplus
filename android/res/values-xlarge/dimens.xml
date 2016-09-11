@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <dimen name="action_button_height">90dip</dimen>
+  <dimen name="contents_text_size">28sp</dimen>
+  <dimen name="standard_padding">16dip</dimen>
+  <dimen name="half_padding">8dip</dimen>
+  <dimen name="book_search_page_number_width">144dip</dimen>
+  <dimen name="barcode_image_width_land">360dip</dimen>
+  <dimen name="barcode_image_height_land">240dip</dimen>
+  <dimen name="barcode_image_width_port">240dip</dimen>
+  <dimen name="barcode_image_height_port">240dip</dimen>
+</resources>

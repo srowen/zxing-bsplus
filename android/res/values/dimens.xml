@@ -15,6 +15,13 @@
  limitations under the License.
  -->
 <resources>
+  <dimen name="action_button_height">48dip</dimen>
+  <dimen name="contents_text_size">14sp</dimen>
   <dimen name="standard_padding">8dip</dimen>
   <dimen name="half_padding">4dip</dimen>
+  <dimen name="book_search_page_number_width">72dip</dimen>
+  <dimen name="barcode_image_width_land">180dip</dimen>
+  <dimen name="barcode_image_height_land">120dip</dimen>
+  <dimen name="barcode_image_width_port">120dip</dimen>
+  <dimen name="barcode_image_height_port">100dip</dimen>
 </resources>

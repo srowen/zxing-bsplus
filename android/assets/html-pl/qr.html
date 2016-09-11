@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Skanowanie kodów QR </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Oprócz kodów kreskowych 1D produkt, który na co dzień, inne i bardziej skomplikowane rodzaj kodu kreskowego stał się popularny w ostatnich latach. Te kody są łatwe do wykrycia, ponieważ kodowanie danych po obu ich szerokość i wysokość, w matrycy kwadratów. Na przykład, już widzieliśmy kodów kreskowych w QR Code lub format Data Matrix: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Można włączyć lub wyłączyć skanowanie z tych formatów indywidualnie w Ustawienia. </p>
+
+<p> Te kody mogą być skanowane, jak kody kreskowe produktów. Zawierają więcej informacji niż kody kreskowe 1D produktu, i bardziej złożonych rodzajów informacji. Formaty te mogą zakodować link do strony internetowej, numer telefonu, dane kontaktowe i inne. </p>
+
+<p> W rezultacie, na ekranie wynik, przyciski akcji znajdą Państwo po zakończeniu skanowania, takich kodów kreskowych zależy od rodzaju kodu kreskowego zawartości. </p>
+
+<h4> Hiperłącza lub adresu URL </h4>
+
+<p> Najczęściej kod kreskowy zawiera hiperłącze do strony internetowej. Możesz nacisnąć sam URL, aby otworzyć przeglądarkę do tej strony lub w inny sposób uzyskać dostęp do zawartości URI. Możesz również zobaczyć kilka przycisków akcji: </p>
+
+<ul>
+  <li> Otwórz przeglądarkę. To także dostęp do URI w ten sam sposób, zwykle poprzez otwarcie urządzenia przeglądarki. Zauważ, że niektóre URI, jak "rynek" URI, zostanie otwarty przez inną aplikację, "rynek" URI są otwierane przez aplikację Android Market na przykład. </li>
+  <li> Poleć przez e-mail. Poleć link wysyłając e-mail. </li>
+  <li> Poleć przez SMS. Poleć link wysyłając SMS lub wiadomości tekstowych. </li>
+</ul>
+
+<h4> Informacje kontaktowe </h4>
+
+<p> Czy kod kreskowy zawiera informacje kontaktowe zakodowane w formacie MECARD lub vCard, ujrzysz kilka przycisków, w zależności od części informacje kontaktowe są zakodowane: </p>
+
+<ul>
+  <li> Dodaj kontakt. Ta opcja będzie zawsze obecny, ale dodaje, informacje kontaktowe do urządzenia książce adresowej. </li>
+  <li> Pokaż mapę. Jeśli dane kontaktowe zawiera adres, to będzie próbował wyświetlić adres na mapie za pomocą Google Maps. </li>
+  <li> Wybierz numer. Jeśli dane kontaktowe zawiera numer telefonu, to otworzy urządzenia dialer z numerem gotowy do wybierania. </li>
+  <li> Wyślij e-mail. Podobnie w informacji kontaktowych zawiera adres e-mail, zostanie otwarty klient poczty elektronicznej na urządzenia do tworzenia i e-mail na ten adres. </li>
+</ul>
+
+<h4> Adres e-mail </h4>
+
+<p> Jeżeli zawartość kodu kreskowego są adres e-mail, lub "mailto:" URI, wtedy będziesz w stanie: </p>
+
+<ul>
+  <li> Dodaj kontakt. To dodaje informacje kontakt do książki adresowej urządzenia zawierające jedynie adres e-mail </li>
+  <li> Wyślij e-mail. Spowoduje to otwarcie klienta e-mail w urządzeniu do tworzenia i e-mail na ten adres. </li>
+</ul>
+
+<h4> Numer telefonu </h4>
+
+<p> Podobnie, czy kod kreskowy zawiera tylko numer telefonu, możesz: </p>
+
+<ul>
+  <li> Dodaj kontakt. To dodaje informacje kontakt do książki adresowej urządzenia zawierające jedynie numer telefonu </li>
+  <li> Wybierz numer. Otwiera urządzenia dialer z numerem gotowy do wybierania. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Jeśli kod kreskowy koduje "sms:" lub "mms:" URI, a zobaczysz, przyciski do: </p>
+
+<ul>
+  <li> Wyślij SMS. Otwiera urządzenia stosowania wiadomości i komponuje i SMS lub wiadomość tekstową, do numeru w kodzie kreskowym. </li>
+  <li> Wyślij MMS. To samo, ale stara się komponować MMS lub MMS tekst. </li>
+</ul>
+
+<h4> Kalendarz </h4>
+
+<p> Kody kreskowe mogą kodować informacje na temat zdarzenia, w określonym czasie i miejscu. Jeśli skanuje kod kreskowy zawierający informacje w formacie vCal, będziesz w stanie: </p>
+
+<ul>
+  <li> Dodaj do kalendarza. Otwiera urządzenia aplikacji kalendarza i tworzy nowe zdarzenie z informacji w kodzie kreskowym, w tym datę i czas, miejsce, nazwa, i tak dalej. </li>
+</ul>
+
+<h4> Położenie geograficzne </h4>
+
+<p> Możliwe jest przechowywanie lokalizacji w kodów kreskowych, jak "geo" URI zawierający szerokości i długości geograficznej. Jeśli jeden z tych jest skanowany, a następnie na ekranie wynik będzie zawierać przyciski, które pozwalają na: </p>
+
+<ul>
+  <li> Pokaż mapę. Ten próbuje otworzyć Google Maps lub innych aplikacji mapowania, aby pokazać położenie z kodem kreskowym na mapie. </li>
+  <li> Jak dojechać. Otwiera Google Maps, aby spróbować dojazdu z bieżącej lokalizacji do lokalizacji geograficznej. </li>
+</ul>
+
+<h4> Wi-Fi </h4>
+
+<p> Kody kreskowe mogą kodować szczegóły sieci Wi-Fi, w tym nazwę, typ sieci i hasło. Jeden skanowania umożliwia podłączenie do sieci wi-fi w prosty sposób: </p>
+
+<ul>
+  <li> Podłącz do sieci. Próbuje podłączyć urządzenie do sieci wi-fi o nazwie w kodzie kreskowym, za pomocą dostarczonego typu i hasło. Pojawi się ekran, który pokazuje postęp tego połączenia. </li>
+</ul>
+
+<h4> Tekst </h4>
+
+<p> Jeżeli zawartość kodu kreskowego nie są rozpoznawane jako jednym ze specjalnych rodzajów powyżej, będzie to traktowane jako zwykły tekst. W takim przypadku można: </p>
+
+<ul>
+  <li> Wyszukiwania w sieci Web. Szukaj tekstu zapytań wyszukiwarki Google. </li>
+  <li> Poleć przez e-mail. Podziel się tekst wysyłając e-mail. </li>
+  <li> Poleć przez SMS. Podziel się tekst wysyłając SMS lub wiadomości tekstowych. </li>
+  <li> Custom Search. Jeśli ustawiłeś niestandardowy adres URL wyszukiwania, pozwala na wyszukiwanie niestandardowy adres URL wyszukiwania tekstu. </li>
+</ul>
+
+<p>Tłumaczone przez Google Translate.</p></body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scanning QR Codes</title>
+  <link rel="stylesheet" href="../style.css" type="text/css"/>
+</head>
+<body>
+
+<p>In addition to the 1D product barcodes that you see every day, a different and more complex kind of barcode
+has become popular in recent years. These barcodes are easy to spot, because they encode data along both their
+width and height, in a matrix of squares. For example, you may have already seen a barcode in the QR Code or
+Data Matrix format:</p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img src="../images/big-qr.png" alt="QR Code"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img src="../images/big-datamatrix.png" alt="Data Matrix"/>
+  </a>
+</p>
+
+<p>You can enable or disable scanning of these formats individually in Settings.</p>
+
+<p>These barcodes can be scanned like product barcodes. They contain more information than a 1D product
+barcode, and more complex types of information. These formats can encode a link to website, a phone number,
+contact information, and more.</p>
+
+<p>As a result, on the result screen, the action buttons you will find after scanning such a barcode depend
+on the type of the barcode's contents.</p>
+
+<h4>Hyperlink or URL</h4>
+
+<p>Most commonly, the barcode contains a hyperlink to a web site. You can press the URL itself to open a browser
+to view that web page, or otherwise access the URI's contents. You will also see several action buttons:</p>
+
+<ul>
+  <li>Open browser. This also accesses the URI in the same way, typically by opening the device's browser.
+    Note that some URIs, like "market:" URIs, will be opened by another application; "market:" URIs are opened
+    by the Android Market app for example.</li>
+  <li>Share via email. Share the link by sending an e-mail.</li>
+  <li>Share via SMS. Share the link by sending an SMS, or text message.</li>
+</ul>
+
+<h4>Contact Information</h4>
+
+<p>If the barcode contains contact information encoded in the MECARD or vCard format, you will see several buttons
+depending on what pieces of contact information are encoded:</p>
+
+<ul>
+  <li>Add contact. This option will always be present; it adds the contact information to your device's
+    address book.</li>
+  <li>Show map. If the contact information contains an address, this will attempt to show the address on a map
+    using Google Maps.</li>
+  <li>Dial number. If the contact information contains a phone number, this will open the device's dialer with the
+    number ready to dial.</li>
+  <li>Send email. Likewise in the contact information contains an e-mail address, this will open an e-mail client
+    on the device to compose and e-mail to that address.</li>
+</ul>
+
+<h4>E-mail address</h4>
+
+<p>If the contents of the barcode are an e-mail address, or a "mailto:" URI, then you will be able to:</p>
+
+<ul>
+  <li>Add contact. This adds the contact information to your device's
+    address book containing only the e-mail address</li>
+  <li>Send email. This will open an e-mail client on the device to compose and e-mail to that address.</li>
+</ul>
+
+<h4>Telephone number</h4>
+
+<p>Similarly, if the barcode contains only a telephone number, you can:</p>
+
+<ul>
+  <li>Add contact. This adds the contact information to your device's
+    address book containing only the phone number</li>
+  <li>Dial number. Opens the device's dialer with the number ready to dial.</li>
+</ul>
+
+<h4>SMS</h4>
+
+<p>If the barcode encodes an "sms:" or "mms:" URI, then you will see buttons to:</p>
+
+<ul>
+  <li>Send SMS. Opens the device's messaging application and composes and SMS, or text message, to the
+    number in the barcode.</li>
+  <li>Send MMS. Same, but attempts to compose an MMS, or multimedia text message.</li>
+</ul>
+
+<h4>Calendar</h4>
+
+<p>Barcodes can also encode information about an event, at a certain time and place. If you scan a barcode
+containing information in the vCal format, you will be able to:</p>
+
+<ul>
+  <li>Add to calendar. Opens the device's calendar application and creates a new event with the information
+    in the barcode, including date and time, place, name, and so forth.</li>
+</ul>
+
+<h4>Geographic location</h4>
+
+<p>It is possible to store a location in a barcode, as a "geo:" URI containing latitude and longitude. If
+one of these is scanned, then the result screen will contain buttons that allow you to:</p>
+
+<ul>
+  <li>Show map. This attempts to open Google Maps or other mapping application to show the location from the barcode
+    on a map.</li>
+  <li>Get directions. Opens Google Maps in order to try to get directions from the current location to that
+    geographical location.</li>
+</ul>
+
+<h4>Wi-fi</h4>
+
+<p>Barcodes can encode the details of a wi-fi network, including network name, type and password. Scanning
+one enables you to connect to a wi-fi network easily:</p>
+
+<ul>
+  <li>Connect to Network. This attempts to connect the device to the wi-fi network named in the barcode, using
+    the supplied type and password. You will see a screen that shows the progress of this connection.</li>
+</ul>
+
+<h4>Text</h4>
+
+<p>If the contents of the barcode are not recognized as any of the special types above, it will be treated
+as simple text. In that case, you can:</p>
+
+<ul>
+  <li>Web search. Search for the text by querying Google Web Search.</li>
+  <li>Share via email. Share the text by sending an e-mail.</li>
+  <li>Share via SMS. Share the text by sending an SMS, or text message.</li>
+  <li>Custom search. If you have set a custom search URL, this will allow you to search your custom search
+    URL for the text.</li>
+</ul>
+
+</body>
+</html>

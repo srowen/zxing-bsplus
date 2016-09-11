@@ -37,11 +37,12 @@
               tools:ignore="NestedWeights"/>
 
     <Button android:id="@+id/query_button"
-            style="@android:style/Widget.Holo.Button.Borderless.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="@string/button_search_book_contents"/>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            style="@android:style/Widget.Holo.Button.Borderless"/>
 
   </LinearLayout>
 

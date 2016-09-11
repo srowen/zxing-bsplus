@@ -26,25 +26,22 @@
 
   <ImageView android:id="@+id/image_view"
              android:layout_width="wrap_content"
-             android:layout_height="fill_parent"
-             android:layout_gravity="center_vertical"
+             android:layout_height="wrap_content"
              android:scaleType="center"
+             android:padding="@dimen/standard_padding"
              tools:ignore="ContentDescription"/>
 
   <ScrollView android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
-            android:gravity="center">
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:padding="@dimen/standard_padding">
 
     <TextView android:id="@+id/contents_text_view"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_gravity="center_vertical"
-              android:gravity="center"
+              android:gravity="left"
               android:textColor="@color/contents_text"
-              android:paddingRight="8dip"
-              android:paddingTop="8dip"
-              android:paddingBottom="8dip"
+              android:textAppearance="?android:attr/textAppearanceSmall"
               android:textIsSelectable="true"/>
 
   </ScrollView>

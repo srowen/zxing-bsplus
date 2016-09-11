@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Viivakoodi Scan Historia </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p><strong class="notranslate">Barcode Scanner+</strong> pitää
+muistissa skannaamasi viivakoodihistorian: sisällön, ajan, formaatin ja
+muut asiaan liittyvät tiedot. Saat historiatiedot näkyviin painamalla
+menu - "Historia" (kellon kuva).</p>
+
+<p>Saat näkyville luettelon vanhoista skannauksistasi. Paina haluamaasi
+listalla olevaa skannausta ja sinulle näytetään kyseisen skannauksen
+yksityiskohdat - nyt voit toimia aivan kuin kyseinen viivakoodi olisi
+juuri nyt skannattu uudestaan. Voit poistaa yksittäisen skannatun
+historiatiedon painamalla sitä pitkään listassa. Voit poistaa koko
+historian painamalla valitsemalla menu - "Tyhjennä historia".</p>
+
+<h3>Historiatietojen vieminen</h3>
+
+<p>Voit viedä skannaushistoriasi datan, jolloin jokin toinen ohjelma
+voi lukea ja käyttää sitä. Tiedot viedään sellaisessa muodossa, jossa
+pilku toimii arvojen erottimena (CSV). Viedyt kenttäsarakkeet ovat
+järjestyksessä:</p>
+
+<ul>
+  <li>Raakasisältö</li>
+  <li>Näyttöön muotoiltu sisältö</li>
+  <li>Tiedon muoto (formaatti) (esimerkki: QR_CODE)</li>
+  <li>Aikaleima, millisekunteina epookista (esimerkki: 1315175453569)</li>
+  <li>Muotoiltu aikaleima (esimerkki: Sep 4, 2011 11:30:53 PM)</li>
+  <li>Muut tiedot</li>
+</ul>
+
+<p>Valitse menu - "Lähetä historia". Voit valita laitteesi
+ohjelmista sellaiset, jotka osaavat lähettää tietoa, esimerkiksi
+sähköpostiohjelman, jolla voit lähettää CSV-tietoja
+sähköpostiosoitteeseesi. Huomaa, että tietojen lähettämisen jälkeen ne
+myös talletetaan SD-kortille hakemistoon "<code class="notranslate">BarcodeScanner/History</code>".</p>
+
+<h3>Kopiointi leikepöydälle</h3>
+
+<p>Oletusarvoisesti jokaisen skannauksen tiedot kopioidaan
+leikepöydälle. Tämä voidaan estää poistamalla Asetuksista valinta
+"Kopioi leikepöydälle".</p>
+
+<h3>Jatkuva skannaus</h3>
+
+<p>Joskus on tarpeen skannata useita viivakoodeja sarjassa: tarkoitus
+on tallentaa niiden tiedot ja lähettää datahistoria myöhemmin. Jotta
+tämä onnistuisi helpommin, aktivoi Asetuksista "Jatkuva tallennus". Jokaisen onnistuneen skannauksen jälkeen ohjelma on
+valmis uuteen skannaukseen, eikä se näytä tavallisen skannauksen
+jälkeen annettavaa tulosruutua.</p>
+
+<h3>Yhden viivakoodin skannaaminen useampaan kertaan</h3>
+
+<p>Mikäli sama viivakoodi skannataan useamman kerran, tallennetaan
+historiatietoihin oletusarvoisesti vain tuorein skannaus. Tämä voidaan
+muuttaa Asetuksista valitsemalla "Muista kaksoiskappaleet", jonka
+jälkeen kaikki skannaukset talletetaan historiaan.</p>
+
+</body>
+</html>

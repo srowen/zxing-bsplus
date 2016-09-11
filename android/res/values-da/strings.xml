@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">Applikationer</string>
   <string name="bookmark_picker_name">Bogmærker</string>
   <string name="button_add_calendar">Tilføj til kalendar</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">Ingen stregkodescanninger er blevet registreret endnu</string>
   <string name="history_send">Send historik</string>
   <string name="history_title">Historik</string>
+  <string name="menu_decode_image">Decode Billede</string>
   <string name="menu_encode_mecard">Brug MECARD</string>
   <string name="menu_encode_vcard">Brug vCard</string>
   <string name="menu_help">Hjælp</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">Del</string>
   <string name="msg_bulk_mode_scanned">Massetilstand: stregkode scannet og gemt</string>
   <string name="msg_camera_framework_bug">Beklager, Android-kameraet er stødt på et problem. Du skal muligvis genstarte enheden.</string>
+  <string name="msg_decode_image_failed">Ingen stregkode blev fundet i billedet.</string>
   <string name="msg_default_format">Format</string>
   <string name="msg_default_meta">Metadata</string>
   <string name="msg_default_mms_subject">Hej</string>
-  <string name="msg_default_status">Placér en stregkode inden i firkanten for at aflæse den.</string>
   <string name="msg_default_time">Tid</string>
   <string name="msg_default_type">Type</string>
   <string name="msg_encode_contents_failed">Kunne ikke indkode en stregkode fra oplysningerne givet.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">Er du sikker?</string>
   <string name="msg_unmount_usb">Beklager, SD-kortet er ikke tilgængelig.</string>
   <string name="preferences_actions_title">Når en stregkode er fundet\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">Ignorer stregkoder ikke matcher regulært udtryk</string>
+  <string name="preferences_allowed_content_pattern_title">Matchende mønster kun</string>
   <string name="preferences_auto_focus_title">Brug autofokus</string>
   <string name="preferences_auto_open_web_title">Åbn websider automatisk</string>
   <string name="preferences_bulk_mode_summary">Scan og gem mange stregkoder uden afbrydelser</string>
@@ -98,20 +101,25 @@
   <string name="preferences_decode_1D_product_title">1D Produkt</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Afkod Data Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">Afkod QR-koder</string>
-  <string name="preferences_device_bug_workarounds_title">Device Bug Løsninger</string>
+  <string name="preferences_device_bug_workarounds_title">Enhedfejlløsninger</string>
   <string name="preferences_disable_barcode_scene_mode_title">Ingen stregkode scenetilstand</string>
   <string name="preferences_disable_continuous_focus_summary">Brug kun standard fokusindstilling</string>
   <string name="preferences_disable_continuous_focus_title">Ingen løbende fokus</string>
   <string name="preferences_disable_exposure_title">Ingen eksponering</string>
   <string name="preferences_disable_metering_title">Ingen måling</string>
+  <string name="preferences_force_camera_orientation_front_summary">Kun muligt hvis foran billedet er drejet</string>
+  <string name="preferences_force_camera_orientation_front_title">Tilsidesæt foran kamera-retning</string>
+  <string name="preferences_force_camera_orientation_summary">Kun muligt hvis billedet er drejet</string>
+  <string name="preferences_force_camera_orientation_title">Tilsidesæt kamera-retning</string>
+  <string name="preferences_front_camera_title">Foretrækker foran kamera</string>
   <string name="preferences_front_light_auto">Automatisk</string>
   <string name="preferences_front_light_off">Inaktiv</string>
   <string name="preferences_front_light_on">Aktiv</string>
   <string name="preferences_front_light_summary">Forbedrer aflæsning i svagt lys på nogle telefoner, men kan medføre genskær. Virker ikke på alle telefoner.</string>
   <string name="preferences_front_light_title">Brug frontlys</string>
-  <string name="preferences_general_title">Generelle indstillinger</string>
   <string name="preferences_history_summary">Gem dine scanninger i Historie</string>
   <string name="preferences_history_title">Tilføj til Historie</string>
   <string name="preferences_invert_scan_summary">Scan for hvide stregkoder på sort baggrund. Ikke tilgængelig på nogle enheder.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">Gem flere scanninger af de samme stregkoder i Historik</string>
   <string name="preferences_remember_duplicates_title">Husk dubletter</string>
   <string name="preferences_result_title">Resultatindstillinger</string>
+  <string name="preferences_scan_title">Scanningsindstillinger</string>
   <string name="preferences_scanning_title">Når der scannes efter stregkoder\u2026</string>
   <string name="preferences_search_country">Søg efter land</string>
   <string name="preferences_supplemental_summary">Prøv at få flere oplysninger om stregkodens indhold</string>
   <string name="preferences_supplemental_title">Hent mere info</string>
   <string name="preferences_vibrate_title">Vibrér</string>
-  <string name="result_address_book">Kontaktinfo fundet</string>
-  <string name="result_calendar">Kalendarbegivenhed fundet</string>
-  <string name="result_email_address">E-mailadresse fundet</string>
-  <string name="result_geo">Geografiske koordinater fundet</string>
-  <string name="result_isbn">Bog fundet</string>
-  <string name="result_product">Produkt fundet</string>
-  <string name="result_sms">SMS-adresse fundet</string>
-  <string name="result_tel">Telefonnummer fundet</string>
-  <string name="result_text">Almindelig tekst fundet</string>
-  <string name="result_uri">URL fundet</string>
-  <string name="result_wifi">WLAN-forbindelse fundet</string>
   <string name="sbc_name">Google Bøger-søgning</string>
   <string name="wifi_changing_network">Anmoder om tilslutning til netværk\u2026</string>
 </resources>

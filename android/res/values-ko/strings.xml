@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">바코드 스캐너</string>
+  <string name="app_name">바코드 스캐너+</string>
   <string name="app_picker_name">어플리케이션</string>
   <string name="bookmark_picker_name">즐겨찾기</string>
   <string name="button_add_calendar">일정에 추가하기</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">아무 바코드 스캔이 기록되지 않았습니다</string>
   <string name="history_send">기록 보내기</string>
   <string name="history_title">기록</string>
+  <string name="menu_decode_image">디코딩 이미지</string>
   <string name="menu_encode_mecard">MECARD 사용</string>
   <string name="menu_encode_vcard">vCard 사용</string>
   <string name="menu_help">도움말</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">공유</string>
   <string name="msg_bulk_mode_scanned">일괄 스캔 모드: 다수의 바코드를 읽고 저장합니다.</string>
   <string name="msg_camera_framework_bug">죄송합니다. 기기의 카메라에 오류가 생겼습니다. 기기를 재시작 해야할 수 있습니다.</string>
+  <string name="msg_decode_image_failed">바코드는 이미지에서 찾을 수 없습니다.</string>
   <string name="msg_default_format">포맷</string>
   <string name="msg_default_meta">메타데이터</string>
   <string name="msg_default_mms_subject">안녕하세요</string>
-  <string name="msg_default_status">사각형 영역 안에 바코드를 위치해주세요.</string>
   <string name="msg_default_time">시간</string>
   <string name="msg_default_type">종류</string>
   <string name="msg_encode_contents_failed">바코드를 만들지 못하였습니다.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">계속하시겠습니까?</string>
   <string name="msg_unmount_usb">죄송합니다. SD카드를 사용할 수 없습니다.</string>
   <string name="preferences_actions_title">바코드를 스캔했을 때\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">폐기 바코드는 정규 표현식과 일치하지</string>
+  <string name="preferences_allowed_content_pattern_title">패턴과 일치하는 만</string>
   <string name="preferences_auto_focus_title">자동 초점 사용하기</string>
   <string name="preferences_auto_open_web_title">자동으로 웹 페이지를 엽니다.</string>
   <string name="preferences_bulk_mode_summary">다수의 바코드를 스캔하고 저장합니다.</string>
@@ -98,6 +101,7 @@
   <string name="preferences_decode_1D_product_title">1D Product</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR 코드</string>
   <string name="preferences_device_bug_workarounds_title">장치 버그 해결</string>
@@ -106,12 +110,16 @@
   <string name="preferences_disable_continuous_focus_title">연속 초점 사용하지 않기</string>
   <string name="preferences_disable_exposure_title">노출 조절하지 않기</string>
   <string name="preferences_disable_metering_title">측광 조절하지 않기</string>
+  <string name="preferences_force_camera_orientation_front_summary">전면 이미지가 회전하는 경우에만 사용</string>
+  <string name="preferences_force_camera_orientation_front_title">전면 카메라의 방향을 재정의</string>
+  <string name="preferences_force_camera_orientation_summary">이미지가 회전하는 경우에만 사용</string>
+  <string name="preferences_force_camera_orientation_title">카메라 방향을 무시</string>
+  <string name="preferences_front_camera_title">전면 카메라를 선호</string>
   <string name="preferences_front_light_auto">자동</string>
   <string name="preferences_front_light_off">항상 끄기</string>
   <string name="preferences_front_light_on">항상 켜기</string>
   <string name="preferences_front_light_summary">특정 기기에서는 어두운 환경에서의 스캐닝 기능을 향상 시키지만 너무 밝을 수도 있습니다. 모든 기기에서 작동되지 않습니다.</string>
   <string name="preferences_front_light_title">플래시 사용하기</string>
-  <string name="preferences_general_title">일반 설정</string>
   <string name="preferences_history_summary">스캔 결과를 기록으로 저장합니다.</string>
   <string name="preferences_history_title">기록 저장</string>
   <string name="preferences_invert_scan_summary">검정 바탕의 바코드를 스캔합니다. 일부 장치에서 사용할 수 없습니다.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">동일한 바코드에 대한 스캔 결과도 기록에 저장합니다.</string>
   <string name="preferences_remember_duplicates_title">중복된 바코드 저장</string>
   <string name="preferences_result_title">결과 설정</string>
+  <string name="preferences_scan_title">스캔 설정</string>
   <string name="preferences_scanning_title">바코드 스캐닝 시\u2026</string>
   <string name="preferences_search_country">국가별 검색</string>
   <string name="preferences_supplemental_summary">바코드 내용에 대한 상세 정보를 검색하여 가져옵니다</string>
   <string name="preferences_supplemental_title">바코드 상세 정보</string>
   <string name="preferences_vibrate_title">진동</string>
-  <string name="result_address_book">연락처 정보를 찾았습니다</string>
-  <string name="result_calendar">일정 이벤트를 찾았습니다</string>
-  <string name="result_email_address">이메일 주소를 찾았습니다</string>
-  <string name="result_geo">GPS 좌표를 찾았습니다</string>
-  <string name="result_isbn">책을 찾았습니다</string>
-  <string name="result_product">제품을 찾았습니다</string>
-  <string name="result_sms">전화번호를 찾았습니다</string>
-  <string name="result_tel">전화번호를 찾았습니다</string>
-  <string name="result_text">단문을 찾았습니다</string>
-  <string name="result_uri">인터넷 주소를 찾았습니다</string>
-  <string name="result_wifi">WiFi 설정을 찾았습니다</string>
   <string name="sbc_name">구글 책 검색</string>
   <string name="wifi_changing_network">네트워크에 연결 요청 중\u2026</string>
 </resources>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> La scansione dei codici a barre </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Oltre ai codici a barre 1D prodotto che vedete ogni giorno, un tipo diverso e più complesso di codici a barre è diventato popolare negli ultimi anni. Questi codici a barre sono facili da individuare, perché codificare i dati su entrambi i loro larghezza e l'altezza, in una matrice di quadrati. Ad esempio, si potrebbe avere già visto un codice a barre in formato codice a barre o Data Matrix: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> È possibile attivare o disattivare la scansione di questi formati singolarmente nelle Impostazioni. </p>
+
+<p> Questi codici a barre possono essere acquisiti come codici a barre dei prodotti. Essi contengono più informazioni di un codice a barre 1D prodotto, e dei tipi più complessi di informazioni. Questi formati possono codificare un link al sito, un numero di telefono, informazioni sui contatti e altro ancora. </p>
+
+<p> Di conseguenza, sulla schermata dei risultati, i pulsanti di azione troverete dopo la scansione ad un codice a barre dipendono dal tipo di contenuti il codice a barre è. </p>
+
+<h4> Collegamento ipertestuale o URL </h4>
+
+<p> Più comunemente, il codice a barre contiene un collegamento ipertestuale a un sito web. È possibile premere lo stesso URL per aprire un browser per visualizzare tale pagina web, o comunque accedere ai contenuti dell'URI. Si vedrà anche pulsanti di azione diversi: </p>
+
+<ul>
+  <li> Del browser aperte. Questo accede anche l'URI nello stesso modo, in genere l'apertura del browser del dispositivo. Si noti che alcuni URI, come "di mercato:" URI, sarà aperta da un'altra applicazione, "di mercato:" URI sono aperte dalla applicazione Android Market, per esempio. </li>
+  <li> Condividi via e-mail. Condividere il link con l'invio di una e-mail. </li>
+  <li> Condividi tramite SMS. Condividere il link con l'invio di un SMS, o un messaggio di testo. </li>
+</ul>
+
+<h4> Contatti </h4>
+
+<p> Se il codice a barre contiene informazioni di contatto codificata nel formato MECARD o vCard, vedrete diversi pulsanti a seconda di ciò pezzi di informazioni di contatto sono codificati: </p>
+
+<ul>
+  <li> Aggiungi contatto. Questa opzione sarà sempre presente, ma aggiunge le informazioni di contatto nella rubrica del dispositivo. </li>
+  <li> Visualizza mappa. Se le informazioni di contatto contiene un indirizzo, questo tentativo di mostrare l'indirizzo su una mappa con Google Maps. </li>
+  <li> Comporre il numero. Se le informazioni di contatto contiene un numero di telefono, questo si aprirà dialer del dispositivo con il numero di pronto da comporre. </li>
+  <li> Inviare e-mail. Allo stesso modo le informazioni di contatto contiene un indirizzo e-mail, questo aprire un client di posta elettronica sul dispositivo di comporre e-mail a questo indirizzo. </li>
+</ul>
+
+<h4> Indirizzo e-mail </h4>
+
+<p> Se il contenuto del codice a barre sono un indirizzo e-mail, o un "mailto:" URI, allora si sarà in grado di: </p>
+
+<ul>
+  <li> Aggiungi contatto. Questo aggiunge le informazioni di contatto nella rubrica del dispositivo che contiene solo l'indirizzo e-mail </li>
+  <li> Inviare e-mail. Questo aprirà un client di posta elettronica sul dispositivo di comporre e-mail a questo indirizzo. </li>
+</ul>
+
+<h4> Numero di telefono </h4>
+
+<p> Allo stesso modo, se il codice a barre contiene solo un numero di telefono, è possibile: </p>
+
+<ul>
+  <li> Aggiungi contatto. Questo aggiunge le informazioni di contatto nella rubrica del dispositivo contenente solo il numero di telefono </li>
+  <li> Comporre il numero. Apre dialer del dispositivo con il numero di pronto da comporre. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Se il codice a barre codifica un "sms" o "mms:" URI, poi si vedrà pulsanti per: </p>
+
+<ul>
+  <li> Invia SMS. Apre applicazione di messaggistica del dispositivo e compone e SMS, o un SMS, al numero del codice a barre. </li>
+  <li> Invia MMS. Stesso, ma i tentativi di comporre un MMS o messaggi di testo multimediale. </li>
+</ul>
+
+<h4> Calendario </h4>
+
+<p> Codici a barre può anche codificare informazioni su un evento, in un certo momento e luogo. Se la scansione di un codice a barre contenente le informazioni nel formato vCal, sarete in grado di: </p>
+
+<ul>
+  <li> Aggiungi al calendario. Apre l'applicazione calendario del dispositivo e crea un nuovo evento con le informazioni contenute nel codice a barre, con data e ora, luogo, nome, e così via. </li>
+</ul>
+
+<h4> Posizione geografica </h4>
+
+<p> E 'possibile memorizzare una posizione in un codice a barre, come un "geo:" URI contenenti latitudine e longitudine. Se uno di questi viene sottoposto a scansione, poi lo schermo risultato conterrà pulsanti che consentono di: </p>
+
+<ul>
+  <li> Visualizza mappa. Questo tentativo di aprire Google Maps o altre applicazioni di mappatura per mostrare la posizione del codice a barre su una mappa. </li>
+  <li> Ottieni indicazioni stradali. Apre Google Maps in modo da cercare di ottenere indicazioni dalla posizione corrente a quella posizione geografica. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> I codici a barre in grado di codificare i dettagli di una rete wi-fi, tra cui il nome della rete, il tipo e la password. Uno di scansione permette di connettersi a una rete wi-fi facilmente: </p>
+
+<ul>
+  <li> Connessione a rete. Questo tentativo di collegare il dispositivo alla rete wi-fi chiamato nel codice a barre, utilizzando il tipo e la password forniti. Vedrete una schermata che mostra il progresso di questa connessione. </li>
+</ul>
+
+<h4> Testo </h4>
+
+<p> Se il contenuto del codice a barre non sono riconosciuti come uno dei tipi speciali di cui sopra, sarà trattata come semplice testo. In questo caso, è possibile: </p>
+
+<ul>
+  <li> Ricerca sul web. Cercare il testo interrogando Google Web Search. </li>
+  <li> Condividi via e-mail. Condividere il testo inviando una e-mail. </li>
+  <li> Condividi tramite SMS. Condividere il testo con l'invio di un SMS, o un messaggio di testo. </li>
+  <li> Ricerca personalizzata. Se è stato impostato un URL personalizzato di ricerca, questo vi permetterà di cercare l'URL di ricerca personalizzato per il testo. </li>
+</ul>
+
+<p>Tradotto da Google Translate.</p></body>
+</html>

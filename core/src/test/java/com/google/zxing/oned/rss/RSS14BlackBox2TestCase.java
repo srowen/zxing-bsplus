@@ -27,8 +27,8 @@ public final class RSS14BlackBox2TestCase extends AbstractBlackBoxTestCase {
 
   public RSS14BlackBox2TestCase() {
     super("src/test/resources/blackbox/rss14-2", new MultiFormatReader(), BarcodeFormat.RSS_14);
-    addTest(4, 8, 1, 1, 0.0f);
-    addTest(2, 8, 0, 1, 180.0f);
+    addTest(7, 10, 0, 2, 0.0f);
+    addTest(7, 10, 0, 1, 180.0f);
   }
 
 }

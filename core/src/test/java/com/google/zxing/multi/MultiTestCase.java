@@ -29,11 +29,11 @@ import com.google.zxing.Result;
 import com.google.zxing.common.AbstractBlackBoxTestCase;
 import com.google.zxing.common.HybridBinarizer;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.Ignore;
 
 public final class MultiTestCase extends Assert {
 
-  @Test
+  @Ignore
   public void testMulti() throws Exception {
     // Very basic test for now
     Path testBase = AbstractBlackBoxTestCase.buildTestBase("src/test/resources/blackbox/multi-1");

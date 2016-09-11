@@ -23,7 +23,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.google.zxing</groupId>
+      <groupId>com.srowen.bs.android</groupId>
       <artifactId>core</artifactId>
     </dependency>
     <dependency>

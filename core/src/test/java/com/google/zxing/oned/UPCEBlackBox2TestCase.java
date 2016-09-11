@@ -27,8 +27,8 @@ public final class UPCEBlackBox2TestCase extends AbstractBlackBoxTestCase {
 
   public UPCEBlackBox2TestCase() {
     super("src/test/resources/blackbox/upce-2", new MultiFormatReader(), BarcodeFormat.UPC_E);
-    addTest(31, 35, 0, 1, 0.0f);
-    addTest(31, 35, 1, 1, 180.0f);
+    addTest(36, 39, 0.0f);
+    addTest(37, 39, 180.0f);
   }
 
 }

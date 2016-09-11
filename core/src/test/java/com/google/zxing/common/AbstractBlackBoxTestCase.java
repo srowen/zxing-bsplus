@@ -25,6 +25,7 @@ import com.google.zxing.Reader;
 import com.google.zxing.ReaderException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultMetadataType;
+import com.google.zxing.common.advanced.rowedge.RowEdgeDetectorBinarizer;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -45,6 +46,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.EnumMap;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -172,24 +174,51 @@ public abstract class AbstractBlackBoxTestCase extends Assert {
         float rotation = testResults.get(x).getRotation();
         BufferedImage rotatedImage = rotateImage(image, rotation);
         LuminanceSource source = new BufferedImageLuminanceSource(rotatedImage);
+
         BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
+        BinaryBitmap enhancedBitmap = new BinaryBitmap(new RowEdgeDetectorBinarizer(source));
+
+        EnumSet<BarcodeFormat> skipForEnhanced =
+            EnumSet.of(BarcodeFormat.QR_CODE, BarcodeFormat.DATA_MATRIX, BarcodeFormat.AZTEC, BarcodeFormat.PDF_417);
+
         try {
-          if (decode(bitmap, rotation, expectedText, expectedMetadata, false)) {
+          if (decode(bitmap, rotation, expectedText, expectedMetadata, false, null)) {
             passedCounts[x]++;
           } else {
             misreadCounts[x]++;
           }
         } catch (ReaderException ignored) {
-          log.fine(String.format("could not read at rotation %f", rotation));
+          try {
+            if (decode(enhancedBitmap, rotation, expectedText, expectedMetadata, false, skipForEnhanced)) {
+              passedCounts[x]++;
+            } else {
+              misreadCounts[x]++;
+            }
+          } catch (ReaderException re2) {
+            log.fine(String.format("could not read at rotation %f", rotation));
+          }
         }
+
+        RowEdgeDetectorBinarizer tryHarderBinarizer = new RowEdgeDetectorBinarizer(source);
+        tryHarderBinarizer.setTryHarder(true);
+        enhancedBitmap = new BinaryBitmap(tryHarderBinarizer);
+
         try {
-          if (decode(bitmap, rotation, expectedText, expectedMetadata, true)) {
+          if (decode(bitmap, rotation, expectedText, expectedMetadata, true, null)) {
             tryHarderCounts[x]++;
           } else {
             tryHaderMisreadCounts[x]++;
           }
         } catch (ReaderException ignored) {
-          log.fine(String.format("could not read at rotation %f w/TH", rotation));
+          try {
+            if (decode(enhancedBitmap, rotation, expectedText, expectedMetadata, true, skipForEnhanced)) {
+              tryHarderCounts[x]++;
+            } else {
+              tryHaderMisreadCounts[x]++;
+            }
+          } catch (ReaderException re2) {
+            log.fine(String.format("could not read at rotation %f w/TH", rotation));
+          }
         }
       }
     }
@@ -256,13 +285,17 @@ public abstract class AbstractBlackBoxTestCase extends Assert {
                          float rotation,
                          String expectedText,
                          Map<?,?> expectedMetadata,
-                         boolean tryHarder) throws ReaderException {
+                         boolean tryHarder,
+                         EnumSet<BarcodeFormat> skipFormats) throws ReaderException {
 
     String suffix = String.format(" (%srotation: %d)", tryHarder ? "try harder, " : "", (int) rotation);
 
     Map<DecodeHintType,Object> hints = new EnumMap<>(DecodeHintType.class);
     if (tryHarder) {
       hints.put(DecodeHintType.TRY_HARDER, Boolean.TRUE);
+    }
+    if (skipFormats != null) {
+      hints.put(DecodeHintType.POSSIBLE_FORMATS, EnumSet.complementOf(skipFormats));
     }
 
     // Try in 'pure' mode mostly to exercise PURE_BARCODE code paths for exceptions;

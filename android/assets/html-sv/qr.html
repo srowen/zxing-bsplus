@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scanna QR Codes</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Förutom de 1D produkt streckkoder som du ser varje dag, har ett annorlunda och mer komplexa typ av streckkod blivit populärt på senare år. Dessa streckkoder är lätta att upptäcka, eftersom de koda data tillsammans både bredd och höjd, i en matris av kvadrater. Till exempel kan du redan har sett en streckkod i QR-koden eller Data Matrix-format: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Du kan aktivera eller inaktivera skanning av dessa format individuellt i Inställningar. </p>
+
+<p> Dessa streckkoder kan skannas likadan produkt streckkoder. De innehåller mer information än en 1D produkt streckkod, och mer komplexa typer av information. Dessa format kan koda en länk till hemsida, ett telefonnummer, kontaktinformation och annat. </p>
+
+<p> Som en följd av resultatet skärmen, funktionsknapparna hittar du efter skanning sådan streckkod beror på vilken typ av streckkod innehåll. </p>
+
+<h4> Hyperlänk eller webbadress </h4>
+
+<p> Oftast innehåller streckkoden en hyperlänk till en webbplats. Du kan trycka på själva webbadressen för att öppna en webbläsare för att visa den webbsidan eller på annat sätt komma åt URI innehåll. Du kommer också se flera åtgärder knappar: </p>
+
+<ul>
+  <li> Öppna webbläsaren. Detta åtkomster också URI på samma sätt, vanligtvis genom att öppna enhetens webbläsare. Observera att vissa URI: er, som "marknaden:" Uris, kommer att öppnas av ett annat program, "marknaden:" Uris öppnas av Android Market app till exempel. </li>
+  <li> Dela via e-post. Dela på länken genom att skicka ett e-post. </li>
+  <li> Dela via SMS. Dela på länken genom att skicka ett SMS eller textmeddelande. </li>
+</ul>
+
+<h4> Kontaktinformation </h4>
+
+<p> Om streckkoden innehåller kontaktinformation kodade i MECARD eller vCard-format, ser du flera knappar beroende på vilka bitar av kontaktinformation är kodade: </p>
+
+<ul>
+  <li> Lägg till kontakt. Detta alternativ kommer alltid att vara närvarande, det lägger kontaktuppgifter till enhetens adressbok. </li>
+  <li> Visa karta. Om uppgifterna innehåller en adress, kommer detta försök att visa adressen på en karta med hjälp av Google Maps. </li>
+  <li> Slå nummer. Om uppgifterna innehåller ett telefonnummer, kommer detta att öppna enhetens dialer med antalet redo att ringa. </li>
+  <li> Skicka e-post. Likaså i kontaktinformationen innehåller en e-postadress, kommer detta att öppna en e-postklient på enheten för att komponera och e-post till den adressen. </li>
+</ul>
+
+<h4> E-postadress </h4>
+
+<p> Om innehållet i streckkoden är en e-postadress, eller en "mailto:" Uri, då kommer du att kunna: </p>
+
+<ul>
+  <li> Lägg till kontakt. Detta lägger till kontaktuppgifter till enhetens adressbok som endast innehåller e-postadress </li>
+  <li> Skicka e-post. Detta kommer att öppna en e-postklient på enheten för att komponera och e-post till den adressen. </li>
+</ul>
+
+<h4> Telefonnummer </h4>
+
+<p> Likaså om streckkoden innehåller endast ett telefonnummer kan du: </p>
+
+<ul>
+  <li> Lägg till kontakt. Detta lägger till kontaktuppgifter till enhetens adressbok innehåller bara telefonnumret </li>
+  <li> Slå nummer. Öppnar enhetens dialer med antalet redo att ringa. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Om streckkoden kodar en "sms:" eller "mms:" Uri, sedan ser du knappar för att: </p>
+
+<ul>
+  <li> Skicka SMS. Öppnar enhetens meddelandeprogrammet och komponerar och SMS eller SMS till numret i streckkoden. </li>
+  <li> Skicka MMS. Densamma, men försök att komponera ett MMS eller MMS textmeddelande. </li>
+</ul>
+
+<h4> Kalender </h4>
+
+<p> Streckkoder kan också koda information om en händelse vid en viss tid och plats. Om du skannar en streckkod som innehåller information i vCal-format, kommer du att kunna: </p>
+
+<ul>
+  <li> Lägg till i kalender. Öppnar enhetens kalender ansökan och skapar en ny händelse med informationen i streckkoden, inklusive datum och tid, plats, namn och så vidare. </li>
+</ul>
+
+<h4> Geografiskt läge </h4>
+
+<p> Det är möjligt att lagra en plats i en streckkod, som en "geo:" URI innehåller latitud och longitud. Om någon av dessa skannas och sedan resultatet på skärmen kommer att innehålla knappar som låter dig: </p>
+
+<ul>
+  <li> Visa karta. Detta försök att öppna Google Maps eller andra kartapplikation att visa platsen från streckkoden på en karta. </li>
+  <li> Hämta vägbeskrivning. Öppnar Google Maps för att försöka att få en vägbeskrivning från den aktuella platsen till den geografiska platsen. </li>
+</ul>
+
+<h4> Wi-Fi </h4>
+
+<p> Streckkoder kan koda detaljerna i ett Wi-Fi-nätverk, inklusive nätverk namn, typ och lösenord. Skanna ett kan du ansluta till ett Wi-Fi-nätverk enkelt: </p>
+
+<ul>
+  <li> Anslut till nätverket. Detta försök att ansluta enheten till Wi-Fi-nätverk som nämns i streckkoden, med den medföljande typ och lösenord. Du kommer att se en skärm som visar utvecklingen av den här anslutningen. </li>
+</ul>
+
+<h4> Text </h4>
+
+<p> Om innehållet i streckkoden inte är erkända som några av de särskilda typerna ovan, kommer det att behandlas som enbart text. I så fall kan du: </p>
+
+<ul>
+  <li> Webbsökning. Sök efter text genom att fråga Google webbsökning. </li>
+  <li> Dela via e-post. Dela den text genom att skicka ett e-post. </li>
+  <li> Dela via SMS. Dela den text genom att skicka ett SMS eller textmeddelande. </li>
+  <li> Anpassad sökning. Om du har angett en anpassad sökning URL, kommer detta att du kan söka på Custom Search URL för texten. </li>
+</ul>
+
+<p>Översatt av Google Translate.</p></body>
+</html>

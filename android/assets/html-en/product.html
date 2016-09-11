@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scanning Product Barcodes</title>
+  <link rel="stylesheet" href="../style.css" type="text/css"/>
+</head>
+<body>
+
+<p>The barcodes that you have seen most often are undoubtedly the ones on products all around you, like books and
+DVDs. These barcodes are known as UPC or EAN barcodes, after the family of barcode formats in which they are encoded.
+Here is an example of an EAN barcode from a book:</p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/International_Article_Number_(EAN)">
+    <img src="../images/big-1d.png" alt="EAN-13"/>
+  </a>
+</p>
+
+<p>The UPC and EAN formats are also examples of "one-dimensional" or 1D barcode formats. While the barcode certainly
+has two dimensions, both width and height, it only encodes data in the changing black-and-white bars across its
+width, and does not use the vertical direction to encode information. These formats typically encode a numeric
+product identifier of 12 or 13 digits.</p>
+
+<p>By default, <strong class="notranslate">Barcode Scanner+</strong> scans for all 1D product-related barcode formats. This includes
+familiar UPC-A and EAN-13 formats, compact UPC-E and EAN-8 formats, and the relatively new RSS-14 format, which
+is related to the GS1 Databar format now coming into use for products. You can disable scanning of product
+barcode formats in Settings, by deselecting "1D Product".</p>
+
+<h3>Searching for more information</h3>
+
+<p>Scanning the barcode's content is an interesting trick, but chances are you want to do more than know what
+the barcode encodes. After all, that is usually already printed beneath the barcode!</p>
+
+<p>After scanning, you will see a result screen with the time of scan, format of the barcode, type of its content,
+a miniature image of the scanned barcode, and the contents of the barcode itself. Depending on the nature of the
+barcode, you will also see one of several action buttons, and may also see additional information about the
+scanned barcode appear.</p>
+
+<h4>Product</h4>
+
+<p>After scanning a product, you will see three or four action buttons at the bottom of the result screen.
+All of these buttons will take you outside of the application.</p>
+
+<ul>
+  <li>Web search. Search for product ID by querying Google Web Search.</li>
+  <li>Product search. Search for product-related information and prices at the Google Product Search site.</li>
+  <li>Custom search. If you have set a custom search URL, this will allow you to search your custom search
+    URL for the product ID.</li>
+</ul>
+
+<p>In addition, if a network connection available, you should see after a short time a summary of the first
+search result from Google Product Search appear on the result screen, below the product ID. Pressing this also
+takes you to Google Product Search.</p>
+
+<p>You can override the default country used when searching Google in Settings.</p>
+
+<h4>Books</h4>
+
+<p>When scanning a book, you will also links to search for the product, and/or your custom
+search result provider. However you will also see two additional buttons:</p>
+
+<ul>
+  <li>Book search. Search for book information at Google Book Search.</li>
+  <li>Search contents. This allows you to search <em>within</em> the book's contents itself, for those books
+    whose contents are indexed by Google Book Search. Type a search term. If available, results will appear, by page,
+    alongside snippets. Press the result to view the page in which the search terms occur.</li>
+</ul>
+
+<p>The first Google Product Search result should appear for books as well. In addition you should see the first
+result from Google Book Search appear. Both can be pressed to access these services directly.</p>
+
+</body>
+</html>

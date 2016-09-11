@@ -18,6 +18,8 @@ package com.google.zxing.oned;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.NotFoundException;
+import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 /**
@@ -69,9 +71,11 @@ public final class EAN13Reader extends UPCEANReader {
   }
 
   @Override
-  protected int decodeMiddle(BitArray row,
+  protected int decodeMiddle(int rowNumber,
+                             BitArray row,
                              int[] startRange,
-                             StringBuilder resultString) throws NotFoundException {
+                             StringBuilder resultString,
+                             ResultPointCallback resultPointCallback) throws NotFoundException {
     int[] counters = decodeMiddleCounters;
     counters[0] = 0;
     counters[1] = 0;
@@ -84,7 +88,12 @@ public final class EAN13Reader extends UPCEANReader {
 
     for (int x = 0; x < 6 && rowOffset < end; x++) {
       int bestMatch = decodeDigit(row, counters, rowOffset, L_AND_G_PATTERNS);
-      resultString.append((char) ('0' + bestMatch % 10));
+      char c = (char) ('0' + bestMatch % 10);
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(rowOffset, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, String.valueOf(c));
+      }
+      resultString.append(c);
       for (int counter : counters) {
         rowOffset += counter;
       }
@@ -100,7 +109,12 @@ public final class EAN13Reader extends UPCEANReader {
 
     for (int x = 0; x < 6 && rowOffset < end; x++) {
       int bestMatch = decodeDigit(row, counters, rowOffset, L_PATTERNS);
-      resultString.append((char) ('0' + bestMatch));
+      char c = (char) ('0' + bestMatch % 10);
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(rowOffset, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, String.valueOf(c));
+      }
+      resultString.append(c);
       for (int counter : counters) {
         rowOffset += counter;
       }

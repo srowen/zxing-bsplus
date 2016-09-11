@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+  <SurfaceView android:id="@+id/preview_view"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"/>
+
+  <com.srowen.bs.android.ViewfinderView android:id="@+id/viewfinder_view"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"/>
+
+  <LinearLayout android:id="@+id/result_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/result_view"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingTop="?android:attr/actionBarSize">
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="@dimen/standard_padding">
+
+      <ImageView android:id="@+id/barcode_image_view"
+                 android:layout_width="@dimen/barcode_image_width_port"
+                 android:layout_height="@dimen/barcode_image_height_port"
+                 android:scaleType="fitStart"
+                 android:paddingRight="@dimen/standard_padding"
+                 tools:ignore="ContentDescription"/>
+
+      <TextView android:id="@+id/format_text_view_label"
+                android:layout_toRightOf="@id/barcode_image_view"
+                android:layout_alignTop="@id/barcode_image_view"
+                android:text="@string/msg_default_format"
+                android:paddingRight="@dimen/half_padding"
+                style="@style/ResultFieldLabel"/>
+
+      <TextView android:id="@+id/format_text_view"
+                android:layout_toRightOf="@id/format_text_view_label"
+                android:layout_alignTop="@id/format_text_view_label"
+                style="@style/ResultField"/>
+
+      <TextView android:id="@+id/type_text_view_label"
+                android:layout_below="@id/format_text_view_label"
+                android:layout_alignLeft="@id/format_text_view_label"
+                android:text="@string/msg_default_type"
+                android:paddingRight="@dimen/half_padding"
+                style="@style/ResultFieldLabel"/>
+
+      <TextView android:id="@+id/type_text_view"
+                android:layout_toRightOf="@id/type_text_view_label"
+                android:layout_alignTop="@id/type_text_view_label"
+                style="@style/ResultField"/>
+
+      <TextView android:id="@+id/time_text_view_label"
+                android:layout_below="@id/type_text_view_label"
+                android:layout_alignLeft="@id/type_text_view_label"
+                android:text="@string/msg_default_time"
+                android:paddingRight="@dimen/half_padding"
+                style="@style/ResultFieldLabel"/>
+
+      <TextView android:id="@+id/time_text_view"
+                android:layout_toRightOf="@id/time_text_view_label"
+                android:layout_alignTop="@id/time_text_view_label"
+                style="@style/ResultField"/>
+
+      <TextView android:id="@+id/meta_text_view_label"
+                android:layout_below="@id/time_text_view_label"
+                android:layout_alignLeft="@id/time_text_view_label"
+                android:text="@string/msg_default_meta"
+                android:paddingRight="@dimen/half_padding"
+                style="@style/ResultFieldLabel"/>
+
+      <TextView android:id="@+id/meta_text_view"
+                android:layout_toRightOf="@id/meta_text_view_label"
+                android:layout_alignTop="@id/meta_text_view_label"
+                style="@style/ResultField"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:padding="@dimen/standard_padding">
+
+      <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+        <TextView android:id="@+id/contents_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColorLink="@color/result_text"
+                  android:textSize="@dimen/contents_text_size"
+                  android:autoLink="web"
+                  android:textIsSelectable="true"/>
+
+        <TextView android:id="@+id/contents_supplement_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColorLink="@color/result_text"
+                  android:textAppearance="?android:attr/textAppearanceSmall"
+                  android:paddingTop="@dimen/standard_padding"
+                  android:autoLink="web"
+                  android:textIsSelectable="true"/>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/result_button_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  style="?android:attr/buttonBarStyle">
+
+      <Button android:id="@+id/button_open_browser"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_open_browser"
+              android:drawableStart="@android:drawable/ic_menu_compass"/>
+
+      <Button android:id="@+id/button_web_search"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_web_search"
+              android:drawableStart="@android:drawable/ic_menu_search"/>
+
+      <Button android:id="@+id/button_add_contact"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_add_contact"
+              android:drawableStart="@android:drawable/ic_menu_crop"/>
+
+      <Button android:id="@+id/button_show_map"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_show_map"
+              android:drawableStart="@android:drawable/ic_menu_mapmode"/>
+
+      <Button android:id="@+id/button_dial"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_dial"
+              android:drawableStart="@android:drawable/ic_menu_call"/>
+
+      <Button android:id="@+id/button_email"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_email"
+              android:drawableStart="@android:drawable/ic_menu_send"/>
+
+      <Button android:id="@+id/button_add_calendar"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_add_calendar"
+              android:drawableStart="@android:drawable/ic_menu_today"/>
+
+      <Button android:id="@+id/button_get_directions"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_get_directions"
+              android:drawableStart="@android:drawable/ic_menu_directions"/>
+
+      <Button android:id="@+id/button_product_search"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_product_search"
+              android:drawableStart="@android:drawable/ic_menu_camera"/>
+
+      <Button android:id="@+id/button_book_search"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_book_search"
+              android:drawableStart="@android:drawable/ic_menu_search"/>
+
+      <Button android:id="@+id/button_search_book_contents"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_search_book_contents"
+              android:drawableStart="@android:drawable/ic_menu_sort_alphabetically"/>
+
+      <Button android:id="@+id/button_sms"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_sms"
+              android:drawableStart="@android:drawable/ic_menu_send"/>
+
+      <Button android:id="@+id/button_mms"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_mms"
+              android:drawableStart="@android:drawable/ic_menu_send"/>
+
+      <Button android:id="@+id/button_share_by_email"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_share_by_email"
+              android:drawableStart="@android:drawable/ic_menu_share"/>
+
+      <Button android:id="@+id/button_share_by_sms"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_share_by_sms"
+              android:drawableStart="@android:drawable/ic_menu_share"/>
+
+      <Button android:id="@+id/button_wifi"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_wifi"
+              android:drawableStart="@android:drawable/ic_menu_preferences"/>
+
+      <Button android:id="@+id/button_custom_product_search"
+              style="@style/ResultButtonPortrait"
+              android:text="@string/button_custom_product_search"
+              android:drawableStart="@android:drawable/ic_menu_zoom"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

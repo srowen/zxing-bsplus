@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Streckkodsavläsningshistoria</title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p><strong class="notranslate">Barcode Scanner+</strong> lagrar en historia av streckkoder du har skannat. Detta inkluderar innehållet, tid, format och annan relaterad information. Du kan komma åt historien genom att trycka på menyknappen och sedan välja historia. </p>
+
+<p> Du kommer att se en lista över tidigare skanningar. Tryck en att minnas detaljer om genomsökningen på skärmen och agera på det precis som om det hade varit igenom igen. Tryck länge för att klara ett enda objekt. Du kan rensa historiken genom att trycka på Meny och sedan välja "Rensa historik". </p>
+
+<h3> Exportera historia </h3>
+
+<p> Du kan exportera data i skanningen historia, så att den kan läsas och bearbetas av ett externt program. Uppgifterna exporteras i kommaseparerat värde format (CSV). Utgången kolumner, i ordning, är: </p>
+
+<ul>
+  <li> Raw innehållet </li>
+  <li> Display-formaterade innehållet </li>
+  <li> Format (till exempel QR_CODE) </li>
+  <li> Tidsstämpel, i millisekunder sedan epoken (t.ex. 1315175453569) </li>
+  <li> Formaterad timestamp (t.ex. Sep 4, 2011 11:30:53) </li>
+  <li> Övrig information </li>
+</ul>
+
+<p> Tryck på menyalternativet och välj sedan "Skicka historia". Du kommer att kunna välja mellan program på din enhet som kan skicka data någonstans, till exempel ett e-postprogram med vilket du kan skicka CSV-data till din e-postadress. Observera att när du har skickat uppgifterna kommer den också att sparas på SD-kort under ett som heter katalogen " <code class="notranslate">BarcodeScanner/History</code> ". </p>
+
+<h3> Kopiering till urklipp </h3>
+
+<p> Som standard är innehållet i varje skanning kopieras till klippbordet också. För att avaktivera detta, avmarkera "Kopiera till urklipp" i Inställningar. </p>
+
+<h3> Bulk scanningläge </h3>
+
+<p> Vissa användare behöver skanna många streckkoder, för att lagra och sedan exportera skanna historia. För att underlätta detta, aktivera "Bulk scan mode" under Inställningar. Efter varje lyckad skanning, kommer programmet att förbereda sig för att läsa en annan streckkod, istället för att visa resultatet på skärmen. </p>
+
+<h3> Flera genomsökningar av en streckkod </h3>
+
+<p> Som standard, om en streckkod skannas flera gånger, kommer historien endast spela de senaste genomsökning av att streckkoden. Detta kan ändras genom att "Kom ihåg dubbletter" i Inställningar. Detta gör att historien att registrera alla skanningar. </p>
+
+<p>Översatt av Google Translate.</p></body>
+</html>

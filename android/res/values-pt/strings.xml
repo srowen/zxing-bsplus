@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Barcode Scanner</string>
+  <string name="app_name">Barcode Scanner+</string>
   <string name="app_picker_name">Aplicativos</string>
   <string name="bookmark_picker_name">Favoritos</string>
   <string name="button_add_calendar">Adicionar ao calendário</string>
@@ -54,6 +54,7 @@
   <string name="history_empty_detail">Nenhum código de barras foram registrados</string>
   <string name="history_send">Enviar histórico</string>
   <string name="history_title">Histórico</string>
+  <string name="menu_decode_image">Descodificar imagem</string>
   <string name="menu_encode_mecard">Usar MECARD</string>
   <string name="menu_encode_vcard">Usar vCard</string>
   <string name="menu_help">Ajuda</string>
@@ -62,10 +63,10 @@
   <string name="menu_share">Compartilhar</string>
   <string name="msg_bulk_mode_scanned">Modo em massa: código de barras lido e guardado</string>
   <string name="msg_camera_framework_bug">Desculpe, a câmera do Android encontrou um problema. Poderá precisar reiniciar o dispositivo.</string>
+  <string name="msg_decode_image_failed">Não foi encontrado um código de barras na imagem.</string>
   <string name="msg_default_format">Formato</string>
   <string name="msg_default_meta">Metadata</string>
   <string name="msg_default_mms_subject">Olá</string>
-  <string name="msg_default_status">Alinhar código de barras com o exemplo para ser lido.</string>
   <string name="msg_default_time">Tempo</string>
   <string name="msg_default_type">Tipo</string>
   <string name="msg_encode_contents_failed">Não foi possível codificar o código de barras a partir dos dados fornecidos.</string>
@@ -87,6 +88,8 @@
   <string name="msg_sure">Tem certeza?</string>
   <string name="msg_unmount_usb">Desculpe, o cartão SD não está disponível.</string>
   <string name="preferences_actions_title">Quando o código de barras é encontrado\u2026</string>
+  <string name="preferences_allowed_content_pattern_summary">Ignorar códigos de barras que não correspondam a expressão regular</string>
+  <string name="preferences_allowed_content_pattern_title">Correspondente ao padrão único</string>
   <string name="preferences_auto_focus_title">Usar foco automático</string>
   <string name="preferences_auto_open_web_title">Abrir páginas da web automaticamente</string>
   <string name="preferences_bulk_mode_summary">Ler e guardar códigos de barras continuamente</string>
@@ -98,20 +101,25 @@
   <string name="preferences_decode_1D_product_title">Produto 1D</string>
   <string name="preferences_decode_Aztec_title">Aztec</string>
   <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+  <string name="preferences_decode_NFC_title">NFC</string>
   <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
   <string name="preferences_decode_QR_title">QR Codes</string>
-  <string name="preferences_device_bug_workarounds_title">Soluções alternativas de dispositivos com erros</string>
+  <string name="preferences_device_bug_workarounds_title">Bug Soluções alternativas dispositivo</string>
   <string name="preferences_disable_barcode_scene_mode_title">No modo de cena de código de barras</string>
   <string name="preferences_disable_continuous_focus_summary">Use apenas o modo de foco padrão</string>
   <string name="preferences_disable_continuous_focus_title">No foco contínuo</string>
   <string name="preferences_disable_exposure_title">Nenhuma exposição</string>
   <string name="preferences_disable_metering_title">Sem medição</string>
+  <string name="preferences_force_camera_orientation_front_summary">Só permitem se a imagem da frente é girada</string>
+  <string name="preferences_force_camera_orientation_front_title">Substituir orientação da câmera frontal</string>
+  <string name="preferences_force_camera_orientation_summary">Só permitem se a imagem é girado</string>
+  <string name="preferences_force_camera_orientation_title">Substituir orientação da câmara</string>
+  <string name="preferences_front_camera_title">Preferem câmera frontal</string>
   <string name="preferences_front_light_auto">Automático</string>
   <string name="preferences_front_light_off">Inativo</string>
   <string name="preferences_front_light_on">Ativo</string>
   <string name="preferences_front_light_summary">Melhora a leitura em luz fraca em alguns telefones, mas pode causar clarões. Não disponível em certos dispositivos.</string>
   <string name="preferences_front_light_title">Usar luz frontal</string>
-  <string name="preferences_general_title">Configurações Gerais</string>
   <string name="preferences_history_summary">Armazene seus scans em História</string>
   <string name="preferences_history_title">Adicionar à História</string>
   <string name="preferences_invert_scan_summary">Procurar por códigos de barras brancos em fundo preto. Não disponível em certos dispositivos.</string>
@@ -122,22 +130,12 @@
   <string name="preferences_remember_duplicates_summary">Guardar pesquisas múltiplas do mesmo código de barras no histórico</string>
   <string name="preferences_remember_duplicates_title">Lembrar duplicados</string>
   <string name="preferences_result_title">Definições do resultado</string>
+  <string name="preferences_scan_title">Definições de digitalização</string>
   <string name="preferences_scanning_title">Quando procurar por códigos de barras, decodificar\u2026</string>
   <string name="preferences_search_country">Procurar País</string>
   <string name="preferences_supplemental_summary">Tentar recuperar mais informação sobre os conteúdos dos códigos de barras</string>
   <string name="preferences_supplemental_title">Recuperar mais informação</string>
   <string name="preferences_vibrate_title">Vibrar</string>
-  <string name="result_address_book">Info de contato encontrada</string>
-  <string name="result_calendar">Evento de calendário encontrado</string>
-  <string name="result_email_address">Endereço de e-mail encontrado</string>
-  <string name="result_geo">Coordenadas geográficas encontradas</string>
-  <string name="result_isbn">Livro encontrado</string>
-  <string name="result_product">Produto encontrado</string>
-  <string name="result_sms">Endereço SMS encontrado</string>
-  <string name="result_tel">Número de telefone encontrado</string>
-  <string name="result_text">Texto simples encontrado</string>
-  <string name="result_uri">URL encontrado</string>
-  <string name="result_wifi">Configuração WLAN encontrada</string>
   <string name="sbc_name">Pesquisa Google Book</string>
   <string name="wifi_changing_network">Solicitando ligação à rede\u2026</string>
 </resources>

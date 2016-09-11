@@ -23,6 +23,7 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.Arrays;
@@ -92,13 +93,16 @@ public final class Code39Reader extends OneDReader {
   public Code39Reader(boolean usingCheckDigit, boolean extendedMode) {
     this.usingCheckDigit = usingCheckDigit;
     this.extendedMode = extendedMode;
-    decodeRowResult = new StringBuilder(20);
-    counters = new int[9];
+    this.decodeRowResult = new StringBuilder(20);
+    this.counters = new int[9];
   }
 
   @Override
   public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints)
       throws NotFoundException, ChecksumException, FormatException {
+
+    ResultPointCallback resultPointCallback = hints == null ? null :
+        (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
 
     int[] theCounters = counters;
     Arrays.fill(theCounters, 0);
@@ -119,6 +123,10 @@ public final class Code39Reader extends OneDReader {
         throw NotFoundException.getNotFoundInstance();
       }
       decodedChar = patternToChar(pattern);
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(nextStart, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, String.valueOf(decodedChar));
+      }
       result.append(decodedChar);
       lastStart = nextStart;
       for (int counter : theCounters) {

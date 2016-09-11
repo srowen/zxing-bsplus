@@ -40,6 +40,45 @@
         android:key="preferences_decode_PDF417"
         android:defaultValue="false"
         android:title="@string/preferences_decode_PDF417_title"/>
+    <CheckBoxPreference
+        android:key="preferences_decode_NFC"
+        android:defaultValue="true"
+        android:title="@string/preferences_decode_NFC_title"/>
+    <EditTextPreference
+        android:key="preferences_allowed_content_pattern"
+        android:title="@string/preferences_allowed_content_pattern_title"
+        android:summary="@string/preferences_allowed_content_pattern_summary"/>
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/preferences_scan_title">
+    <ListPreference
+        android:entries="@array/preferences_front_light_options"
+        android:entryValues="@array/preferences_front_light_values"
+        android:key="preferences_front_light_mode"
+        android:defaultValue="OFF"
+        android:title="@string/preferences_front_light_title"
+        android:summary="@string/preferences_front_light_summary"/>
+    <CheckBoxPreference
+        android:key="preferences_auto_focus"
+        android:defaultValue="true"
+        android:title="@string/preferences_auto_focus_title"/>
+    <CheckBoxPreference
+        android:key="preferences_invert_scan"
+        android:defaultValue="false"
+        android:title="@string/preferences_invert_scan_title"
+        android:summary="@string/preferences_invert_scan_summary"/>
+    <CheckBoxPreference
+        android:key="preferences_front_camera"
+        android:defaultValue="false"
+        android:title="@string/preferences_front_camera_title"/>
+    <CheckBoxPreference
+        android:key="preferences_bulk_mode"
+        android:defaultValue="false"
+        android:title="@string/preferences_bulk_mode_title"
+        android:summary="@string/preferences_bulk_mode_summary"/>
+    <CheckBoxPreference
+        android:key="preferences_orientation"
+        android:defaultValue="true"
+        android:title="@string/preferences_orientation_title"/>
   </PreferenceCategory>
   <PreferenceCategory android:title="@string/preferences_actions_title">
     <CheckBoxPreference
@@ -74,33 +113,6 @@
         android:title="@string/preferences_supplemental_title"
         android:summary="@string/preferences_supplemental_summary"/>
   </PreferenceCategory>
-  <PreferenceCategory android:title="@string/preferences_general_title">
-    <ListPreference
-        android:entries="@array/preferences_front_light_options"
-        android:entryValues="@array/preferences_front_light_values"
-        android:key="preferences_front_light_mode"
-        android:defaultValue="OFF"
-        android:title="@string/preferences_front_light_title"
-        android:summary="@string/preferences_front_light_summary"/>
-    <CheckBoxPreference
-        android:key="preferences_auto_focus"
-        android:defaultValue="true"
-        android:title="@string/preferences_auto_focus_title"/>
-    <CheckBoxPreference
-        android:key="preferences_invert_scan"
-        android:defaultValue="false"
-        android:title="@string/preferences_invert_scan_title"
-        android:summary="@string/preferences_invert_scan_summary"/>
-    <CheckBoxPreference
-        android:key="preferences_bulk_mode"
-        android:defaultValue="false"
-        android:title="@string/preferences_bulk_mode_title"
-        android:summary="@string/preferences_bulk_mode_summary"/>
-    <CheckBoxPreference
-        android:key="preferences_orientation"
-        android:defaultValue="true"
-        android:title="@string/preferences_orientation_title"/>
-  </PreferenceCategory>
   <PreferenceCategory android:title="@string/preferences_result_title">
     <EditTextPreference
         android:key="preferences_custom_product_search"
@@ -131,5 +143,19 @@
         android:key="preferences_disable_barcode_scene_mode"
         android:defaultValue="true"
         android:title="@string/preferences_disable_barcode_scene_mode_title"/>
+    <ListPreference
+        android:key="preferences_force_camera_orientation"
+        android:defaultValue="-"
+        android:entries="@array/rotations"
+        android:entryValues="@array/rotations"
+        android:title="@string/preferences_force_camera_orientation_title"
+        android:summary="@string/preferences_force_camera_orientation_summary"/>
+    <ListPreference
+        android:key="preferences_force_camera_orientation_front"
+        android:defaultValue="-"
+        android:entries="@array/rotations"
+        android:entryValues="@array/rotations"
+        android:title="@string/preferences_force_camera_orientation_front_title"
+        android:summary="@string/preferences_force_camera_orientation_front_summary"/>
   </PreferenceCategory>
 </PreferenceScreen>

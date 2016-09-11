@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Skannaus QR Koodit </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p>Päivittäin näkemiesi 1D -tuoteviivakoodien lisäksi on suosituksi tullut myös erilainen ja monimutkaisempi viivakoodityyppi. Nämä
+viivakoodit on helppo huomata, koska niissä tieto tallennetaan
+taulukkomaisesti sekä pysty- että vaakasuunnassa eräänlaiseen ruudukkoon. Olet
+voinut jo nähdä esimerkiksi QR Code tai Data Matrix-muotoisen viivakoodin:</p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p>Ohjelman Asetuksisssa voit ottaa käyttöön ja poistaa käytöstä näiden
+viivakoodien skannauksen, astukset ovat viivakoodikohtaisia.</p>
+
+<p>Näitä viivakoodeja voi lukea samalla tavalla kuin tuoteviivakoodeja.
+Ne voivat sisältää enemmän tietoa kuin 1D -viivakoodit, samoin niiden
+tietotyypit voivat olla monimutkaisempia. Näihin viivakoodityyppeihin
+voidaan tallentaa tietoa www-sivuston osoitteista, puhelinnumeroista,
+kontaktitiedoista jne.</p>
+
+<p>Erilaisista sisällöistä johtuen näytöllä näytettävät toimintonäppäimet valitaan skannatun viivakoodin tyypin perusteella.</p>
+
+<h4>Hyperlinkki tai URL</h4>
+
+<p>Yleisimmin viivakoodi pitää sisällään hyperlinkin jollekin
+www-sivulle. Voit painaa suoraan URL-osoitetta avataksesi nettiselaimen
+ja päästäksesi näkemään annetun sivun tai muuten päästä näkemään URI:n
+sisällön. Näet myös useampia toimintonäppäimiä:</p>
+
+<ul>
+  <li>Avaa selain. Myös tämä avaa URI:n, yleensä näyttämällä sen
+laitteen www-selaimessa. Huomaa, että jotkin URI:t, kuten "market:"
+-URI:t, avataan muilla ohjelmilla; esimerkiksi "market:" -URI:t avataan
+Android Market -ohjelmalla..</li>
+  <li>Jaa sähköpostilla. Ja linkki lähettämällä se sähköpostilla.</li>
+  <li>Jaa tekstiviestillä. Jaa linkki lähettämällä se tekstiviestillä tai tekstiviestipalvelulla.</li>
+</ul>
+
+<h4>Kontaktitiedot</h4>
+
+<p>Jos viivakoodi pitää sisällään MECARD tai vCard format -muodoissa
+olevia kontaktietoja, näytetään sinulle erilaisia toimintonäppäimiä
+riippuen siitä, mitä tietoja kontaktitietoihin on tallennettu:</p>
+
+<ul>
+  <li>Lisää yhteystieto. Tämä vaihtoehto näytetään aina. Se lisää kyseisen kontaktitiedon laitteesi osoitekirjaan.</li>
+  <li>Näytä kartta. Mikäli kontaktitieto sisältää osoitteen, yritetään se näyttää Google Maps -sovelluksessa.</li>
+  <li>Soita
+numeroon. Mikäli kontaktitieto sisältää puhelinnumeron, näytetään
+laitteen puhelinnumeron valintaikkuna ja puhelinnumero esitetään siinä
+valmiiksi soittoa varten.</li>
+  <li>Lähetä sähköpostia. Mikäli kontaktieto sisältää
+sähköpostiosoitteen, käynnistetään laitteen sähköpostiohjelma, josta
+ sähköpostia voidaan lähettää tuohon osoitteeseen.</li>
+</ul>
+
+<h4>Sähköpostiosoite</h4>
+
+<p>Mikäli viivakoodin sisältö on joko sähköpostiosoite tai "mailto:" -URI, voit valita seuraavista toiminnoista:</p>
+
+<ul>
+  <li>Lisää yhteystieto. Tämä lisää vain kyseisen sähköpostiosoiteen laitteesi osoitekirjaan.</li>
+  <li>Lähetä sähköpostia. Tämä käynnistää laitteen sähköpostiohjelman, josta sähköpostia voidaan lähettää tuohon osoitteeseen.</li>
+</ul>
+
+<h4>Puhelinnumero</h4>
+
+<p>Samoin, mikäli viivakoodi pitää sisällään vain puhelinnumeron, voit valita seuraavista toiminnoista:</p>
+
+<ul>
+  <li>Lisää yhteystieto. Tämä lisää vain kyseisen puhelinnumeron laitteesi osoitekirjaan.</li>
+  <li>Soita numeroon. Näytetään laitteen puhelinnumeron valintaikkuna ja puhelinnumero esitetään siinä valmiiksi soittoa varten.</li>
+</ul>
+
+<h4>Tekstiviesti</h4>
+
+<p>Mikäli viivakoodin sisältö on joko "sms:" tai "mms:" -URI, voit valita seuraavista toiminnoista:</p>
+
+<ul>
+  <li>Lähetä tekstiviesti. Avaa laitteen viestiohjelman ja
+siirrytään viestin laadintaan, josta viesti voidaan lähettää
+viivakoodissa olleeseen numeroon.</li>
+  <li>Lähetä multimediaviesti. Samoin kuin edellä, mutta yritetään laatia multimediaviesti tai multimedia-tekstiviesti.</li>
+</ul>
+
+<h4>Kalenteri</h4>
+
+<p>Viivakoodeissa voi olla myös tietoa tapahtumista sisältäen niiden
+aika- ja paikkatietoja. Mikäli skannaat viivakoodin, jonka sisältö on
+vCal -muodossa, voit valita:</p>
+
+<ul>
+  <li>Lisää kalenteriin. Laitteen kalenteriohjelma avataan ja
+sinne luodaan uusi tapahtuma, tietoina viivakoodin sisältämät tiedot,
+kuten päiväys, aika, paikka, nimi jne.</li>
+</ul>
+
+<h4>Paikkatieto</h4>
+
+<p>Paikkatiedon (karttakoordinaattien) tallentaminen viivakoodiin on
+mahdollista käyttämällä "geo:" URI:a ja antamalla paikan pituus- ja
+leveysasteet. Kun tällainen viivakoodi luetaan, sisältää annettava
+tulosruutu toimintonäppäimet:</p>
+
+<ul>
+  <li>Näytä kartta. Yritetään avata karttasovellus (esim. Google
+Maps) ja näyttää viivakoodin sisältämä paikka sen esittämällä kartalla.</li>
+  <li>Hae ajo-ohjeet. Avataan Google Maps ja yritetään hakea ajo-ohjeet nykyisestä sijainnista viivakoodin sisältämään paikkaan.</li>
+</ul>
+
+<h4>Wi-fi</h4>
+
+<p>Viivakoodi voi pitää sisällään langattoman verkon tarkkoja tietoja,
+esim. verkon nimen, tyypin ja salasanan. Tällaisen viivakoodin
+lukeminen mahdollistaa helpon liittymisen langattomaan verkkoon:</p>
+
+<ul>
+  <li>Liity verkkoon. Yritetään liittää laite siihen
+langattoomaan verkkoon, joka on nimetty viivakoodissa, käyttäen ko.
+viivakoodin antamaa salasanaa ja verkon tyyppiä. Voit seurata näytöstä,
+kuinka yhteyden muodostamisen edistyy.</li>
+</ul>
+
+<h4>Teksti</h4>
+
+<p>Mikäli viivakoodin sisältöä ei tunnisteta miksikään edellä olevista
+tietotyypeistä, sitä käsitellään tavallisena tekstinä. Tässä
+tapauksessa valinnat ovat:</p>
+
+<ul>
+  <li>Haku netistä. Käytä Google:n hakutoimintaa tekstin etsimiseen netistä.</li>
+  <li>Jaa sähköpostilla. Jaa teksti lähettämällä se sähköpostilla.</li>
+  <li>Jaa tekstiviestillä. Jaa teksti lähettämällä se tekstiviestinä tai tekstiviestipalvelulla.</li>
+  <li>Mukautettu haku. Jos olet asettanut oman hakupalvelun URL-osoitteen, tämä suorittaa tekstin haun kyseisen osoiteen avulla.</li>
+</ul>
+
+</body>
+</html>

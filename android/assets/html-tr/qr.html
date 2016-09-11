@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title> Tarama QR Kodları </title>
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p> Buna ek olarak, her gün gördüğünüz 1D ürün barkod, barkod daha karmaşık ve farklı bir tür, son yıllarda popüler hale gelmiştir. Kareler bir matris, genişlik ve yükseklik boyunca veri kodlamak için bu barkodları noktaya kolay. Örneğin, QR Code veya Data Matrix formatında barkod olabilir: </p>
+
+<p style="text-align:center">
+  <a href="http://en.wikipedia.org/wiki/QR_code"><img alt="QR Code" src="../images/big-qr.png"/></a>
+  <a href="http://en.wikipedia.org/wiki/Data_matrix_(computer)">
+    <img alt="Data Matrix" src="../images/big-datamatrix.png"/>
+  </a>
+</p>
+
+<p> Ayarlar bu biçimlerin ayrı ayrı tarama etkinleştirmek veya devre dışı bırakabilirsiniz. </p>
+
+<p> Bu barkodlar, ürün barkod gibi taranabilir. Onlar bir 1D ürün barkod daha fazla bilgi ve daha karmaşık bilgi türlerinden içerir. Bu biçimler, web sitesine bir bağlantı, bir telefon numarası, iletişim bilgileri ve daha fazla kodlamak. </p>
+
+<p> Sonuç olarak, sonuç ekranda, eylem düğmeleri, böyle bir barkod barkod içeriğini türüne bağlıdır tarama sonrasında bulacaksınız. </p>
+
+<h4> Köprü veya URL </h4>
+
+<p> En sık, barkod, bir web sitesine bir köprü içerir. URL kendisi bu web sayfasını görüntülemek için bir tarayıcı açmak için basın veya başka bir URI içeriğine erişmek. Ayrıca birkaç eylem düğmeleri göreceksiniz: </p>
+
+<ul>
+  <li> Açık tarayıcı. Bu da genellikle cihazın tarayıcısı açarak, aynı şekilde URI erişir. URI'ler, başka bir uygulama tarafından açılmış olacak bazı URI'ler, "piyasa" gibi, "piyasa" URI'leri örneğin Android Market uygulaması ile açıldı. </li>
+  <li> E-posta yoluyla paylaşın. Bir e-posta göndererek bağlantı paylaşın. </li>
+  <li> SMS ile paylaşın. SMS, ya da metin mesajı göndererek bağlantı paylaşın. </li>
+</ul>
+
+<h4> İletişim Bilgileri </h4>
+
+<p> Barkod MECARD veya vCard biçiminde kodlanmış iletişim bilgileri içeriyorsa, iletişim bilgileri parçaları kodlanmış ne bağlı olarak birkaç düğme göreceksiniz: </p>
+
+<ul>
+  <li> Kartvizit ekle. Bu seçenek her zaman mevcut olacak; iletişim bilgileri cihazınızın adres defterine ekler. </li>
+  <li> Haritayı göster. Iletişim bilgilerini bir adresi varsa, bu, Google Maps kullanarak bir harita üzerinde adresi göstermeye çalışacağım. </li>
+  <li> Numarasını çevirin. Iletişim bilgilerini bir telefon numarası varsa, bu numara ile arama yapmak için hazır cihazın çevirici açmak. </li>
+  <li> Email gönder. Aynı şekilde iletişim bilgilerini içeren bir e-posta adresi, bu adrese e-posta oluşturmak ve cihaz üzerinde bir e-posta istemcisi açılacaktır. </li>
+</ul>
+
+<h4> E-posta adresi </h4>
+
+<p> Barkodun içeriğini e-posta adresini, veya bir "mailto:" Eğer URI, o zaman mümkün olacaktır: </p>
+
+<ul>
+  <li> Kartvizit ekle. Bu sadece e-posta adresini içeren iletişim bilgileri cihazınızın adres defterine ekler. </li>
+  <li> Email gönder. Bu cihaz bu adrese e-posta oluşturmak ve bir e-posta istemcisi açılacaktır. </li>
+</ul>
+
+<h4> Telefon numarası </h4>
+
+<p> Barkod sadece bir telefon numarası varsa Benzer şekilde, şunları yapabilirsiniz: </p>
+
+<ul>
+  <li> Kartvizit ekle. Bu sadece telefon numarası içeren iletişim bilgileri cihazınızın adres defterine ekler. </li>
+  <li> Numarasını çevirin. Aramak için hazır numarası ile cihazın çevirici açar. </li>
+</ul>
+
+<h4> SMS </h4>
+
+<p> Veya "mms:" barkod "sms" kodlar Eğer URI, o zaman için düğmeler göreceksiniz: </p>
+
+<ul>
+  <li> SMS gönderin. Cihaz mesajlaşma uygulamasını açar ve barkod numara, besteler ve SMS veya metin mesajı. </li>
+  <li> MMS gönderin. Aynı, ancak bir MMS veya multimedya metin mesajı oluşturmak için çalışır. </li>
+</ul>
+
+<h4> Takvim </h4>
+
+<p> Barkodlar de belirli bir zaman ve yerde, bir olay hakkında bilgi kodlamak. VCal formatında bilgileri içeren bir barkod tarama yapıyorsanız, mümkün olacaktır: </p>
+
+<ul>
+  <li> Takvime ekleyin. Cihazın takvim uygulaması açar ve barkod bilgileri, tarih ve saat, yer, isim, vb de dahil olmak üzere yeni bir olay oluşturur. </li>
+</ul>
+
+<h4> Coğrafi konumu </h4>
+
+<p> URI: Enlem ve boylam değerleri içeren bir "coğrafi" bir barkod gibi, bir konumu saklamak mümkündür. Eğer bunlardan biri taranır, sonra sonuç ekranında izin veren düğmeler içerir: </p>
+
+<ul>
+  <li> Haritayı göster. Google Maps ya da diğer harita uygulaması açmak için, bir harita üzerinde barkod yerini göstermek için çalışır. </li>
+  <li> Tarifi alın. Geçerli konumdan bu coğrafi konumu tarifi almak için denemek için Google Maps açar. </li>
+</ul>
+
+<h4> Wi-fi </h4>
+
+<p> Barkodlar, ağ adı, türü ve şifre de dahil olmak üzere bir wi-fi şebekesinin detayları, kodlamak. Tarama tek bir wi-fi ağa bağlanmak kolayca yapmanızı sağlar: </p>
+
+<ul>
+  <li> Ağ bağlayın. Bu verilen tip ve parola kullanarak, cihazın barkod adlı wi-fi ağa bağlamak için çalışır. Bu bağlantının ilerleme gösteren bir ekran göreceksiniz. </li>
+</ul>
+
+<h4> Metin </h4>
+
+<p> Barkodun içeriğini herhangi yukarıdaki özel tip olarak kabul değilseniz, basit bir metin olarak kabul edilecektir. Bu durumda şunları yapabilirsiniz: </p>
+
+<ul>
+  <li> Web araması. Google Web Araması sorgulama metin için arayın. </li>
+  <li> E-posta yoluyla paylaşın. Metin bir e-posta göndererek paylaşın. </li>
+  <li> SMS ile paylaşın. Metin SMS, ya da metin mesajı göndererek paylaşın. </li>
+  <li> Özel arama. Eğer özel bir arama URL'si varsa, bu metin için özel arama URL aramak için izin verecek. </li>
+</ul>
+
+<p>Google Translate tarafından tercüme edilmiştir.</p></body>
+</html>

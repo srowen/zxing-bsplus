@@ -27,10 +27,10 @@ public final class FalsePositives2BlackBoxTestCase extends AbstractNegativeBlack
 
   public FalsePositives2BlackBoxTestCase() {
     super("src/test/resources/blackbox/falsepositives-2");
-    addTest(4, 0.0f);
-    addTest(4, 90.0f);
-    addTest(4, 180.0f);
-    addTest(4, 270.0f);
+    addTest(2, 0.0f);
+    addTest(2, 90.0f);
+    addTest(2, 180.0f);
+    addTest(2, 270.0f);
   }
 
 }

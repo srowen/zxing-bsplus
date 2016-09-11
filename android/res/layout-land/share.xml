@@ -16,75 +16,91 @@
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
               android:gravity="center"
-              android:orientation="vertical"
-              android:padding="8dip">
+              android:orientation="horizontal"
+              android:focusable="true"
+              android:focusableInTouchMode="true">
 
-  <TextView
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:gravity="center"
-      android:text="@string/msg_share_explanation"
-      android:paddingBottom="12dip"
-      android:textIsSelectable="false"/>
+  <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
-  <LinearLayout
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal"
-      android:paddingBottom="12dip">
+    <TextView android:layout_width="160dip"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="@string/msg_share_explanation"
+              android:gravity="center"
+              android:padding="@dimen/standard_padding"
+              android:textIsSelectable="false"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:scaleType="center"
-        android:src="@drawable/share_via_barcode"
-        android:paddingRight="24dip"
-        tools:ignore="ContentDescription"/>
-
-    <LinearLayout
-        android:layout_width="0dip"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-      <Button android:id="@+id/share_app_button"
-              style="@style/ShareButton"
-              android:text="@string/button_share_app"/>
-
-      <Button android:id="@+id/share_contact_button"
-              style="@style/ShareButton"
-              android:text="@string/button_share_contact"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dip"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-      <Button android:id="@+id/share_bookmark_button"
-              style="@style/ShareButton"
-              android:text="@string/button_share_bookmark"/>
-
-      <Button android:id="@+id/share_clipboard_button"
-              style="@style/ShareButton"
-              android:text="@string/button_share_clipboard"/>
-
-    </LinearLayout>
+    <ImageView android:layout_width="120dip"
+               android:layout_height="80dip"
+               android:scaleType="fitEnd"
+               android:src="@drawable/share_via_barcode"
+               android:padding="@dimen/standard_padding"
+               tools:ignore="ContentDescription"/>
 
   </LinearLayout>
 
-  <EditText android:id="@+id/share_text_view"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/msg_share_text"
-            android:singleLine="true"
-            android:selectAllOnFocus="true"/>
+  <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <TableLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="@dimen/standard_padding">
+
+      <TableRow>
+
+        <Button android:id="@+id/share_app_button"
+                android:text="@string/button_share_app"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:paddingRight="@dimen/standard_padding"
+                android:textAllCaps="true"
+                style="@android:style/Widget.Holo.Button.Borderless.Small"/>
+
+        <Button android:id="@+id/share_bookmark_button"
+                android:text="@string/button_share_bookmark"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:paddingRight="@dimen/standard_padding"
+                android:textAllCaps="true"
+                style="@android:style/Widget.Holo.Button.Borderless.Small"/>
+
+      </TableRow>
+
+      <TableRow>
+
+        <Button android:id="@+id/share_contact_button"
+                android:text="@string/button_share_contact"
+                android:drawableStart="@android:drawable/ic_menu_crop"
+                android:paddingRight="@dimen/standard_padding"
+                android:textAllCaps="true"
+                style="@android:style/Widget.Holo.Button.Borderless.Small"/>
+
+        <Button android:id="@+id/share_clipboard_button"
+                android:text="@string/button_share_clipboard"
+                android:drawableStart="@android:drawable/ic_menu_agenda"
+                android:paddingRight="@dimen/standard_padding"
+                android:textAllCaps="true"
+                style="@android:style/Widget.Holo.Button.Borderless.Small"/>
+
+      </TableRow>
+
+    </TableLayout>
+
+    <EditText android:id="@+id/share_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:hint="@string/msg_share_text"
+              android:singleLine="true"
+              android:selectAllOnFocus="true"
+              android:padding="@dimen/standard_padding"/>
+
+  </LinearLayout>
 
 </LinearLayout>

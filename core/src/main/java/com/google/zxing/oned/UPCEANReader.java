@@ -44,8 +44,8 @@ public abstract class UPCEANReader extends OneDReader {
   // These two values are critical for determining how permissive the decoding will be.
   // We've arrived at these values through a lot of trial and error. Setting them any higher
   // lets false positives creep in quickly.
-  private static final float MAX_AVG_VARIANCE = 0.48f;
-  private static final float MAX_INDIVIDUAL_VARIANCE = 0.7f;
+  private static final float MAX_AVG_VARIANCE = 0.4f;
+  private static final float MAX_INDIVIDUAL_VARIANCE = 0.58f;
 
   /**
    * Start/end guard pattern.
@@ -162,7 +162,7 @@ public abstract class UPCEANReader extends OneDReader {
 
     StringBuilder result = decodeRowStringBuffer;
     result.setLength(0);
-    int endStart = decodeMiddle(row, startGuardRange, result);
+    int endStart = decodeMiddle(rowNumber, row, startGuardRange, result, resultPointCallback);
 
     if (resultPointCallback != null) {
       resultPointCallback.foundPossibleResultPoint(new ResultPoint(
@@ -385,14 +385,18 @@ public abstract class UPCEANReader extends OneDReader {
    * Subclasses override this to decode the portion of a barcode between the start
    * and end guard patterns.
    *
+   * @param rowNumber row number in the image (for use with {@link ResultPointCallback})
    * @param row row of black/white values to search
    * @param startRange start/end offset of start guard pattern
    * @param resultString {@link StringBuilder} to append decoded chars to
+   * @param resultPointCallback callback to send partial scan info to
    * @return horizontal offset of first pixel after the "middle" that was decoded
    * @throws NotFoundException if decoding could not complete successfully
    */
-  protected abstract int decodeMiddle(BitArray row,
+  protected abstract int decodeMiddle(int rowNumber,
+                                      BitArray row,
                                       int[] startRange,
-                                      StringBuilder resultString) throws NotFoundException;
+                                      StringBuilder resultString,
+                                      ResultPointCallback resultPointCallback) throws NotFoundException;
 
 }

@@ -23,6 +23,7 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.Arrays;
@@ -66,6 +67,9 @@ public final class Code93Reader extends OneDReader {
   public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints)
       throws NotFoundException, ChecksumException, FormatException {
 
+    ResultPointCallback resultPointCallback = hints == null ? null :
+        (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
+
     int[] start = findAsteriskPattern(row);
     // Read off white space    
     int nextStart = row.getNextSet(start[1]);
@@ -85,6 +89,10 @@ public final class Code93Reader extends OneDReader {
         throw NotFoundException.getNotFoundInstance();
       }
       decodedChar = patternToChar(pattern);
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(nextStart, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, String.valueOf(decodedChar));
+      }
       result.append(decodedChar);
       lastStart = nextStart;
       for (int counter : theCounters) {

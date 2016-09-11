@@ -23,7 +23,7 @@ package com.google.zxing;
  * @author dswitkin@google.com (Daniel Switkin)
  * @author Betaminos
  */
-public final class RGBLuminanceSource extends LuminanceSource {
+public final class RGBLuminanceSource extends RenderableLuminanceSource {
 
   private final byte[] luminances;
   private final int dataWidth;
@@ -131,6 +131,25 @@ public final class RGBLuminanceSource extends LuminanceSource {
                                   this.top + top,
                                   width,
                                   height);
+  }
+
+  @Override
+  public int[] renderThumbnail() {
+    int width = getWidth() / THUMBNAIL_SCALE_FACTOR;
+    int height = getHeight() / THUMBNAIL_SCALE_FACTOR;
+    int[] pixels = new int[width * height];
+    byte[] yuv = luminances;
+    int inputOffset = 0;
+
+    for (int y = 0; y < height; y++) {
+      int outputOffset = y * width;
+      for (int x = 0; x < width; x++) {
+        int grey = yuv[inputOffset + x * THUMBNAIL_SCALE_FACTOR] & 0xff;
+        pixels[outputOffset + x] = 0xFF000000 | (grey * 0x00010101);
+      }
+      inputOffset += dataWidth * THUMBNAIL_SCALE_FACTOR;
+    }
+    return pixels;
   }
 
 }

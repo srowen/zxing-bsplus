@@ -22,6 +22,7 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
 import com.google.zxing.ResultPoint;
+import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.BitArray;
 
 import java.util.Map;
@@ -85,12 +86,15 @@ public final class ITFReader extends OneDReader {
   public Result decodeRow(int rowNumber, BitArray row, Map<DecodeHintType,?> hints)
       throws FormatException, NotFoundException {
 
+    ResultPointCallback resultPointCallback = hints == null ? null :
+        (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
+    
     // Find out where the Middle section (payload) starts & ends
     int[] startRange = decodeStart(row);
     int[] endRange = decodeEnd(row);
 
     StringBuilder result = new StringBuilder(20);
-    decodeMiddle(row, startRange[1], endRange[0], result);
+    decodeMiddle(rowNumber, row, startRange[1], endRange[0], result, resultPointCallback);
     String resultString = result.toString();
 
     int[] allowedLengths = null;
@@ -137,10 +141,12 @@ public final class ITFReader extends OneDReader {
    * @param resultString {@link StringBuilder} to append decoded chars to
    * @throws NotFoundException if decoding could not complete successfully
    */
-  private static void decodeMiddle(BitArray row,
+  private static void decodeMiddle(int rowNumber,
+                                   BitArray row,
                                    int payloadStart,
                                    int payloadEnd,
-                                   StringBuilder resultString) throws NotFoundException {
+                                   StringBuilder resultString,
+                                   ResultPointCallback resultPointCallback) throws NotFoundException {
 
     // Digits are interleaved in pairs - 5 black lines for one digit, and the
     // 5
@@ -163,9 +169,17 @@ public final class ITFReader extends OneDReader {
       }
 
       int bestMatch = decodeDigit(counterBlack);
-      resultString.append((char) ('0' + bestMatch));
+      char c1 = (char) ('0' + bestMatch);
       bestMatch = decodeDigit(counterWhite);
-      resultString.append((char) ('0' + bestMatch));
+      char c2 = (char) ('0' + bestMatch);
+      
+      if (resultPointCallback != null) {
+        ResultPoint point = new ResultPoint(payloadStart, rowNumber);
+        resultPointCallback.foundPossibleResultPoint(point, new String(new char[] {c1, c2}));
+      }
+      
+      resultString.append(c1);
+      resultString.append(c2);
 
       for (int counterDigit : counterDigitPair) {
         payloadStart += counterDigit;

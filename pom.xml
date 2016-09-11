@@ -53,7 +53,7 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>com.google.zxing</groupId>
+        <groupId>com.srowen.bs.android</groupId>
         <artifactId>core</artifactId>
         <version>${zxing.version}</version>
       </dependency>
@@ -83,11 +83,7 @@
 
   <modules>
     <module>core</module>
-    <module>javase</module>
     <module>android-core</module>
-    <module>android-integration</module>
-    <module>zxing.appspot.com</module>
-    <module>zxingorg</module>
   </modules>
 
   <properties>
@@ -124,10 +120,6 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>clirr-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -468,45 +460,6 @@
           </dependencies>
         </plugin>
         <plugin>
-          <groupId>org.apache.rat</groupId>
-          <artifactId>apache-rat-plugin</artifactId>
-          <version>0.12</version>
-          <configuration>
-            <excludes>
-              <exclude>**/.*</exclude>
-              <exclude>**/.settings/**</exclude>
-              <exclude>**/*.iml</exclude>
-              <exclude>**/*.md</exclude>
-              <exclude>**/*.textile</exclude>
-              <exclude>**/*.txt</exclude>
-              <exclude>**/*.html</exclude>
-              <exclude>**/*.js</exclude>
-              <exclude>**/*.css</exclude>
-              <exclude>**/*.properties</exclude>
-              <exclude>**/*.cfg</exclude>
-              <exclude>**/*.config</exclude>
-              <exclude>**/*.yaml</exclude>
-              <exclude>**/gen/**</exclude>
-              <exclude>**/resources/**</exclude>
-              <exclude>**/symbolMaps/**</exclude>
-              <exclude>**/target/**</exclude>
-              <exclude>**/dependency-reduced-pom.xml</exclude>
-              <exclude>docs/</exclude>
-              <exclude>private/**</exclude>
-              <exclude>CHANGES</exclude>
-              <excludeSubProjects>false</excludeSubProjects>
-            </excludes>
-          </configuration>
-          <executions>
-            <execution>
-              <phase>verify</phase>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
           <version>2.7</version>
@@ -717,8 +670,6 @@
       </activation>
       <modules>
         <module>android</module>
-        <module>androidtest</module>
-        <module>glass</module>
       </modules>
     </profile>
     <profile>

@@ -27,8 +27,8 @@ public final class UPCEBlackBox3ReflectiveTestCase extends AbstractBlackBoxTestC
 
   public UPCEBlackBox3ReflectiveTestCase() {
     super("src/test/resources/blackbox/upce-3", new MultiFormatReader(), BarcodeFormat.UPC_E);
-    addTest(6, 8, 0.0f);
-    addTest(6, 8, 180.0f);
+    addTest(6, 8, 0, 1, 0.0f);
+    addTest(10, 10, 0, 0, 180.0f);
   }
 
 }
